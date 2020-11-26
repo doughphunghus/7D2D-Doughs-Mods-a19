@@ -21,16 +21,3 @@ Adds new recipes:
 **Details**:
 - Why? Because flashlights/place-able lantern are too OP/bright and I like a darker game. If brightness could be adjusted I would have made them easier to craft, but hard to craft a quality, bright one.  This will force you to use torches (heat sources) and/or have a harder time looting (for awhile) vs turning on your headlight all day/night.
 - The new parts are not common in loot, so it should take a little while to get all the parts and craft, and by that time you should relish the fact you have anything related to a flashlight mod in your helmet/gun This also means those who loot a lot will be rewarded sooner.
-
-**Tested on**:
-| Game version tested on | This Mod version  | Note |
-| :------------ | :------------- | :------------- |
-| alpha 19.2 b3  | v1.0.2 | Made new items even harder to find. Adjusted recipes using new items easier. |
-| alpha 19.0  | v1.0.1 | Made new items harder to find. Adjusted recipes using new items to be harder. |
-| alpha 19.0  | v1.0.0 |  |
-
-**To install game mods**: [7 Days to Die modlet installation](https://gist.github.com/doughphunghus/a1907c5f63b5fe79bd823965328f25bf)
-
-**Discussions (and additional info, links, etc)**: [My modlets main page](https://7daystodie.com/forums/showthread.php?144915-Doughs-modlets)
-
-**Modding Terms of Agreement**: [TFP Official Modding Forum Policy ](https://7daystodie.com/forums/showthread.php?59817-TFP-Official-Modding-Forum-Policy)

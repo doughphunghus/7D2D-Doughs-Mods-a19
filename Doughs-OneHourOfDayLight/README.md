@@ -31,17 +31,3 @@ alone clear it out.
 
 - 24 is "Perpetual Daylight".  I don't know if blood moon hordes will even spawn.
 Haven't tested as I don't plan to play with this setting, just providing it for completeness
-
-**Tested on:**
-
-| Game version tested on | This Mod version  | Note |
-| :------------ | :------------- | :------------- |
-| alpha 19.1 b8 (stable) | v2.0.0 | Patch for single XML error. Added 24 hour option |
-| alpha 19 B157 | v1.0.1 | No changes to modlet for a19 compatibility. Darkness not as prevalent in a19 as it was in a18. See additional modlet to load above|
-| alpha 18.3 b4 | v1.0.1 | |
-
-**To install game mods**: [7 Days to Die modlet installation](https://gist.github.com/doughphunghus/a1907c5f63b5fe79bd823965328f25bf)
-
-**Discussions (and additional info, links, etc)**: [My modlets main page](https://community.7daystodie.com/topic/17197-doughs-modlets/)
-
-**Modding Terms of Agreement**: [TFP Official Modding Forum Policy ](https://community.7daystodie.com/topic/4189-tfp-official-modding-forum-policy/)

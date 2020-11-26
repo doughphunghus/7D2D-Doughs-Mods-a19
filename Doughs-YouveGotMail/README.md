@@ -1,7 +1,7 @@
 **For game**: [7 Days to Die](https://7daystodie.com)
 
 **Description**
-This modlet adds a bunch of "fun" items into the game that you can find in places where mail would be found (mailboxes, desks, dressers, trash) in order to add a bit of backstory to the residents of the city, the outbreak and fall of civilization, and a bit of much needed whimsy.
+Possibly NSFW. This modlet adds a bunch of "fun" items into the game that you can find in places where mail would be found (mailboxes, desks, dressers, trash) in order to add a bit of backstory to the residents of the city, the outbreak and fall of civilization, and a bit of much needed whimsy.
 
 Note: This modlet can be slightly NSFW at times. If you're using the "No Potty Mouth" or similar modlets you might want to edit out a few items.
 
@@ -20,21 +20,3 @@ This modlet is purposefully made for/to:
 - 3 games to play: Soduku, Chess, Checkers, Tic-Tac-Toe. If you have time to burn. Specially sized containers for the game boards. Have to find or craft the pieces/puzzles depending on the game. Collect them all!
 - 1 "Geocaching" treasure map: Who knows what it will contain?
 - 1 Weapon: BB gun
-
-
-**Tested on**:
-
-| Game version | This Mod version  | Note |
-| :------------ | :------------- | :------------- |
-| alpha 19.2 b4  | v2.1.2 | Lightly tested. Note: Some items and descriptive text may be NSFW |
-| alpha 19.2 b4  | v2.1.1 | Lightly tested. Note: Some items and descriptive text may be NSFW |
-| alpha 19.2 b4  | v2.1.0 | Lightly tested. Note: Some items and descriptive text may be NSFW |
-| alpha 19.0 (b180)  | v2.0.0 | Lightly tested. Note: Some items and descriptive text may be NSFW |
-| alpha 19 b157  | v1.0.1 | Lightly tested. Note: Some items and descriptive text may be NSFW |
-| alpha 18.2 b5  | v1.0.0 | Lightly tested. Note: Some items and descriptive text may be NSFW |
-
-**To install game mods**: [7 Days to Die modlet installation](https://gist.github.com/doughphunghus/a1907c5f63b5fe79bd823965328f25bf)
-
-**Discussions (and additional info, links, etc)**: [My modlets main page](https://community.7daystodie.com/topic/17197-doughs-modlets/)
-
-**Modding Terms of Agreement**: [TFP Official Modding Forum Policy ](https://community.7daystodie.com/topic/4189-tfp-official-modding-forum-policy/)

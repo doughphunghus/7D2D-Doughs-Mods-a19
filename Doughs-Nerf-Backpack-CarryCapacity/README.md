@@ -11,14 +11,3 @@ Does not change the number of slots available.
 
 **Credits**:
 [khainegb](https://community.7daystodie.com/profile/27804-khainegb/) - Borrowed from [Khaine's 60-slot Bigger Backpack Mod](https://community.7daystodie.com/topic/19558-khaines-a19-modlets-bigger-backpacks-backpack-buttons-hp-bars-etc/)
-
-**Tested on**:
-| Game version | This Mod version  | Note |
-| :------------ | :------------- | :------------- |
-| alpha 19 b180  | v1.0.0 |  |
-
-**To install game mods**: [7 Days to Die modlet installation](https://gist.github.com/doughphunghus/a1907c5f63b5fe79bd823965328f25bf)
-
-**Discussions (and additional info, links, etc)**: [My modlets main page](https://7daystodie.com/forums/showthread.php?144915-Doughs-modlets)
-
-**Modding Terms of Agreement**: [TFP Official Modding Forum Policy ](https://7daystodie.com/forums/showthread.php?59817-TFP-Official-Modding-Forum-Policy)

@@ -24,19 +24,3 @@ Other than the sound pitch changes, this mod adds extra "new" sounds to these ad
 | cloth               | Destroying         | 3             | v1.2.0 |
 | door(wood)          | Opening+Closing    | 10            | v1.2.0 |
 | door(metal)         | Opening+Closing    | 12            | v1.2.0 |
-
-
-**Tested on**:
-
-| Game version tested on | This Mod version  | Note |
-| :------------ | :------------- | :------------- |
-| alpha 19.2 b3 | v1.2.0 | Likely works with all a19+ |
-| alpha 19.2 b3 | v1.1.0 | Likely works with all a19+ |
-| alpha 19 B157 | v1.0.0 | Likely works with all a19+ |
-| alpha 18.3 B3 | v1.0.0 | Likely works with all a18+ |
-
-**To install game mods**: [7 Days to Die modlet installation](https://gist.github.com/doughphunghus/a1907c5f63b5fe79bd823965328f25bf)
-
-**Discussions (and additional info, links, etc)**: [My modlets main page](https://community.7daystodie.com/topic/17197-doughs-modlets/)
-
-**Modding Terms of Agreement**: [TFP Official Modding Forum Policy ](https://community.7daystodie.com/topic/4189-tfp-official-modding-forum-policy/)

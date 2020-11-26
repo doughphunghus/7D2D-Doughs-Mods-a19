@@ -25,16 +25,3 @@ You essentially have to rely on the compass for bedroll location (if you have on
 and quests/airdrops/backpack locations as they show up as exclamation points on the compass.
 In addition, you should see the "distance" to an active quest marker in the main game UI
 and "Feels Like" temperature in the player stats area
-
-**Tested on**:
-
-| Game version tested on| Mod version  | Note |
-| :------------ | :------------- | :------------- |
-| alpha 19.2 b3 | v2.0.0 | a18 (v1.0.0) modlet does not work in a19! This may work in all a19+ versions, have not tested all of them |
-| alpha 18.3 b3 | v1.0.0 | |
-
-**To install game mods**: [7 Days to Die modlet installation](https://gist.github.com/doughphunghus/a1907c5f63b5fe79bd823965328f25bf)
-
-**Discussions (and additional info, links, etc)**: [My modlets main page](https://community.7daystodie.com/topic/17197-doughs-modlets/)
-
-**Modding Terms of Agreement**: [TFP Official Modding Forum Policy ](https://community.7daystodie.com/topic/4189-tfp-official-modding-forum-policy/)
