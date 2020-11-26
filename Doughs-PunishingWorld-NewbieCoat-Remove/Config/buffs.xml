@@ -1,0 +1,8 @@
+<Doughs>
+
+<!--
+Remove NewbieCoat buff activation
+-->
+<remove xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group/triggered_effect[@buff='buffNewbieCoat']" />
+
+</Doughs>

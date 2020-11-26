@@ -1,0 +1,51 @@
+<Doughs>
+
+  <append xpath="/entitygroups/*">
+    <entity name="zombieScreamer" prob=".5"/>
+  </append>
+
+  <!-- DOUGH: High spawn rates: -->
+  <!--
+  <append xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']">
+    <entity name="zombieScreamer" prob="2"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='HospitalGroup']">
+    <entity name="zombieScreamer" prob="2"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='ZombiesAll']">
+    <entity name="zombieScreamer" prob="2"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='ZombiesNight']">
+    <entity name="zombieScreamer" prob="2"/>
+  </append>
+   -->
+
+  <!-- DOUGH: Med spawn rates -->
+  <!--
+  <append xpath="/entitygroups/entitygroup[@name='ZombiesHoard']">
+    <entity name="zombieScreamer" prob="1"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='ZombiesBurntForest']">
+    <entity name="zombieScreamer" prob="1"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']">
+    <entity name="zombieScreamer" prob="1"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNightNoBears']">
+    <entity name="zombieScreamer" prob="1"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight2']">
+    <entity name="zombieScreamer" prob="1"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight2NoBears']">
+    <entity name="zombieScreamer" prob="1"/>
+  </append>
+  -->
+
+  <!-- DOUGH: Low spawn rates: -->
+  <!--
+  <append xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']">
+    <entity name="zombieScreamer" prob="0.60"/>
+  </append>
+  -->
+</Doughs>

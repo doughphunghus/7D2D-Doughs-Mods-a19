@@ -1,0 +1,6 @@
+Key,Source,Context,UsedInMainMenu,NoTranslate,english
+doughsAnimalRabbbitOfCaerbannog,entityclasses,Entity,,,Rabbit Of Caerbannog
+doughsAnimalRabbbitFleshOfCaerbannog,items,Food,,,Rabbit Flesh Of The Caerbannog
+doughsAnimalRabbbitFleshOfCaerbannoghDesc,items,Food,,,Very Very Very high chance of food poisoning.\n\nYou would have to be pretty stupid to eat this.,
+doughs-khelldonHolyHandGrenade,items,Gun,,,The Holy Hand Grenade of Antioch
+doughs-khelldonHolyHandGrenadeDesc,items,Gun,,,"Bless this, O Lord, that with it thou mayst blow thine enemies to tiny bits, in thy mercy."

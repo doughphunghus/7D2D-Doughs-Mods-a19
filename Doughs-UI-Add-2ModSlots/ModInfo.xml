@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Doughs UI Add 2 Mod Slots" />
+		<Description value="Adds 2 visible mod slots to the 6 existing ones in the game UI" />
+		<Author value="Doughphunghus" />
+		<Version value="1.0.0" />
+    <Website value="https://github.com/doughphunghus" />
+	</ModInfo>
+</xml>

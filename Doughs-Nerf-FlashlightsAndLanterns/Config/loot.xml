@@ -1,0 +1,85 @@
+<Doughs>
+
+  <!--
+  Remove anything giving lights/light mods in loot because MUST CRAFT OR BUY
+  -->
+
+  <!--
+  Remove full flashlights from all lootgroups and lootcontainers
+  -->
+  <remove xpath="/lootcontainers/*/item[@name='modGunFlashlight']" />
+  <remove xpath="/lootcontainers/*/item[@name='modArmorHelmetLight']" />
+  <remove xpath="/lootcontainers/*/item[@name='meleeToolFlashlight02']" />
+
+  <!--
+  Remove light mods from all lootgroups and lootcontainers
+  Set mod_chance = 0!
+  -->
+  <set xpath="/lootcontainers/*/item[@mods='modArmorHelmetLight']/@mod_chance">0</set>
+
+  <!--
+  Put back empty flashlight cases/shells in some loot where flashlights were normally found
+  -->
+  <append xpath="/lootcontainers/lootgroup[@name='automotive']">
+    <item name="doughsMeleeToolEmptyFlashlight" prob="0.005" />
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='sportingGoods']">
+    <item name="doughsMeleeToolEmptyFlashlight" prob="0.005"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='backpacks/survival']">
+    <item name="doughsMeleeToolEmptyFlashlight" prob="0.005"/>
+  </append>
+
+  <!--
+  Put batteries and bulbs in the rest of the numbered/common containers flashlights were normally found
+  -->
+  <!-- metal desk -->
+  <append xpath="/lootcontainers/lootcontainer[@id='24']">
+    <item name="doughsCellC" count="1,2" prob="0.005"/>
+  </append>
+
+  <!-- suitcase / luggage -->
+  <append xpath="/lootcontainers/lootcontainer[@id='36']">
+    <item name="doughsCellC" count="1" prob="0.002"/>
+  </append>
+
+  <!-- cntNightstandClosed and dressers, wooden desk: pistol, ammo, magazines, books -->
+  <append xpath="/lootcontainers/lootcontainer[@id='42']">
+    <item name="doughsResourceSmallBulb" count="1" prob="0.02"/>
+  </append>
+
+  <!--
+  Add custom places to find items
+  -->
+  <append xpath="/lootcontainers/lootgroup[@name='chemistryStationLoot']">
+    <item name="doughsCellC" count="1" prob="0.02"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='automotive']">
+    <item name="doughsCellC" count="1" prob="0.01"/>
+    <item name="doughsResourceSmallBulb" count="1" prob="0.01"/>
+  </append>
+
+  <!-- cntCollapsedWorkbench -->
+  <append xpath="/lootcontainers/lootcontainer[@id='92']">
+    <item name="doughsCellC" count="1,2" prob="0.02"/>
+    <item name="doughsResourceSmallBulb" count="1" prob="0.01"/>
+    <item name="doughsMeleeToolEmptyFlashlight" count="1" prob="0.05"/>
+  </append>
+
+  <!-- cntCollapsedChemistryStation -->
+  <append xpath="/lootcontainers/lootcontainer[@id='94']">
+    <item name="doughsCellC" count="1" prob="0.01"/>
+    <item name="doughsResourceSmallBulb" count="1" prob="0.01"/>
+  </append>
+
+  <!-- cntToolBoxClosed -->
+  <append xpath="/lootcontainers/lootcontainer[@id='125']">
+    <item name="doughsCellC" count="1,2" prob="0.02"/>
+    <item name="doughsResourceSmallBulb" count="1" prob="0.02"/>
+    <item name="doughsMeleeToolEmptyFlashlight" count="1" prob="0.05"/>
+  </append>
+
+</Doughs>

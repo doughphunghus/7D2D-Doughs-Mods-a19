@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Doughs UI Add 5 Recipe Ingredients" />
+		<Description value="Adds 5 more visible ingredient slots for recipes" />
+		<Author value="Doughphunghus" />
+		<Version value="2.0.1" />
+	</ModInfo>
+</xml>

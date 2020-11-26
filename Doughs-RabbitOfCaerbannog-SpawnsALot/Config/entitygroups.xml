@@ -1,0 +1,55 @@
+<Doughs>
+
+  <!--
+  ########## Mod vanilla items ##########
+  -->
+
+  <!-- DOUGH: High spawn rates -->
+  <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.07"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.05"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.05"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight2']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.05"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='ZombieBadassGroup']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.05"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='ZombieAnimalsGroup']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.05"/>
+  </append>
+
+  <!-- DOUGH: Med spawn rates -->
+  <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.02"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnow']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.02"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsForest']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.02"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsBurntForest']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.02"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='ZombiesNight']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.02"/>
+  </append>
+
+  <!-- DOUGH: Low spawn rates -->
+  <append xpath="/entitygroups/entitygroup[@name='AnimalsFarm']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.01"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='AnimalsSmall']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.01"/>
+  </append>
+  <append xpath="/entitygroups/entitygroup[@name='ZombiesHoard']">
+    <entity name="doughsAnimalRabbbitOfCaerbannog" prob="0.01"/>
+  </append>
+
+</Doughs>

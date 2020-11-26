@@ -1,0 +1,11 @@
+<Doughs>
+  <!--
+  ########## Mod vanilla items ##########
+  -->
+
+  <!-- Add new capacitrors to workbenches ... I guess -->
+  <append xpath="/lootcontainers/lootgroup[@name='workbenchLoot']">
+    <item name="doughsCapacitor" count="1,2"/>
+  </append>
+
+</Doughs>

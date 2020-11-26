@@ -1,0 +1,4 @@
+Key,Source,Context,UsedInMainMenu,NoTranslate,english
+doughsCapacitor,items,Item,,,"Capacitor"
+doughsCapacitorDesc,items,Item,,,"A large high energy capacitor"
+doughsCapacitorBank,items,Item,,,"Capacitor Bank"

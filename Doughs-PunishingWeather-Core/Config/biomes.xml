@@ -1,0 +1,453 @@
+<Doughs>
+
+<!--
+########## Mod vanilla items ##########
+NOTE: Setting ChunkMargin="1" is rally cool and dense effect, but hits FPS a little too much. Default game is ChunkMargin="7"
+Set ChunkMargin="1" anyway as this is the lowest it can go and can add overriding mods to lessen it
+
+Spectrums:
+BloodMoon Foggy Rainy Stormy Snowy
+Note: Foggy is noce, snowy is very white, like super fog
+-->
+
+<!--
+BIOME: snow
+
+<spectrum name="snow"/>
+
+<weather>
+  <Temperature doughtag="1" min="-60" max="-30" prob="1"/>
+  <Fog doughtag="1" min="0" max="0" prob=".9"/>
+  <Fog doughtag="1" min="100" max="100" prob=".1"/>
+  <CloudThickness doughtag="1" min="0" max="100" prob=".5"/>
+  <CloudThickness doughtag="1" min="95" max="100" prob=".5"/>
+  <Precipitation doughtag="1" min="0" max="0" prob=".0"/>
+  <Precipitation doughtag="1" min="50" max="100" prob=".75"/>
+  <Wind doughtag="1" min="20" max="40" prob="0.9"/>
+  <Wind doughtag="1" min="40" max="100" prob="0.1"/>
+  <ParticleEffect prefab="ParticleEffects/p_snowstorm1" ChunkMargin="7"/>
+</weather>
+
+-->
+<remove xpath="/worldgeneration/biomes/biome[@name='snow']/weather" />
+
+<append xpath="/worldgeneration/biomes/biome[@name='snow']">
+  <weather>
+    <Temperature doughtag="1" min="-60" max="-30" prob=".2"/> <!-- DOUGH: Vanilla value -->
+    <Temperature doughtag="2" min="-70" max="-40" prob=".5"/>
+    <Temperature doughtag="3" min="-80" max="-50" prob=".3"/>
+    <Temperature doughtag="4" min="-90" max="-60" prob=".05"/>
+    <Temperature doughtag="5" min="-100" max="-70" prob=".05"/>
+
+    <Fog doughtag="1" min="0" max="10" prob=".05"/>
+    <Fog doughtag="2" min="10" max="40" prob=".15"/>
+    <Fog doughtag="3" min="40" max="60" prob=".3"/>
+    <Fog doughtag="4" min="60" max="80" prob=".3"/>
+    <Fog doughtag="5" min="80" max="100" prob=".2"/>
+
+    <CloudThickness doughtag="1" min="0" max="10" prob=".05"/>
+    <CloudThickness doughtag="2" min="10" max="40" prob=".1"/>
+    <CloudThickness doughtag="3" min="40" max="70" prob=".2"/>
+    <CloudThickness doughtag="4" min="70" max="80" prob=".45"/>
+    <CloudThickness doughtag="5" min="80" max="100" prob=".2"/>
+
+    <Precipitation doughtag="1" min="0" max="10" prob=".45"/> <!-- it has to be at least 70% cloudy before it can rain -->
+    <Precipitation doughtag="2" min="10" max="20" prob=".25"/>
+    <Precipitation doughtag="3" min="20" max="50" prob=".15"/>
+    <Precipitation doughtag="4" min="50" max="80" prob=".1"/>
+    <Precipitation doughtag="5" min="80" max="100" prob=".05"/>
+
+    <Wind doughtag="1" min="0" max="10" prob="0.05"/>
+    <Wind doughtag="2" min="10" max="30" prob="0.15"/>
+    <Wind doughtag="3" min="30" max="60" prob="0.45"/>
+    <Wind doughtag="4" min="60" max="90" prob="0.25"/>
+    <Wind doughtag="5" min="90" max="100" prob="0.1"/>
+
+    <ParticleEffect prefab="ParticleEffects/p_snowstorm1" ChunkMargin="1"/>
+
+  </weather>
+</append>
+
+<!--
+BIOME: pine_forest
+* No spectrum defined: appears to default to <spectrum name="pine_forest"/>
+
+<weather>
+  <Temperature doughtag="1" min="-35" max="15" prob="1"/>
+  <CloudThickness doughtag="1" min="0" max="0" prob=".3"/>
+  <CloudThickness doughtag="1" min="10" max="70" prob=".6"/>
+  <CloudThickness doughtag="1" min="100" max="100" prob=".1"/>
+  <Precipitation doughtag="1" min="0" max="0" prob=".0"/>
+  <Precipitation doughtag="1" min="50" max="100" prob=".75"/>
+  <Wind doughtag="1" min="10" max="20" prob="0.9"/>
+  <Wind doughtag="1" min="20" max="100" prob="0.1"/>
+</weather>
+
+-->
+<remove xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather" />
+<!--<remove xpath="/worldgeneration/biomes/biome[@name='pine_forest']/spectrum" /> -->
+<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']">
+  <spectrum name="burnt_forest"/>
+</append>
+
+<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']">
+  <weather>
+    <Temperature doughtag="1" min="-60" max="0" prob=".05"/>
+    <Temperature doughtag="2" min="-55" max="5" prob=".15"/>
+    <Temperature doughtag="3" min="-35" max="15" prob=".5"/> <!-- DOUGH: Vanilla value -->
+    <Temperature doughtag="4" min="-15" max="25" prob=".25"/>
+    <Temperature doughtag="5" min="-10" max="30" prob=".05"/>
+
+    <Fog doughtag="1" min="0" max="10" prob=".05"/>
+    <Fog doughtag="2" min="10" max="30" prob=".15"/>
+    <Fog doughtag="3" min="30" max="40" prob=".2"/>
+    <Fog doughtag="4" min="40" max="60" prob=".2"/>
+    <Fog doughtag="5" min="60" max="100" prob=".4"/>
+
+    <CloudThickness doughtag="1" min="0" max="5" prob=".05"/>
+    <CloudThickness doughtag="2" min="5" max="10" prob=".1"/>
+    <CloudThickness doughtag="3" min="10" max="20" prob=".15"/>
+    <CloudThickness doughtag="4" min="20" max="70" prob=".2"/>
+    <CloudThickness doughtag="5" min="70" max="100" prob=".5"/>
+
+    <Precipitation doughtag="1" min="0" max="10" prob=".05"/>
+    <Precipitation doughtag="2" min="10" max="50" prob=".2"/>
+    <Precipitation doughtag="3" min="50" max="80" prob=".5"/>
+    <Precipitation doughtag="4" min="80" max="90" prob=".15"/>
+    <Precipitation doughtag="5" min="90" max="100" prob=".1"/>
+
+    <Wind doughtag="1" min="0" max="10" prob="0.05"/>
+    <Wind doughtag="2" min="10" max="25" prob="0.25"/>
+    <Wind doughtag="3" min="25" max="60" prob="0.5"/>
+    <Wind doughtag="4" min="60" max="70" prob="0.15"/>
+    <Wind doughtag="5" min="70" max="100" prob="0.05"/>
+
+    <ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="1"/> <!-- DOUGH: Did not exist in vanilla -->
+
+  </weather>
+</append>
+
+<!--
+BIOME: desert
+
+<spectrum name="desert"/>
+
+<weather>
+  <Temperature doughtag="1" min="20" max="50" prob="1"/>
+  <CloudThickness doughtag="1" min="5" max="50" prob="1"/>
+  <CloudThickness doughtag="1" min="0" max="0" prob=".3"/>
+  <CloudThickness doughtag="1" min="10" max="70" prob=".6"/>
+  <CloudThickness doughtag="1" min="100" max="100" prob=".1"/>
+  <Precipitation doughtag="1" min="0" max="0" prob=".0"/>
+  <Precipitation doughtag="1" min="50" max="100" prob=".75"/>
+  <Wind doughtag="1" min="10" max="20" prob="0.9"/>
+  <Wind doughtag="1" min="20" max="100" prob="0.1"/>
+  <ParticleEffect prefab="ParticleEffects/p_sandstorm" ChunkMargin="7"/>
+</weather>
+-->
+<remove xpath="/worldgeneration/biomes/biome[@name='desert']/weather" />
+<remove xpath="/worldgeneration/biomes/biome[@name='desert']/spectrum" />
+<append xpath="/worldgeneration/biomes/biome[@name='desert']">
+  <spectrum name="burnt_forest"/>
+</append>
+
+<append xpath="/worldgeneration/biomes/biome[@name='desert']">
+  <weather>
+    <Temperature doughtag="1" min="20" max="50" prob=".4"/> <!-- DOUGH: Vanilla value -->
+    <Temperature doughtag="2" min="30" max="60" prob=".3"/>
+    <Temperature doughtag="3" min="40" max="70" prob=".1"/>
+    <Temperature doughtag="4" min="50" max="80" prob=".15"/>
+    <Temperature doughtag="5" min="65" max="85" prob=".05"/>
+
+    <Fog doughtag="1" min="0" max="5" prob=".05"/>
+    <Fog doughtag="2" min="5" max="20" prob=".7"/>
+    <Fog doughtag="3" min="20" max="30" prob=".15"/>
+    <Fog doughtag="4" min="30" max="60" prob=".05"/>
+    <Fog doughtag="5" min="60" max="70" prob=".05"/>
+
+    <CloudThickness doughtag="1" min="0" max="10" prob=".05"/>
+    <CloudThickness doughtag="2" min="10" max="40" prob=".2"/>
+    <CloudThickness doughtag="3" min="40" max="70" prob=".5"/>
+    <CloudThickness doughtag="4" min="70" max="85" prob=".15"/>
+    <CloudThickness doughtag="5" min="85" max="100" prob=".1"/>
+
+    <Precipitation doughtag="1" min="0" max="0" prob=".4"/>
+    <Precipitation doughtag="2" min="10" max="20" prob=".25"/>
+    <Precipitation doughtag="3" min="20" max="30" prob=".2"/>
+    <Precipitation doughtag="4" min="30" max="40" prob=".1"/>
+    <Precipitation doughtag="5" min="40" max="50" prob=".05"/>
+
+    <Wind doughtag="1" min="0" max="10" prob="0.05"/>
+    <Wind doughtag="2" min="10" max="30" prob="0.3"/>
+    <Wind doughtag="3" min="30" max="70" prob="0.5"/>
+    <Wind doughtag="4" min="70" max="80" prob="0.1"/>
+    <Wind doughtag="5" min="80" max="100" prob="0.05"/>
+
+    <ParticleEffect prefab="ParticleEffects/p_sandstorm" ChunkMargin="1"/>
+
+  </weather>
+</append>
+
+<!--
+BIOME: water
+Note: more like snow (nastier) but temperature buffering on midpoint
+
+<spectrum name="pine_forest"/>
+
+<weather>
+  <Temperature doughtag="1" min="0" max="10" prob="1"/>
+  <CloudThickness doughtag="1" min="5" max="50" prob="1"/>
+  <Fog doughtag="1" min="0" max="0" prob=".9"/>
+  <Fog doughtag="1" min="100" max="100" prob=".1"/>
+  <CloudThickness doughtag="1" min="0" max="0" prob=".3"/>
+  <CloudThickness doughtag="1" min="10" max="70" prob=".6"/>
+  <CloudThickness doughtag="1" min="100" max="100" prob=".1"/>
+  <Precipitation doughtag="1" min="0" max="0" prob=".0"/>
+  <Precipitation doughtag="1" min="50" max="100" prob=".75"/>
+  <Wind doughtag="1" min="10" max="20" prob="0.9"/>
+  <Wind doughtag="1" min="20" max="100" prob="0.1"/>
+</weather>
+
+-->
+<remove xpath="/worldgeneration/biomes/biome[@name='water']/weather" />
+<remove xpath="/worldgeneration/biomes/biome[@name='water']/spectrum" />
+<append xpath="/worldgeneration/biomes/biome[@name='water']">
+  <spectrum name="burnt_forest"/>
+</append>
+
+<append xpath="/worldgeneration/biomes/biome[@name='water']">
+  <weather>
+    <Temperature doughtag="1" min="-30" max="0" prob=".1"/>
+    <Temperature doughtag="2" min="-20" max="-10" prob=".15"/>
+    <Temperature doughtag="3" min="0" max="10" prob=".5"/> <!-- DOUGH: Vanilla value -->
+    <Temperature doughtag="4" min="20" max="40" prob=".15"/>
+    <Temperature doughtag="5" min="30" max="50" prob=".1"/>
+
+    <!-- Stolen from snow -->
+    <Fog doughtag="1" min="0" max="10" prob=".05"/>
+    <Fog doughtag="2" min="10" max="40" prob=".15"/>
+    <Fog doughtag="3" min="40" max="60" prob=".3"/>
+    <Fog doughtag="4" min="60" max="80" prob=".3"/>
+    <Fog doughtag="5" min="80" max="100" prob=".2"/>
+
+    <CloudThickness doughtag="1" min="0" max="10" prob=".05"/>
+    <CloudThickness doughtag="2" min="10" max="40" prob=".1"/>
+    <CloudThickness doughtag="3" min="40" max="70" prob=".2"/>
+    <CloudThickness doughtag="4" min="70" max="80" prob=".45"/>
+    <CloudThickness doughtag="5" min="80" max="100" prob=".2"/>
+
+    <Precipitation doughtag="1" min="0" max="0" prob=".5"/> <!-- it has to be at least 70% cloudy before it can rain -->
+    <Precipitation doughtag="2" min="10" max="20" prob=".3"/>
+    <Precipitation doughtag="3" min="20" max="50" prob=".1"/>
+    <Precipitation doughtag="4" min="50" max="80" prob=".05"/>
+    <Precipitation doughtag="5" min="80" max="100" prob=".05"/>
+
+    <Wind doughtag="1" min="0" max="10" prob="0.05"/>
+    <Wind doughtag="2" min="10" max="30" prob="0.3"/>
+    <Wind doughtag="3" min="30" max="60" prob="0.35"/>
+    <Wind doughtag="4" min="60" max="90" prob="0.2"/>
+    <Wind doughtag="5" min="90" max="100" prob="0.1"/>
+
+    <ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="1"/> <!-- DOUGH: Did not exist in vanilla -->
+
+  </weather>
+</append>
+
+<!--
+BIOME: onlyWater
+Note: same as water
+
+<spectrum name="pine_forest"/>
+
+<weather>
+  <Temperature doughtag="1" min="0" max="10" prob="1"/>
+  <CloudThickness doughtag="1" min="5" max="50" prob="1"/>
+  <Fog doughtag="1" min="0" max="0" prob=".9"/>
+  <Fog doughtag="1" min="100" max="100" prob=".1"/>
+  <CloudThickness doughtag="1" min="0" max="0" prob=".3"/>
+  <CloudThickness doughtag="1" min="10" max="70" prob=".6"/>
+  <CloudThickness doughtag="1" min="100" max="100" prob=".1"/>
+  <Precipitation doughtag="1" min="0" max="0" prob=".0"/>
+  <Precipitation doughtag="1" min="50" max="100" prob=".75"/>
+  <Wind doughtag="1" min="10" max="20" prob="0.9"/>
+  <Wind doughtag="1" min="20" max="100" prob="0.1"/>
+</weather>
+-->
+<remove xpath="/worldgeneration/biomes/biome[@name='onlyWater']/weather" />
+<remove xpath="/worldgeneration/biomes/biome[@name='onlyWater']/spectrum" />
+<append xpath="/worldgeneration/biomes/biome[@name='onlyWater']">
+  <spectrum name="burnt_forest"/>
+</append>
+
+<append xpath="/worldgeneration/biomes/biome[@name='onlyWater']">
+  <weather>
+    <Temperature doughtag="1" min="-30" max="-20" prob=".05"/>
+    <Temperature doughtag="2" min="-20" max="-10" prob=".25"/>
+    <Temperature doughtag="3" min="0" max="10" prob=".4"/> <!-- DOUGH: Vanilla value -->
+    <Temperature doughtag="4" min="20" max="40" prob=".25"/>
+    <Temperature doughtag="5" min="30" max="50" prob=".05"/>
+
+    <!-- Stolen from snow -->
+    <Fog doughtag="1" min="0" max="10" prob=".05"/>
+    <Fog doughtag="2" min="10" max="40" prob=".15"/>
+    <Fog doughtag="3" min="40" max="60" prob=".3"/>
+    <Fog doughtag="4" min="60" max="80" prob=".3"/>
+    <Fog doughtag="5" min="80" max="100" prob=".2"/>
+
+    <CloudThickness doughtag="1" min="0" max="10" prob=".05"/>
+    <CloudThickness doughtag="2" min="10" max="30" prob=".1"/>
+    <CloudThickness doughtag="3" min="30" max="70" prob=".2"/>
+    <CloudThickness doughtag="4" min="70" max="80" prob=".45"/>
+    <CloudThickness doughtag="5" min="80" max="100" prob=".2"/>
+
+    <Precipitation doughtag="1" min="0" max="10" prob=".45"/> <!-- it has to be at least 70% cloudy before it can rain -->
+    <Precipitation doughtag="2" min="10" max="20" prob=".25"/>
+    <Precipitation doughtag="3" min="20" max="50" prob=".15"/>
+    <Precipitation doughtag="4" min="50" max="80" prob=".1"/>
+    <Precipitation doughtag="5" min="80" max="100" prob=".05"/>
+
+    <Wind doughtag="1" min="0" max="10" prob="0.05"/>
+    <Wind doughtag="2" min="10" max="30" prob="0.15"/>
+    <Wind doughtag="3" min="30" max="60" prob="0.45"/>
+    <Wind doughtag="4" min="60" max="90" prob="0.25"/>
+    <Wind doughtag="5" min="90" max="100" prob="0.1"/>
+
+    <ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="1"/> <!-- DOUGH: Did not exist in vanilla -->
+  </weather>
+</append>
+
+<!--
+BIOME: underwater
+Note: same as water for temp.  VAnilla has no weather settings, No spectrum
+-->
+<!-- <remove xpath="/worldgeneration/biomes/biome[@name='underwater']/weather" /> --> <!-- DOUGH: Does not exist in vanilla -->
+
+<append xpath="/worldgeneration/biomes/biome[@name='underwater']">
+  <weather>
+
+    <Temperature doughtag="1" min="-30" max="-20" prob=".05"/>
+    <Temperature doughtag="2" min="-20" max="-10" prob=".25"/>
+    <Temperature doughtag="3" min="0" max="10" prob=".4"/> <!-- DOUGH: Vanilla value -->
+    <Temperature doughtag="4" min="20" max="40" prob=".25"/>
+    <Temperature doughtag="5" min="30" max="50" prob=".05"/>
+
+    <ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="6"/> <!-- DOUGH: Did not exist in vanilla. Makes water murky -->
+
+  </weather>
+</append>
+
+<!--
+BIOME: wasteland
+Note: temperate, and nasty
+
+<spectrum name="burnt_forest"/>
+
+<weather>
+  <Temperature doughtag="1" min="-30" max="30" prob="1"/>
+  <CloudThickness doughtag="1" min="0" max="0" prob=".2"/>
+  <CloudThickness doughtag="1" min="10" max="70" prob=".5"/>
+  <CloudThickness doughtag="1" min="100" max="100" prob=".3"/>
+  <Precipitation doughtag="1" min="0" max="0" prob=".0"/>
+  <Precipitation doughtag="1" min="50" max="100" prob=".75"/>
+  <Wind doughtag="1" min="10" max="20" prob="0.9"/>
+  <Wind doughtag="1" min="20" max="100" prob="0.1"/>
+</weather>
+-->
+<remove xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather" />
+
+<append xpath="/worldgeneration/biomes/biome[@name='wasteland']">
+  <weather>
+    <Temperature doughtag="1" min="-50" max="10" prob=".1"/>
+    <Temperature doughtag="2" min="-40" max="20" prob=".25"/>
+    <Temperature doughtag="3" min="-30" max="30" prob=".3"/> <!-- DOUGH: Vanilla value -->
+    <Temperature doughtag="4" min="-20" max="40" prob=".25"/>
+    <Temperature doughtag="5" min="-10" max="50" prob=".1"/>
+
+    <Fog doughtag="1" min="0" max="10" prob=".05"/>
+    <Fog doughtag="2" min="10" max="30" prob=".15"/>
+    <Fog doughtag="3" min="30" max="70" prob=".3"/>
+    <Fog doughtag="4" min="70" max="85" prob=".35"/>
+    <Fog doughtag="5" min="85" max="100" prob=".15"/>
+
+    <CloudThickness doughtag="1" min="0" max="10" prob=".05"/>
+    <CloudThickness doughtag="2" min="1" max="30" prob=".15"/>
+    <CloudThickness doughtag="3" min="30" max="70" prob=".2"/>
+    <CloudThickness doughtag="4" min="70" max="80" prob=".2"/>
+    <CloudThickness doughtag="5" min="80" max="100" prob=".45"/>
+
+    <Precipitation doughtag="1" min="0" max="10" prob=".05"/>
+    <Precipitation doughtag="2" min="10" max="20" prob=".15"/>
+    <Precipitation doughtag="3" min="20" max="50" prob=".25"/>
+    <Precipitation doughtag="4" min="50" max="80" prob=".4"/>
+    <Precipitation doughtag="5" min="80" max="100" prob=".15"/>
+
+    <Wind doughtag="1" min="0" max="0" prob="0.05"/>
+    <Wind doughtag="2" min="0" max="30" prob="0.05"/>
+    <Wind doughtag="3" min="30" max="60" prob="0.1"/>
+    <Wind doughtag="4" min="60" max="90" prob="0.3"/>
+    <Wind doughtag="5" min="90" max="100" prob="0.5"/>
+
+    <ParticleEffect prefab="ParticleEffects/p_snowstorm1" ChunkMargin="1"/> <!-- DOUGH: Did not exist in vanilla -->
+
+  </weather>
+</append>
+
+<!--
+BIOME: burnt_forest
+Note: Sorta same as Forest, but generally hotter, nastier
+
+* No spectrum defined Seems to default to <spectrum name="burnt_forest"/>
+
+<weather>
+  <Temperature doughtag="1" min="0" max="20" prob="1"/>
+  <Fog doughtag="1" min="0" max="0" prob="1"/>
+  <CloudThickness doughtag="1" min="30" max="70" prob=".9"/>
+  <CloudThickness doughtag="1" min="100" max="100" prob=".1"/>
+  <Wind doughtag="1" min="10" max="20" prob="0.9"/>
+  <Wind doughtag="1" min="20" max="100" prob="0.1"/>
+  <Precipitation doughtag="1" min="0" max="0" prob=".0"/>
+  <Precipitation doughtag="1" min="50" max="100" prob=".75"/>
+  <ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="7"/>
+</weather>
+-->
+<remove xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather" />
+
+<append xpath="/worldgeneration/biomes/biome[@name='burnt_forest']">
+  <weather>
+
+    <Temperature doughtag="1" min="-10" max="0" prob=".2"/>
+    <Temperature doughtag="2" min="0" max="20" prob=".4"/> <!-- DOUGH: Vanilla value -->
+    <Temperature doughtag="3" min="20" max="40" prob=".2"/>
+    <Temperature doughtag="4" min="40" max="50" prob=".15"/>
+    <Temperature doughtag="5" min="55" max="55" prob=".05"/>
+
+    <Fog doughtag="1" min="0" max="0" prob=".1"/>
+    <Fog doughtag="2" min="0" max="10" prob=".55"/>
+    <Fog doughtag="3" min="10" max="40" prob=".2"/>
+    <Fog doughtag="4" min="40" max="60" prob=".1"/>
+    <Fog doughtag="5" min="60" max="80" prob=".05"/>
+
+    <CloudThickness doughtag="1" min="0" max="10" prob=".05"/>
+    <CloudThickness doughtag="2" min="10" max="20" prob=".1"/>
+    <CloudThickness doughtag="3" min="20" max="40" prob=".25"/>
+    <CloudThickness doughtag="4" min="40" max="70" prob=".4"/>
+    <CloudThickness doughtag="5" min="70" max="100" prob=".2"/>
+
+    <Precipitation doughtag="1" min="0" max="5" prob=".2"/>
+    <Precipitation doughtag="2" min="5" max="10" prob=".5"/>
+    <Precipitation doughtag="3" min="10" max="15" prob=".15"/>
+    <Precipitation doughtag="4" min="15" max="20" prob=".1"/>
+    <Precipitation doughtag="5" min="20" max="25" prob=".05"/>
+
+    <Wind doughtag="1" min="0" max="10" prob="0.05"/>
+    <Wind doughtag="2" min="10" max="30" prob="0.1"/>
+    <Wind doughtag="3" min="30" max="60" prob="0.3"/>
+    <Wind doughtag="4" min="60" max="90" prob="0.5"/>
+    <Wind doughtag="5" min="90" max="100" prob="0.05"/>
+
+    <ParticleEffect prefab="ParticleEffects/p_smokestorm" ChunkMargin="1"/>
+
+  </weather>
+</append>
+
+</Doughs>

@@ -1,0 +1,55 @@
+<Doughs>
+
+<!--
+########## Mod vanilla items ##########
+NOTE: Setting ChunkMargin="1" is rally cool and dense effect, but may hit FPS a little too much.
+Default game is ChunkMargin="7"
+-->
+
+<!--
+BIOME: snow
+-->
+<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather/ParticleEffect/@ChunkMargin">7</set>
+
+<!--
+BIOME: pine_forest
+-->
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather/ParticleEffect/@ChunkMargin">7</set>
+
+<!--
+BIOME: desert
+-->
+<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather/ParticleEffect/@ChunkMargin">7</set>
+
+<!--
+BIOME: water
+Note: more like snow (nastier) but temperature buffering on midpoint
+-->
+<set xpath="/worldgeneration/biomes/biome[@name='water']/weather/ParticleEffect/@ChunkMargin">7</set>
+
+<!--
+BIOME: onlyWater
+Note: same as water
+-->
+<set xpath="/worldgeneration/biomes/biome[@name='onlyWater']/weather/ParticleEffect/@ChunkMargin">7</set>
+
+<!--
+BIOME: underwater
+Note: same as water for temp.  VAnilla has no weather settings
+-->
+<set xpath="/worldgeneration/biomes/biome[@name='underwater']/weather/ParticleEffect/@ChunkMargin">7</set>
+
+<!--
+BIOME: wasteland
+Note: temperate, and nasty
+-->
+<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather/ParticleEffect/@ChunkMargin">7</set>
+
+<!--
+BIOME: burnt_forest
+Note: Sorta same as Forest, but generally hotter, nastier
+-->
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather/ParticleEffect/@ChunkMargin">7</set>
+
+
+</Doughs>

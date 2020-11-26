@@ -1,0 +1,28 @@
+<Doughs>
+
+<!--
+BIOME: burnt_forest
+Note: Sorta same as Forest, but generally hotter, nastier
+-->
+<!-- MOre heat.  SO much you can likely die.  You're standing in a burnt forest it's not nice -->
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather/Temperature[@doughtag='1']/@prob">.05</set> <!-- Core = .2 -->
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather/Temperature[@doughtag='1']/@min">30</set>
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather/Temperature[@doughtag='1']/@max">40</set>
+
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather/Temperature[@doughtag='2']/@prob">.1</set> <!-- Core = .4 -->
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather/Temperature[@doughtag='2']/@min">40</set>
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather/Temperature[@doughtag='3']/@max">50</set>
+
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather/Temperature[@doughtag='3']/@prob">.2</set> <!-- Core = .2 -->
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather/Temperature[@doughtag='3']/@min">50</set>
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather/Temperature[@doughtag='3']/@max">65</set>
+
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather/Temperature[@doughtag='4']/@prob">.4</set> <!-- Core = .15 -->
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather/Temperature[@doughtag='4']/@min">65</set>
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather/Temperature[@doughtag='4']/@max">85</set>
+
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather/Temperature[@doughtag='5']/@prob">.25</set> <!-- Core = .05 -->
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather/Temperature[@doughtag='5']/@min">85</set>
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather/Temperature[@doughtag='5']/@max">100</set>
+
+</Doughs>

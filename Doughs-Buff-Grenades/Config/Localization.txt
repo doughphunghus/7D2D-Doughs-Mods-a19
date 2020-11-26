@@ -1,0 +1,5 @@
+Key,Source,Context,UsedInMainMenu,NoTranslate,english
+doughsthrownGrenadeSteel,items,Gun,,,Steel Grenade (Ammo)
+doughsthrownGrenadeSteelDesc,items,Gun,,,Prime the grenade with the secondary action & throw it with the primary action.
+doughsthrownGrenadeContactSteel,items,Gun,,,Steel Contact Grenade (Ammo)
+doughsthrownGrenadeContactSteelDesc,items,Gun,,,Contact-fused grenades are volatile devices that should not be dropped carelessly. Throw with the primary action.

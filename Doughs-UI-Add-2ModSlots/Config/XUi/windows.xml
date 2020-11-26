@@ -1,0 +1,30 @@
+<Doughs>
+
+  <!-- NOTE: LIKELY to use any of the extra slots, you have to expand each weapon/item using it
+  as they are all hardcoded to use 6 slots, via this line:
+  <passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+
+  Likely easist just to update Tier 6 "value" to 8...but how to do that with XML mod as you can't just pop of a value
+  and you cannot also read a balue, modify it, and put it back
+  -->
+
+  <!-- Add new mod slots where mods are SHOWN in items (on the left area when adding mods)
+  DEFAULT: 6
+  -->
+  <set xpath="/windows/window[@name='windowAssemble']/panel[@name='content']/rect/rect/grid[@name='parts']/@rows">8</set>
+
+  <!-- Shrink the existing slots a teensy bit to make it fit a little beter
+    DEFAULT: 60. 60/6 = 10. subtract 10 from every cell to make it fit a little better?
+  -->
+  <!-- <set xpath="/windows/window[@name='windowAssemble']/panel[@name='content']/rect/rect/grid[@name='parts']/@cell_height">50</set> -->
+
+  <!-- Add new mod slots where mods are LISTED in items (under ingredients area)
+  DEFAULT: 6
+  -->
+  <set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/grid[@name='parts']/@cols">8</set>
+  <!-- Shrink the existing slots a teensy bit to make it fit a little beter
+    DEFAULT: 75. 75/6 = 12.5. subtract 12 from every cell to make it fit a little better?
+  -->
+  <!-- <set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/grid[@name='parts']/@cell_width">12</set> -->
+
+</Doughs>

@@ -1,0 +1,13 @@
+Key,Source,Context,UsedInMainMenu,NoTranslate,english
+doughsThrownAmmoPipeBombSteel,items,Gun,,,Steel Pipe Bomb (Ammo)
+doughsThrownAmmoPipeBombSteelDesc,items,Gun,,,Light with the secondary action & throw with the primary action.
+doughsResourceSteelPipeBombParts,items,Item,,,Steel Pipe Bomb Parts
+doughsResourceSteelPipeBombPartsDesc,items,Item,,,A specially made short steel pipe. Can be used to make steel pipe bombs.
+doughsThrownAmmoPipeBombBrass,items,Gun,,,Brass Pipe Bomb (Ammo)
+doughsThrownAmmoPipeBombBrassDesc,items,Gun,,,Light with the secondary action & throw with the primary action.
+doughsResourceBrassPipeBombParts,items,Item,,,Brass Pipe Bomb Parts
+doughsResourceBrassPipeBombPartsDesc,items,Item,,,A specially made short brass pipe. Can be used to make brass pipe bombs.
+doughsThrownAmmoPipeBombPlastic,items,Gun,,,Plastic Pipe Bomb (Ammo)
+doughsThrownAmmoPipeBombPlasticDesc,items,Gun,,,Light with the secondary action & throw with the primary action.
+doughsResourcePlasticPipeBombParts,items,Item,,,Plastic Pipe Bomb Parts
+doughsResourcePlasticPipeBombPartsDesc,items,Item,,,A specially made short plastic pipe. Can be used to make plastic pipe bombs.

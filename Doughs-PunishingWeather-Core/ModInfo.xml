@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Doughs Punishing Weather Core" />
+		<Description value="Makes the weather more challenging to deal with" />
+		<Author value="Doughphunghus" />
+		<Version value="2.0.2" />
+    <Website value="https://github.com/doughphunghus" />
+	</ModInfo>
+</xml>

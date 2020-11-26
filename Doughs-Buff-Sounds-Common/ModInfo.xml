@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Doughs Buff Sounds Common" />
+		<Description value="Adds additional sounds for sounds that are commonly heard." />
+		<Author value="Doughphunghus" />
+		<Version value="1.2.0" />
+    <Website value="https://github.com/doughphunghus" />
+	</ModInfo>
+</xml>

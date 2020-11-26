@@ -1,0 +1,22 @@
+<Doughs>
+  <!-- NOTE:
+  Extra credits:
+    joshwar99's [More Mod Slots A18-A19](https://www.nexusmods.com/7daystodie/mods/464)
+  For ORIGINAL line:
+    <set xpath="/items/item/effect_group/passive_effect[contains(@name, 'ModSlots')][@value='1,1,2,2,3,4']/@value">1,2,3,4,5,6</set>
+  Borrowed inspiration on: On 24 Oct 2020.  Terms of agreement allowed if giving credit ;)
+
+  LIKELY you will need to make or modify vanilla mods to be able to use >6 for most items
+  Alternatively, use this, stolen from: https://www.nexusmods.com/7daystodie/mods/464
+  and just blow away all existing values, and set the tiers in some way to allow slots 7,8 be the last tiers.
+  -->
+
+  <!-- Uncomment for more "vanilla like" slot progression based on item tier -->
+  <!--
+  <set xpath="/items/item/effect_group/passive_effect[contains(@name, 'ModSlots')][@value='1,1,2,2,3,4']/@value">1,2,4,5,7,8</set>
+  -->
+
+  <!-- Uncomment for full 8 slots no matter what the item tier-->
+  <set xpath="/items/item/effect_group/passive_effect[contains(@name, 'ModSlots')][@value='1,1,2,2,3,4']/@value">8,8,8,8,8,8</set>
+
+</Doughs>

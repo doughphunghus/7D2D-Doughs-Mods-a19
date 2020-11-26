@@ -1,0 +1,561 @@
+<Doughs>
+
+<!-- DOUGH: Some sound Pitch settings work, some don't. Don't know why -->
+
+<!-- ONLY append AudioClips + Pitch changes -->
+
+<append xpath="/Sounds/SoundDataNode[@name='wrench_harvest']">
+  <AudioClip ClipName="#@modfolder:Resources/wrench.unity3d?wrench_harvest-1"/>
+  <AudioClip ClipName="#@modfolder:Resources/wrench.unity3d?wrench_harvest-2"/>
+  <AudioClip ClipName="#@modfolder:Resources/wrench.unity3d?wrench_harvest-3"/>
+  <AudioClip ClipName="#@modfolder:Resources/wrench.unity3d?wrench_harvest-4"/>
+  <AudioClip ClipName="#@modfolder:Resources/wrench.unity3d?wrench_harvest-5"/>
+  <AudioClip ClipName="#@modfolder:Resources/wrench.unity3d?wrench_harvest-6"/>
+  <AudioClip ClipName="#@modfolder:Resources/wrench.unity3d?wrench_harvest-7"/>
+  <AudioClip ClipName="#@modfolder:Resources/wrench.unity3d?wrench_harvest-8"/>
+  <AudioClip ClipName="#@modfolder:Resources/wrench.unity3d?wrench_harvest-9"/>
+</append>
+<set xpath="/Sounds/SoundDataNode[@name='wrench_harvest']/LowestPitch/@name">0.8</set>
+<set xpath="/Sounds/SoundDataNode[@name='wrench_harvest']/HighestPitch/@name">1.2</set>
+
+<append xpath="/Sounds/SoundDataNode[@name='open_backpack']">
+  <AudioClip ClipName="#@modfolder:Resources/backpack.unity3d?open_backpack-1"/>
+  <AudioClip ClipName="#@modfolder:Resources/backpack.unity3d?open_backpack-2"/>
+  <AudioClip ClipName="#@modfolder:Resources/backpack.unity3d?open_backpack-3"/>
+  <AudioClip ClipName="#@modfolder:Resources/backpack.unity3d?open_backpack-4"/>
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+
+<append xpath="/Sounds/SoundDataNode[@name='close_backpack']">
+  <AudioClip ClipName="#@modfolder:Resources/backpack.unity3d?close_backpack-1"/>
+  <AudioClip ClipName="#@modfolder:Resources/backpack.unity3d?close_backpack-2"/>
+  <AudioClip ClipName="#@modfolder:Resources/backpack.unity3d?close_backpack-3"/>
+  <AudioClip ClipName="#@modfolder:Resources/backpack.unity3d?close_backpack-4"/>
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+
+<append xpath="/Sounds/SoundDataNode[@name='open_cupboard']">
+  <AudioClip ClipName="#@modfolder:Resources/cupboard.unity3d?open_cupboard-1"/>
+  <AudioClip ClipName="#@modfolder:Resources/cupboard.unity3d?open_cupboard-2"/>
+  <AudioClip ClipName="#@modfolder:Resources/cupboard.unity3d?open_cupboard-3"/>
+  <AudioClip ClipName="#@modfolder:Resources/cupboard.unity3d?open_cupboard-4"/>
+  <AudioClip ClipName="#@modfolder:Resources/cupboard.unity3d?open_cupboard-5"/>
+  <AudioClip ClipName="#@modfolder:Resources/cupboard.unity3d?open_cupboard-6"/>
+  <AudioClip ClipName="#@modfolder:Resources/cupboard.unity3d?open_cupboard-7"/>
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+
+<append xpath="/Sounds/SoundDataNode[@name='close_cupboard']">
+  <AudioClip ClipName="#@modfolder:Resources/cupboard.unity3d?close_cupboard-1"/>
+  <AudioClip ClipName="#@modfolder:Resources/cupboard.unity3d?close_cupboard-2"/>
+  <AudioClip ClipName="#@modfolder:Resources/cupboard.unity3d?close_cupboard-3"/>
+  <AudioClip ClipName="#@modfolder:Resources/cupboard.unity3d?close_cupboard-4"/>
+  <AudioClip ClipName="#@modfolder:Resources/cupboard.unity3d?close_cupboard-5"/>
+  <AudioClip ClipName="#@modfolder:Resources/cupboard.unity3d?close_cupboard-6"/>
+  <AudioClip ClipName="#@modfolder:Resources/cupboard.unity3d?close_cupboard-7"/>
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+
+<append xpath="/Sounds/SoundDataNode[@name='clothdestroy']">
+  <AudioClip ClipName="#@modfolder:Resources/clothdestroy.unity3d?clothdestroy-1"/>
+  <AudioClip ClipName="#@modfolder:Resources/clothdestroy.unity3d?clothdestroy-2"/>
+  <AudioClip ClipName="#@modfolder:Resources/clothdestroy.unity3d?clothdestroy-3"/>
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+
+<append xpath="/Sounds/SoundDataNode[@name='metaldestroy']">
+  <AudioClip ClipName="#@modfolder:Resources/metaldestroy.unity3d?metaldestroy-1"/>
+  <AudioClip ClipName="#@modfolder:Resources/metaldestroy.unity3d?metaldestroy-2"/>
+</append>
+
+<append xpath="/Sounds/SoundDataNode[@name='stonedestroy']">
+  <AudioClip ClipName="#@modfolder:Resources/stonedestroy.unity3d?stonedestroy-1"/>
+  <AudioClip ClipName="#@modfolder:Resources/stonedestroy.unity3d?stonedestroy-2"/>
+  <AudioClip ClipName="#@modfolder:Resources/stonedestroy.unity3d?stonedestroy-3"/>
+  <AudioClip ClipName="#@modfolder:Resources/stonedestroy.unity3d?stonedestroy-4"/>
+  <AudioClip ClipName="#@modfolder:Resources/stonedestroy.unity3d?stonedestroy-5"/>
+  <AudioClip ClipName="#@modfolder:Resources/stonedestroy.unity3d?stonedestroy-6"/>
+</append>
+
+<append xpath="/Sounds/SoundDataNode[@name='wooddestroy']">
+  <AudioClip ClipName="#@modfolder:Resources/wooddestroy.unity3d?wooddestroy-1"/>
+  <AudioClip ClipName="#@modfolder:Resources/wooddestroy.unity3d?wooddestroy-2"/>
+  <AudioClip ClipName="#@modfolder:Resources/wooddestroy.unity3d?wooddestroy-3"/>
+  <AudioClip ClipName="#@modfolder:Resources/wooddestroy.unity3d?wooddestroy-4"/>
+  <AudioClip ClipName="#@modfolder:Resources/wooddestroy.unity3d?wooddestroy-5"/>
+  <AudioClip ClipName="#@modfolder:Resources/wooddestroy.unity3d?wooddestroy-6"/>
+  <AudioClip ClipName="#@modfolder:Resources/wooddestroy.unity3d?wooddestroy-7"/>
+</append>
+
+<append xpath="/Sounds/SoundDataNode[@name='close_door_metal']">
+  <AudioClip ClipName="#@modfolder:Resources/door_metal.unity3d?close_door_metal-1"/>
+  <AudioClip ClipName="#@modfolder:Resources/door_metal.unity3d?close_door_metal-2"/>
+  <AudioClip ClipName="#@modfolder:Resources/door_metal.unity3d?close_door_metal-3"/>
+  <AudioClip ClipName="#@modfolder:Resources/door_metal.unity3d?close_door_metal-4"/>
+  <AudioClip ClipName="#@modfolder:Resources/door_metal.unity3d?close_door_metal-5"/>
+</append>
+
+<append xpath="/Sounds/SoundDataNode[@name='open_door_metal']">
+  <AudioClip ClipName="#@modfolder:Resources/door_metal.unity3d?open_door_metal-1"/>
+  <AudioClip ClipName="#@modfolder:Resources/door_metal.unity3d?open_door_metal-2"/>
+  <AudioClip ClipName="#@modfolder:Resources/door_metal.unity3d?open_door_metal-3"/>
+  <AudioClip ClipName="#@modfolder:Resources/door_metal.unity3d?open_door_metal-4"/>
+  <AudioClip ClipName="#@modfolder:Resources/door_metal.unity3d?open_door_metal-5"/>
+  <AudioClip ClipName="#@modfolder:Resources/door_metal.unity3d?open_door_metal-6"/>
+  <AudioClip ClipName="#@modfolder:Resources/door_metal.unity3d?open_door_metal-7"/>
+</append>
+
+<append xpath="/Sounds/SoundDataNode[@name='close_door_wood']">
+  <AudioClip ClipName="#@modfolder:Resources/door_wood.unity3d?close_door_wood-1"/>
+  <AudioClip ClipName="#@modfolder:Resources/door_wood.unity3d?close_door_wood-2"/>
+  <AudioClip ClipName="#@modfolder:Resources/door_wood.unity3d?close_door_wood-3"/>
+  <AudioClip ClipName="#@modfolder:Resources/door_wood.unity3d?close_door_wood-4"/>
+  <AudioClip ClipName="#@modfolder:Resources/door_wood.unity3d?close_door_wood-5"/>
+</append>
+
+<append xpath="/Sounds/SoundDataNode[@name='open_door_wood']">
+  <AudioClip ClipName="#@modfolder:Resources/door_wood.unity3d?open_door_wood-1"/>
+  <AudioClip ClipName="#@modfolder:Resources/door_wood.unity3d?open_door_wood-2"/>
+  <AudioClip ClipName="#@modfolder:Resources/door_wood.unity3d?open_door_wood-3"/>
+  <AudioClip ClipName="#@modfolder:Resources/door_wood.unity3d?open_door_wood-4"/>
+  <AudioClip ClipName="#@modfolder:Resources/door_wood.unity3d?open_door_wood-5"/>
+</append>
+
+
+<!-- ewww These sounds are terrible right now
+<append xpath="/Sounds/SoundDataNode[@name='forge_item_complete']">
+  <AudioClip ClipName="#@modfolder:Resources/forge.unity3d?forge_item_complete-1"/>
+  <AudioClip ClipName="#@modfolder:Resources/forge.unity3d?forge_item_complete-2"/>
+  <AudioClip ClipName="#@modfolder:Resources/forge.unity3d?forge_item_complete-3"/>
+  <AudioClip ClipName="#@modfolder:Resources/forge.unity3d?forge_item_complete-4"/>
+  <AudioClip ClipName="#@modfolder:Resources/forge.unity3d?forge_item_complete-5"/>
+</append>
+-->
+
+<!-- [append] ONLY GENERIC Pitch changes for existing sounds -->
+<!-- Weapon Sounds -->
+<!-- Melee -->
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'club_')]">
+  <LowestPitch name="0.6"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'batwood_')]">
+  <LowestPitch name="0.6"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'machete_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'sledge_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'axe_')]">
+  <LowestPitch name="0.6"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'stunbaton_')]">
+  <LowestPitch name="0.7"/>
+  <HighestPitch name="1.2"/>
+</append>
+
+<!-- Weapon Sounds -->
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'nailgun_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'bow_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'bow2_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'bow3_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'crossbow_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'crossbow2_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+
+<!-- DOUGH: Guns only sound good with narrow range.  Drop the bass on them? -->
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'pistol_')]"> <!-- LOWERCASE! -->
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="0.8"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'desertvulture_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="0.8"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'mp5_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="0.8"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, '44magnum_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="0.8"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'pump_shotgun_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="0.8"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'sawed_off_shotgun_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="0.8"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'shotgundb_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="0.8"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'autoshotgun_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="0.8"/>
+</append>
+<!-- Normally sounds weird. Lower?-->
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'blunderbuss_')]">
+  <LowestPitch name="0.6"/>
+  <HighestPitch name="0.6"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'hunting_rifle_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="0.8"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'tacticalar_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="0.8"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'sniperrifle_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="0.8"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'sharpshooter_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="0.8"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'ak47_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="0.8"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'm60_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="0.8"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'm136_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="0.8"/>
+</append>
+
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'light_pipebomb')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'grenade_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'charge_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'weapon_')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'boar')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_water')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_chest')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_cash_register')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_cooler')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_corpse')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_door_metal')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_door_vault')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_door_wood')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_drawer')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_file_cabinet')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_fridge')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_garbage')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_locker')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_mailbox')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_medicine_cabinet')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_pill_case')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_safe')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_shopping_cart')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_trashcan')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_vehicle')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_dumpster')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_toilet')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_refill')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+
+
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_drinking')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_eating')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_painkillers')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+
+<append xpath="/Sounds/SoundDataNode[contains(@name, 'player1stamina')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, 'player2stamina')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_hatch_scrap')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_hatch_wood')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_hatch_vault')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_bridge')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_garage_door')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_garageindustrial')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_garageindustrial_powered')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_toolbox')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+<append xpath="/Sounds/SoundDataNode[contains(@name, '_toolchest')]">
+  <LowestPitch name="0.8"/>
+  <HighestPitch name="1.2"/>
+</append>
+
+<!-- ENEMIES - CHANGED FROM STANDARD 0.8 -> 1.2 !-->
+<append xpath="/Sounds/SoundDataNode[starts-with(@name, 'horde_spawn')]">
+  <LowestPitch name="0.7"/>
+  <HighestPitch name="1.0"/>
+</append>
+
+<!-- [set] ONLY GENERIC Pitch changes for existing sounds -->
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'crawlerstep')]/LowestPitch/@name">0.8</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'crawlerstep')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'step')]/LowestPitch/@name">0.8</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'step')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'player_swim')]/LowestPitch/@name">0.8</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'player_swim')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'water_emerge')]/LowestPitch/@name">0.8</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'water_emerge')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'rabbit')]/LowestPitch/@name">0.8</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'rabbit')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'stag')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'stag')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'bear')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'bear')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'chicken')]/LowestPitch/@name">0.8</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'chicken')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'wolf')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'wolf')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'coyote')]/LowestPitch/@name">0.8</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'coyote')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'vulture')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'vulture')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'mlion')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'mlion')]/HighestPitch/@name">1.2</set>
+
+
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'player2powerattack')]/LowestPitch/@name">0.8</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'player2powerattack')]/HighestPitch/@name">1.1</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'player1powerattack')]/LowestPitch/@name">0.8</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'player1powerattack')]/HighestPitch/@name">1.1</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'player2jump')]/LowestPitch/@name">0.8</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'player2jump')]/HighestPitch/@name">1.1</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'player1jump')]/LowestPitch/@name">0.8</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'player1jump')]/HighestPitch/@name">1.1</set>
+
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'earthDestroy')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'earthDestroy')]/HighestPitch/@name">1.3</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'glassdestroy')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'glassdestroy')]/HighestPitch/@name">1.3</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'metaldestroy')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'metaldestroy')]/HighestPitch/@name">1.3</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'organicdestroy')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'organicdestroy')]/HighestPitch/@name">1.3</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'plantdestroy')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'plantdestroy')]/HighestPitch/@name">1.3</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'stonedestroy')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'stonedestroy')]/HighestPitch/@name">1.3</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'wooddestroy')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'wooddestroy')]/HighestPitch/@name">1.3</set>
+
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'stonehit')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'stonehit')]/HighestPitch/@name">1.5</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'metalhit')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'metalhit')]/HighestPitch/@name">1.5</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'organichit')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'organichit')]/HighestPitch/@name">1.5</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'woodhit')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'woodhit')]/HighestPitch/@name">1.5</set>
+
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'impactbody')]/LowestPitch/@name">0.8</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'impactbody')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'breakleg')]/LowestPitch/@name">0.8</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'breakleg')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'gib')]/LowestPitch/@name">0.8</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'gib')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'woodhit')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'woodhit')]/HighestPitch/@name">1.2</set>
+
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'repair_block')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'repair_block')]/HighestPitch/@name">1.2</set>
+
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'ratchet')]/LowestPitch/@name">0.8</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'ratchet')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'impactdriver')]/LowestPitch/@name">0.8</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'impactdriver')]/HighestPitch/@name">1.2</set>
+
+<!-- CHANGED from standard 0.8 -> 1.2! -->
+<set xpath="/Sounds/SoundDataNode[contains(@name, 'explosion')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[contains(@name, 'explosion')]/HighestPitch/@name">1.2</set>
+
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'treefall')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'treefall')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'treelog')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'treelog')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'trunkbreak')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'trunkbreak')]/HighestPitch/@name">1.2</set>
+
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'throw')]/LowestPitch/@name">0.8</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'throw')]/HighestPitch/@name">1.2</set>
+
+<!-- ENEMIES CHANGED from standard 0.8 -> 1.2! -->
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'hulk')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'hulk')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'demolition')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'demolition')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'zombiefemale')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'zombiefemale')]/HighestPitch/@name">1.4</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'zombiemale')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'zombiemale')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'crawler_')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'crawler_')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'zombieburnt')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'zombieburnt')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'zombieferal')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'zombieferal')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'zombiesnow')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'zombiesnow')]/HighestPitch/@name">1.2</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'spider')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'spider')]/HighestPitch/@name">1.4</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'zombiedog')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'zombiedog')]/HighestPitch/@name">1.4</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'hulk')]/LowestPitch/@name">0.6</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'hulk')]/HighestPitch/@name">1.2</set>
+
+
+<!-- DOUGH: Overrides for specific "set" things -->
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'zombiefemalescout')]/LowestPitch/@name">0.7</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'zombiefemalescout')]/HighestPitch/@name">1.5</set>
+
+</Doughs>

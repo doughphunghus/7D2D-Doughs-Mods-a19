@@ -1,0 +1,72 @@
+<Doughs>
+
+<!--
+########## Mod vanilla items ##########
+a19 docs: Clouds must be above 70 thickness in order for rain to be possible in the biome.
+
+per: https://community.7daystodie.com/topic/14619-how-to-fix-increase-your-fps-guide-a18/?tab=comments#comment-14619
+  DO: gfx dt
+
+-->
+
+<!--
+BIOME: snow
+-->
+<!-- Ita already really cloudy (for cold, etc)-->
+<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather/CloudThickness[@doughtag='3']/@prob">.1</set> <!-- Core = .2 -->
+<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather/CloudThickness[@doughtag='5']/@prob">.3</set> <!-- Core = .2 -->
+
+<!--
+BIOME: pine_forest
+-->
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather/CloudThickness[@doughtag='3']/@prob">.1</set> <!-- Core = .15 -->
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather/CloudThickness[@doughtag='5']/@prob">.6</set> <!-- Core = .5 -->
+
+<!--
+BIOME: desert
+-->
+<!-- More rain, but it doesn't rain a lot in the desert -->
+<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather/CloudThickness[@doughtag='3']/@prob">.4</set> <!-- Core = .5 -->
+<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather/CloudThickness[@doughtag='5']/@prob">.2</set> <!-- Core = .1 -->
+
+<!--
+BIOME: water
+Note: more like snow (nastier) but temperature buffering on midpoint
+-->
+<!-- Stolen from snow -->
+<set xpath="/worldgeneration/biomes/biome[@name='water']/weather/CloudThickness[@doughtag='3']/@prob">.1</set> <!-- Core = .2 -->
+<set xpath="/worldgeneration/biomes/biome[@name='water']/weather/CloudThickness[@doughtag='5']/@prob">.3</set> <!-- Core = .2 -->
+
+<!--
+BIOME: onlyWater
+Note: same as water
+-->
+<!-- Stolen from snow -->
+<set xpath="/worldgeneration/biomes/biome[@name='onlyWater']/weather/CloudThickness[@doughtag='3']/@prob">.1</set> <!-- Core = .2 -->
+<set xpath="/worldgeneration/biomes/biome[@name='onlyWater']/weather/CloudThickness[@doughtag='5']/@prob">.3</set> <!-- Core = .2 -->
+
+<!--
+BIOME: underwater
+Note: same as water for temp.  Vanilla has no weather settings
+-->
+<set xpath="/worldgeneration/biomes/biome[@name='underwater']/weather/ParticleEffect/@ChunkMargin">7</set>
+
+<!--
+BIOME: wasteland
+Note: temperate, and nasty
+-->
+<!-- Make it the worst ;) -->
+<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather/CloudThickness[@doughtag='2']/@prob">.05</set> <!-- Core = .15 -->
+<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather/CloudThickness[@doughtag='3']/@prob">.1</set> <!-- Core = .2 -->
+<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather/CloudThickness[@doughtag='4']/@prob">.3</set> <!-- Core = .2 -->
+<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather/CloudThickness[@doughtag='5']/@prob">.55</set> <!-- Core = .45 -->
+
+<!--
+BIOME: burnt_forest
+Note: Sorta same as Forest, but generally hotter, nastier
+-->
+<!-- More rain, but it doesn't rain a lot in the burnt foreest or it would be put out -->
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather/CloudThickness[@doughtag='4']/@prob">.3</set> <!-- Core = .4 -->
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather/CloudThickness[@doughtag='5']/@prob">.3</set> <!-- Core = .2 -->
+
+</Doughs>
