@@ -57,15 +57,15 @@ NOTE: RandomRoll might roll 1 time and the result be applied for all?
     </triggered_effect>
 
     <!-- Add randomness to vanilla default buff entry point. Make this the "min" value (shortest to live) -->
-    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="s-->
+    <triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="1800"> <!-- 30 minutes -->
       <requirement name="CVarCompare" cvar="$infectionMaxDuration" operation="Equals" value="2700"/>
       <requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
     </triggered_effect>
 
     <!-- DEBUGGING -->
-    <triggered_effect trigger="onSelfBuffStart" action="LogMessage" message="DOUGH DEBUG: Infection set to:"/>
-    <triggered_effect trigger="onSelfBuffStart" action="CVarLogValue" cvar="$infectionMaxDuration"/>
-    -->
+    <!--  <triggered_effect trigger="onSelfBuffStart" action="LogMessage" message="DOUGH DEBUG: Infection set to:"/>  -->
+    <!--  <triggered_effect trigger="onSelfBuffStart" action="CVarLogValue" cvar="$infectionMaxDuration"/>  -->
+
 
     <!-- cleanup, as it seems to be set to the lowest it hit last time and does not reset -->
     <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="10800"/>

@@ -2,7 +2,13 @@
 <Doughs>
   <!-- a19 Defaults
   <property name="ambientInsideThreshold" value="1"/>
--->
+  -->
+
+  <!-- Ran into this on forums:
+  ambientInsideSpeed = 0.2 for slow transition
+  ambientInsideThreshold = 0.1  so that it works so that there are fewer transitions back and forth.
+  ambientInsideEquatorScale=0.6 to reduce the difference in lighting
+  -->
 
   <!-- How much light the moon gives off?
     do not know wht teh settings *is* just setting it to 1 makes indoors darker, mostly
