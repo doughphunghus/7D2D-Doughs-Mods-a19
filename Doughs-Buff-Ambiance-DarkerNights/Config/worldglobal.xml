@@ -20,4 +20,12 @@
   -->
   <set xpath="/worldglobal/environment/property[@name='ambientMoon']/@value">0, 0</set>
 
+  <!-- NOTE: Setting some of these to absolute night min (0.1) is a little unrealistic
+   day -> nighttime transition.  Like, it gets dark too fast as night falls.
+   Its nice and dark, but you miss out on some twilight ambiance. -->
+  <set xpath="/worldglobal/environment/property[@name='ambientEquatorScale']/@value">.7, .4</set>
+  <set xpath="/worldglobal/environment/property[@name='ambientGroundScale']/@value">.4, .1</set>
+  <set xpath="/worldglobal/environment/property[@name='ambientSkyScale']/@value">.9, .3</set>
+
+
 </Doughs>

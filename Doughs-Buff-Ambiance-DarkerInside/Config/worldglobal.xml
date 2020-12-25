@@ -1,9 +1,5 @@
 
 <Doughs>
-  <!-- a19 Defaults
-  <property name="ambientInsideThreshold" value="1"/>
-  -->
-
   <!-- Ran into this on forums:
   ambientInsideSpeed = 0.2 for slow transition
   ambientInsideThreshold = 0.1  so that it works so that there are fewer transitions back and forth.
@@ -11,8 +7,37 @@
   -->
 
   <!-- How much light the moon gives off?
-    do not know wht teh settings *is* just setting it to 1 makes indoors darker, mostly
-  -->
-  <set xpath="/worldglobal/environment/property[@name='ambientInsideThreshold']/@value">2</set>
+    do not know what the setting *is* just setting it to 1 makes indoors darker, mostly
+  --> <!-- Default: .2-->
+  <!-- NOTE: Used to have this set to 2 in older version of a19 and it worked well -->
+  <set xpath="/worldglobal/environment/property[@name='ambientInsideThreshold']/@value">0.1</set>
+
+  <!-- slow transition when going inside --> <!-- Default: .3-->
+  <!-- NOTE: Cannot see a difference in vanilla game? tried  0.1 -> 1 -->
+  <!-- NOTE: Seting to 0.01 seems to break the effect, no dimming at all-->
+  <!-- NOTE: Also Seems to work in reverse, like a light turned on in dark room takes time to light, then off taes time to dim
+  also going outside takes time to brighten, in ful daylight-->
+  <!-- NOTE: .1 = super slow transition, 2 = super fast.  Havingit super fast screws up when you
+  cross a boundary, like it goes from "i can see the entire inside of a room, to nope I cannot." -->
+  <set xpath="/worldglobal/environment/property[@name='ambientInsideSpeed']/@value">.4</set>
+
+  <!-- when its determined your inside? --> <!-- Default: .2-->
+  <!-- NOTE: Cannot see a difference in vanilla game? tried  0.1 -> 1 -->
+  <!-- <set xpath="/worldglobal/environment/property[@name='ambientInsideThreshold']/@value">0.1</set> -->
+
+  <!-- !!!!!! Setting thse too low (like 0.01) makes it way too dark when its full day outside
+   it literlaly looks wrong, like light cannot throw shadows-->
+  <!-- difference in lighting from inside/outside? --> <!-- Default: .4 -->
+  <!-- NOTE: Cannot see a difference in vanilla game? tried  0.1 -> 1 -->
+  <!-- ran a test and 1 = gets lighter indoors ?-->
+  <set xpath="/worldglobal/environment/property[@name='ambientInsideEquatorScale']/@value">0.2</set>
+
+  <!-- Default: .3 -->
+  <!-- NOTE: Cannot see a difference in vanilla game? tried  0.1 -> 1 -->
+ <set xpath="/worldglobal/environment/property[@name='ambientInsideGroundScale']/@value">0.1</set>
+
+  <!-- Default: .6 -->
+  <!-- NOTE: Cannot see a difference in vanilla game? tried  0.1 -> 1 -->
+  <set xpath="/worldglobal/environment/property[@name='ambientInsideSkyScale']/@value">0.3</set>
 
 </Doughs>
