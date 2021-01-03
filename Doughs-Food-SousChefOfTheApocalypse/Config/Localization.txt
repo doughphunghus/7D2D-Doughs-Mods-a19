@@ -103,7 +103,7 @@ doughsFoodButterSchematic,items,Food,,,Grandmas Recipe #6
 doughsFoodButterSchematicDesc,items,Food,,,Grandmas recipe for making butter
 doughsFoodEggSouffleSchematic,items,Food,,,Grandmas Recipe #7
 doughsFoodEggSouffleSchematicDesc,items,Food,,,Grandmas recipe for making basic egg souffle
-doughsFoodSweetCornBlueberryMuffinSchematic,items,Food,,,Grandmas Recipe #7
+doughsFoodSweetCornBlueberryMuffinSchematic,items,Food,,,Grandmas Recipe #8
 doughsFoodSweetCornBlueberryMuffinSchematicDesc,items,Food,,,Grandmas recipe for making sweet corn blueberry muffins
 doughsFoodIceCreamSchematic,items,Food,,,Grandpas Recipe #1
 doughsFoodIceCreamSchematicDesc,items,Food,,,Grandpas recipe for making ice cream

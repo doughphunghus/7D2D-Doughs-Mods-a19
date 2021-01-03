@@ -34,4 +34,34 @@
     <item name="doughsFoodCheese" count="1,2" prob="0.08"/>
   </append>
 
+  <append xpath="/lootcontainers/lootgroup[@name='perkBooks']"> <!-- All books -->
+    <item name="doughsFoodBasicExtractingSchematic"/>
+    <item name="doughsSeedToastingSchematic"/>
+    <item name="doughsDrinkMilkProcessingSchematic"/>
+    <item name="doughsFoodBreadSchematic"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT0']"> <!-- All food -->
+    <item name="doughsSeedFlouringSchematic"/>
+    <item name="doughsFoodPemmicanSchematic"/>
+    <item name="doughsFoodPopCornSchematic" prob=".8"/>
+    <item name="doughsDrinkSweetNutMilkSchematic"/>
+    <item name="doughsFoodButterOfTheGodsSchematic" prob=".8"/>
+    <item name="doughsFoodBoneMarrowSchematic"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT1']"> <!-- All food -->
+    <item name="doughsFoodCheeseSchematic"/>
+    <item name="doughsFoodIceCreamSchematic" prob=".6"/>
+    <item name="doughsFoodButterSchematic"/>
+    <item name="doughsFoodBoiledSweetBreadSchematic"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT2']"> <!-- All food -->
+    <item name="doughsFoodEggSouffleSchematic" prob=".6"/>
+    <item name="doughsFoodSweetCornBlueberryMuffinSchematic"/>
+    <item name="doughsFoodPotatoesDauphinoiseSchematic"/>
+    <item name="doughsFoodCroqueMonsieurSchematic" prob=".6"/>
+    <item name="doughsFoodBoeufBourguignonSchematic"/>
+    <item name="doughsFoodTurkishDelightSchematic"/>
+  </append>
+
 </Doughs>
