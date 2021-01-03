@@ -24,11 +24,11 @@
   -->
   <append xpath="/lootcontainers/lootgroup[@name='cupboard']">
     <item name="doughsFoodFlour" count="1,2" prob="0.05"/>
-    <item name="doughsFoodBouillonCube" count="1,2" prob="0.1"/>
-    <item name="doughsFoodCreamOfTartar" count="1,2" prob="0.1"/>
-    <item name="doughsFoodCookingOil" count="1,2" prob="0.1"/>
-    <item name="doughsFoodHardTack" count="1,2" prob="0.2"/>
-    <item name="doughsFoodBeefJerky" count="1,2" prob="0.2"/>
+    <item name="doughsFoodBouillonCube" count="1,2" prob="0.05"/>
+    <item name="doughsFoodCreamOfTartar" count="1,2" prob="0.05"/>
+    <item name="doughsFoodCookingOil" count="1,2" prob="0.05"/>
+    <item name="doughsFoodHardTack" count="1,2" prob="0.08"/>
+    <item name="doughsFoodBeefJerky" count="1,2" prob="0.08"/>
     <item name="doughsFoodTurkishDelight" count="1,2" prob="0.05"/>
     <item name="doughsDrinkBottomShelfRedWine" count="1,2" prob="0.1"/>
     <item name="doughsFoodCheese" count="1,2" prob="0.08"/>
