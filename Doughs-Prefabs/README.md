@@ -14,5 +14,7 @@ Note: You may want to adjust the spawning percentage in rwgmixer.xml.  I default
 all prefab spawning to 5%, which I have not tested to see if this is appropriate.
 
 Current Prefabs:
-![doughs_utility_celltower_01](./Prefabs/doughs_utility_celltower_01.jpg?raw=true)
-![doughs_water_tower_03_01](./Prefabs/doughs_water_tower_03_01.jpg?raw=true)
+
+- doughs_utility_celltower_01 ![](./Prefabs/doughs_utility_celltower_01.jpg?raw=true)
+
+- doughs_water_tower_03_01 ![doughs_water_tower_03_01](./Prefabs/doughs_water_tower_03_01.jpg?raw=true)
