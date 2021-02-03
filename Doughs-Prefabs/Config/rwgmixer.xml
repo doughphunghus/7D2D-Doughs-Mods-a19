@@ -1,0 +1,7 @@
+﻿<Dough>
+  <append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='prefabList']">    
+        <prefab name="doughs_water_tower_03_01" prob="0.05"/>
+        <prefab name="doughs_utility_celltower_01" prob="0.05"/>
+        
+    </append>
+﻿</Dough>
