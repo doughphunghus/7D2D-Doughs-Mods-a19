@@ -11,11 +11,11 @@ perkDoughsSousChefRank4Desc,progression,perk Str,,,"It is somewhat edible"
 perkDoughsSousChefRank4LongDesc,progression,perk Str,,,"Create more advanced recipes and complex ingredients, and a few foods that a starving person would find palatable. Unlocks recipes such as Milk Curds, Butters, Bread preparation, and Cheese. Cook these 40% faster."
 perkDoughsSousChefRank5Desc,progression,perk Str,,,"Go cook yourself an egg"
 perkDoughsSousChefRank5LongDesc,progression,perk Str,,,"You finally learn how to make signature dishes that do not taste like garbage. Unlocks recipes such as Egg Souffle, Blueberry Muffins, Potatoes Dauphinoise, Croque Monsieur, and Boeuf Bourguignon. Cook these 50% faster."
-doughsFoodPumpkinSeedToasted,items,Food,,,Toasted pumpkin seed
+doughsFoodPumpkinSeedToasted,items,Food,,,Toasted Pumpkin Seed
 doughsFoodPumpkinSeedToastedDesc,items,Food,,,"Delicious toasted pumpkin seed.\nThese probably are worth more in the trash."
-doughsFoodPineSeedToasted,items,Food,,,Toasted pine seed
+doughsFoodPineSeedToasted,items,Food,,,Toasted Pine Seed
 doughsFoodPineSeedToastedDesc,items,Food,,,"Suspiciously delicious toasted pine seed.\nNow you're living the high life!"
-doughsFoodAcornSeedToasted,items,Food,,,Toasted acorn seed
+doughsFoodAcornSeedToasted,items,Food,,,Toasted Acorn Seed
 doughsFoodAcornSeedToastedDesc,items,Food,,,"If only you were a squirrel.\nFree to roam the land without worry.\nFlitting to and fro,\nall a fluff and furry.\nIf only a squirrel you could be\nFree, and at peace."
 doughsFoodCookingOil,items,Food,,,Cooking Oil
 doughsFoodCookingOilDesc,items,Food,,,"An oddly colored Oil that can likely be used for cooking.  Or other things?"
@@ -32,17 +32,17 @@ doughsFoodSweetExtractDesc,items,Food,,,"A delicious Sweet Extract. Mmmmmmm"
 doughsFoodCreamOfTartar,items,Food,,,Cream Of Tartar
 doughsFoodCreamOfTartarDesc,items,Food,,,"Delicious Cream Of Tartar"
 doughsFoodHardTack,items,Food,,,Hard Tack
-doughsFoodHardTackDesc,items,Food,,,Delicious Hard Tack
+doughsFoodHardTackDesc,items,Food,,,This Hard Tack redefines the meaning of crusty bread.
 doughsFoodBeefJerky,items,Food,,,Beef Jerky
-doughsFoodBeefJerkyDesc,items,Food,,,Delicious Beef Jerky
+doughsFoodBeefJerkyDesc,items,Food,,,A very simple Beef Jerky.
 doughsFoodPemmican,items,Food,,,Pemmican
-doughsFoodPemmicanDesc,items,Food,,,Delicious Pemmican
+doughsFoodPemmicanDesc,items,Food,,,A small ball of handmade Pemmican.
 doughsFoodBoneMarrow,items,Food,,,Bone Marrow
 doughsFoodBoneMarrowDesc,items,Food,,,Delicious Bone Marrow
 doughsFoodRawSweetBread,items,Food,,,Raw Sweet Bread
 doughsFoodRawSweetBreadDesc,items,Food,,,"You should probably wash, prepare, and then cook this before eating it.\nBuuut, no ones around to tell you what to do."
 doughsFoodBoiledSweetBread,items,Food,,,Boiled Sweet Bread
-doughsFoodBoiledSweetBreadDesc,items,Food,,,Delicious Boiled Sweet Bread
+doughsFoodBoiledSweetBreadDesc,items,Food,,,"Some Boiled Sweet Bread.  It is... ok"
 doughsFoodSweetBreadCuisine,items,Food,,,Sweet Meat Cuisine
 doughsFoodSweetBreadCuisineDesc,items,Food,,,"So good, everything is all right with the world.\nWell. Not really, decaying corpses forever walk the Earth to consume you alive but you know what I mean."
 doughsFoodRedWineBlueberrySorbet,items,Food,,,Red Wine Sorbet
@@ -50,7 +50,7 @@ doughsFoodRedWineBlueberrySorbetDesc,items,Food,,,"Its cold and icy so we're cal
 doughsFoodSteakAndPotatoCuisine,items,Food,,,Steak And Potato Cuisine
 doughsFoodSteakAndPotatoCuisineDesc,items,Food,,,"You're not some chump loser sitting in a dark corner all day picking and grimacing at some crappy Steak And Potato Meal."
 doughsFoodPopCorn,items,Food,,,Popcorn
-doughsFoodPopCornDesc,items,Food,,,Delicious Popcorn
+doughsFoodPopCornDesc,items,Food,,,A fairly competent Popcorn
 doughsFoodMilkCurds,items,Food,,,Milk Curds
 doughsFoodMilkCurdsDesc,items,Food,,,"Not as squeaky as they should be, but this curd'll do pig, this curd'll do."
 doughsFoodBreadBatter,items,Food,,,Bread Batter
@@ -78,7 +78,7 @@ doughsDrinkRawMilkDesc,items,Food,,,"Delicious Raw Milk extracted from beasts.\n
 doughsDrinkMilk,items,Food,,,Milk
 doughsDrinkMilkDesc,items,Food,,,"Processed Milk.  Much better for you than raw milk, especially for as long as its been sitting around in your pocket."
 doughsDrinkCream,items,Food,,,Cream
-doughsDrinkCreamDesc,items,Food,,,Creamy cream.
+doughsDrinkCreamDesc,items,Food,,,"A soft, silky, creamy Cream.  Cream, it's what's for dinner"
 doughsFoodButteredToast,items,Food,,,Buttered Toast
 doughsFoodButteredToastDesc,items,Food,,,"A completely and competently Buttered Toast"
 doughsDrinkBottomShelfRedWine,items,Food,,,Red Wine
@@ -86,40 +86,40 @@ doughsDrinkBottomShelfRedWineDesc,items,Food,,,"Drunkagains Famous Cherry Pops R
 doughsFoodTurkishDelight,items,Food,,,Turkish Delight
 doughsFoodTurkishDelightDesc,items,Food,,,Who knew Turkish Delight could be found in these parts?
 doughsFoodButterOfTheGods,items,Food,,,Butter of the Gods
-doughsFoodButterOfTheGodsDesc,items,Food,,,Delicious Butter of the Gods
+doughsFoodButterOfTheGodsDesc,items,Food,,,A well balanced Butter of the Gods mixture.
 doughsFoodCroqueMonsieur,items,Food,,,Croque Monsieur
 doughsFoodCroqueMonsieurDesc,items,Food,,,A fantabulous Croque Monsieur
-doughsSeedFlouringSchematic,items,Food,,,Grandmas Recipe #1
+doughsSeedFlouringSchematic,items,Food,,,Making Flour Recipe
 doughsSeedFlouringSchematicDesc,items,Food,,,Grandmas recipe for making flour from toasted seeds
-doughsFoodPemmicanSchematic,items,Food,,,Grandmas Recipe #2
+doughsFoodPemmicanSchematic,items,Food,,,Pemmican Recipe
 doughsFoodPemmicanSchematicDesc,items,Food,,,Grandmas recipe for making pemmican
-doughsFoodPopCornSchematic,items,Food,,,Grandmas Recipe #3
-doughsFoodPopCornSchematicDesc,items,Food,,,Grandmas recipe for making popcorn
-doughsDrinkSweetNutMilkSchematic,items,Food,,,Grandmas Recipe #4
+doughsFoodPopCornSchematic,items,Food,,,Popcorn Recipe
+doughsFoodPopCornSchematicDesc,items,Food,,,"Grandmas recipe for making popcorn.\nIt's apparently not about popping the corn, but preparing and hand selecting the corn"
+doughsDrinkSweetNutMilkSchematic,items,Food,,,Nut Milk Recipe
 doughsDrinkSweetNutMilkSchematicDesc,items,Food,,,Grandmas recipe for making sweet nut milk
-doughsFoodCheeseSchematic,items,Food,,,Grandmas Recipe #5
-doughsFoodCheeseSchematicDesc,items,Food,,,Grandmas recipe for making cheese
-doughsFoodButterSchematic,items,Food,,,Grandmas Recipe #6
-doughsFoodButterSchematicDesc,items,Food,,,Grandmas recipe for making butter
-doughsFoodEggSouffleSchematic,items,Food,,,Grandmas Recipe #7
+doughsFoodCheeseSchematic,items,Food,,,Cheese Recipe
+doughsFoodCheeseSchematicDesc,items,Food,,,Grandmas recipe for making Cheese
+doughsFoodButterSchematic,items,Food,,,Butter Recipe
+doughsFoodButterSchematicDesc,items,Food,,,Grandmas recipe for making Butter
+doughsFoodEggSouffleSchematic,items,Food,,,Egg Souffle Recipe
 doughsFoodEggSouffleSchematicDesc,items,Food,,,Grandmas recipe for making basic egg souffle
-doughsFoodSweetCornBlueberryMuffinSchematic,items,Food,,,Grandmas Recipe #8
+doughsFoodSweetCornBlueberryMuffinSchematic,items,Food,,,Blueberry Muffins Recipe
 doughsFoodSweetCornBlueberryMuffinSchematicDesc,items,Food,,,Grandmas recipe for making sweet corn blueberry muffins
-doughsFoodIceCreamSchematic,items,Food,,,Grandpas Recipe #1
+doughsFoodIceCreamSchematic,items,Food,,,Ice Cream Recipe
 doughsFoodIceCreamSchematicDesc,items,Food,,,Grandpas recipe for making ice cream
-doughsFoodButterOfTheGodsSchematic,items,Food,,,Grandpas Recipe #2
+doughsFoodButterOfTheGodsSchematic,items,Food,,,Butter of the Gods Recipe
 doughsFoodButterOfTheGodsSchematicDesc,items,Food,,,Grandpas recipe for making Butter of the Gods
-doughsFoodBoneMarrowSchematic,items,Food,,,Grandpas Recipe #3
+doughsFoodBoneMarrowSchematic,items,Food,,,Bone Marrow Recipe
 doughsFoodBoneMarrowSchematicDesc,items,Food,,,Grandpas recipe for extracting and preparing bone marrow
-doughsFoodPotatoesDauphinoiseSchematic,items,Food,,,Grandpas Recipe #4
+doughsFoodPotatoesDauphinoiseSchematic,items,Food,,,Potatoes Dauphinoise Recipe
 doughsFoodPotatoesDauphinoiseSchematicDesc,items,Food,,,Grandpas recipe for preparing Potatoes Dauphinoise
-doughsFoodCroqueMonsieurSchematic,items,Food,,,Grandpas Recipe #5
+doughsFoodCroqueMonsieurSchematic,items,Food,,,Croque Monsieur Recipe
 doughsFoodCroqueMonsieurSchematicDesc,items,Food,,,Grandpas recipe for preparing Croque Monsieur
-doughsFoodBoeufBourguignonSchematic,items,Food,,,Grandpas Recipe #6
+doughsFoodBoeufBourguignonSchematic,items,Food,,,Boeuf Bourguignon Recipe
 doughsFoodBoeufBourguignonSchematicDesc,items,Food,,,Grandpas recipe for preparing Boeuf Bourguignon
-doughsFoodBoiledSweetBreadSchematic,items,Food,,,Grandpas Recipe #7
+doughsFoodBoiledSweetBreadSchematic,items,Food,,,Boiled Sweet Bread Recipe
 doughsFoodBoiledSweetBreadSchematicDesc,items,Food,,,Grandpas recipe for preparing Boiled Sweet Bread
-doughsFoodTurkishDelightSchematic,items,Food,,,Grandpas Recipe #8
+doughsFoodTurkishDelightSchematic,items,Food,,,Turkish Delight Recipe
 doughsFoodTurkishDelightSchematicDesc,items,Food,,,Delicious Turkish Delight
 doughsFoodBasicExtractingSchematic,items,Food,,,Everything can be Separated Cookbook
 doughsFoodBasicExtractingSchematicDesc,items,Food,,,"An entire recipe book on how to make simple extracts from common food found around the house. With a jovial introduction on how divorce helped the author learn how to craft everything in the book."
