@@ -24,3 +24,8 @@ Other than the sound pitch changes, this mod adds extra "new" sounds to these ad
 | cloth               | Destroying         | 3             | v1.2.0 |
 | door(wood)          | Opening+Closing    | 10            | v1.2.0 |
 | door(metal)         | Opening+Closing    | 12            | v1.2.0 |
+| chest (player)      | Opening+Closing    | 12            | v19.2.2.0 |
+| zombiefemale        | alert+sense        | 10            | v19.2.2.0 |
+| zombiefemale2       | alert+sense        | 9             | v19.2.2.0 |
+| zombiemale          | alert              | 9             | v19.2.2.0 |
+| zombiemale2         | alert              | 4             | v19.2.2.0 |

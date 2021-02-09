@@ -126,7 +126,73 @@
   <AudioClip ClipName="#@modfolder:Resources/door_wood.unity3d?open_door_wood-5"/>
 </append>
 
+<append xpath="/Sounds/SoundDataNode[@name='open_chest']">
+  <AudioClip ClipName="#@modfolder:Resources/chest.unity3d?open_chest-1"/>
+  <AudioClip ClipName="#@modfolder:Resources/chest.unity3d?open_chest-2"/>
+  <AudioClip ClipName="#@modfolder:Resources/chest.unity3d?open_chest-3"/>
+  <AudioClip ClipName="#@modfolder:Resources/chest.unity3d?open_chest-4"/>
+</append>
 
+<append xpath="/Sounds/SoundDataNode[@name='close_chest']">
+  <AudioClip ClipName="#@modfolder:Resources/chest.unity3d?close_chest-1"/>
+  <AudioClip ClipName="#@modfolder:Resources/chest.unity3d?close_chest-2"/>
+  <AudioClip ClipName="#@modfolder:Resources/chest.unity3d?close_chest-3"/>
+  <AudioClip ClipName="#@modfolder:Resources/chest.unity3d?close_chest-4"/>
+  <AudioClip ClipName="#@modfolder:Resources/chest.unity3d?close_chest-5"/>
+  <AudioClip ClipName="#@modfolder:Resources/chest.unity3d?close_chest-6"/>
+  <AudioClip ClipName="#@modfolder:Resources/chest.unity3d?close_chest-7"/>
+  <AudioClip ClipName="#@modfolder:Resources/chest.unity3d?close_chest-8"/>
+</append>
+
+<append xpath="/Sounds/SoundDataNode[@name='zombiefemale2alert']">
+  <AudioClip ClipName="#@modfolder:Resources/zombiefemale2alert.unity3d?zombiefemale2alert-1"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiefemale2alert.unity3d?zombiefemale2alert-2"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiefemale2alert.unity3d?zombiefemale2alert-3"/>
+</append>
+
+<append xpath="/Sounds/SoundDataNode[@name='zombiefemale2sense']">
+  <AudioClip ClipName="#@modfolder:Resources/zombiefemale2sense.unity3d?zombiefemale2sense-2"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiefemale2sense.unity3d?zombiefemale2sense-3"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiefemale2sense.unity3d?zombiefemale2sense-4"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiefemale2sense.unity3d?zombiefemale2sense-5"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiefemale2sense.unity3d?zombiefemale2sense-6"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiefemale2sense.unity3d?zombiefemale2sense-7"/>
+</append>
+
+<append xpath="/Sounds/SoundDataNode[@name='zombiefemalealert']">
+  <AudioClip ClipName="#@modfolder:Resources/zombiefemalealert.unity3d?zombiefemalealert-1"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiefemalealert.unity3d?zombiefemalealert-2"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiefemalealert.unity3d?zombiefemalealert-3"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiefemalealert.unity3d?zombiefemalealert-4"/>
+</append>
+
+<append xpath="/Sounds/SoundDataNode[@name='zombiefemalesense']">
+  <AudioClip ClipName="#@modfolder:Resources/zombiefemalesense.unity3d?zombiefemalesense-1"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiefemalesense.unity3d?zombiefemalesense-2"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiefemalesense.unity3d?zombiefemalesense-3"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiefemalesense.unity3d?zombiefemalesense-4"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiefemalesense.unity3d?zombiefemalesense-5"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiefemalesense.unity3d?zombiefemalesense-6"/>
+</append>
+
+<append xpath="/Sounds/SoundDataNode[@name='zombiemale2alert']">
+  <AudioClip ClipName="#@modfolder:Resources/zombiemale2alert.unity3d?zombiemale2alert-1"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiemale2alert.unity3d?zombiemale2alert-2"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiemale2alert.unity3d?zombiemale2alert-3"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiemale2alert.unity3d?zombiemale2alert-4"/>
+</append>
+
+<append xpath="/Sounds/SoundDataNode[@name='zombiemalealert']">
+  <AudioClip ClipName="#@modfolder:Resources/zombiemalealert.unity3d?zombiemalealert-1"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiemalealert.unity3d?zombiemalealert-2"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiemalealert.unity3d?zombiemalealert-3"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiemalealert.unity3d?zombiemalealert-4"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiemalealert.unity3d?zombiemalealert-5"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiemalealert.unity3d?zombiemalealert-6"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiemalealert.unity3d?zombiemalealert-7"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiemalealert.unity3d?zombiemalealert-8"/>
+  <AudioClip ClipName="#@modfolder:Resources/zombiemalealert.unity3d?zombiemalealert-9"/>
+</append>
 <!-- ewww These sounds are terrible right now
 <append xpath="/Sounds/SoundDataNode[@name='forge_item_complete']">
   <AudioClip ClipName="#@modfolder:Resources/forge.unity3d?forge_item_complete-1"/>
@@ -387,12 +453,12 @@
 </append>
 
 <append xpath="/Sounds/SoundDataNode[contains(@name, 'player1stamina')]">
-  <LowestPitch name="0.8"/>
-  <HighestPitch name="1.2"/>
+  <LowestPitch name="0.9"/>
+  <HighestPitch name="1.1"/>
 </append>
 <append xpath="/Sounds/SoundDataNode[contains(@name, 'player2stamina')]">
-  <LowestPitch name="0.8"/>
-  <HighestPitch name="1.2"/>
+  <LowestPitch name="0.9"/>
+  <HighestPitch name="1.1"/>
 </append>
 
 <append xpath="/Sounds/SoundDataNode[contains(@name, '_hatch_scrap')]">
@@ -469,10 +535,10 @@
 <set xpath="/Sounds/SoundDataNode[starts-with(@name, 'player2powerattack')]/HighestPitch/@name">1.1</set>
 <set xpath="/Sounds/SoundDataNode[starts-with(@name, 'player1powerattack')]/LowestPitch/@name">0.8</set>
 <set xpath="/Sounds/SoundDataNode[starts-with(@name, 'player1powerattack')]/HighestPitch/@name">1.1</set>
-<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'player2jump')]/LowestPitch/@name">0.8</set>
-<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'player2jump')]/HighestPitch/@name">1.1</set>
-<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'player1jump')]/LowestPitch/@name">0.8</set>
-<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'player1jump')]/HighestPitch/@name">1.1</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'player2jump')]/LowestPitch/@name">0.9</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'player2jump')]/HighestPitch/@name">1.0</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'player1jump')]/LowestPitch/@name">0.9</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'player1jump')]/HighestPitch/@name">1.0</set>
 
 <set xpath="/Sounds/SoundDataNode[starts-with(@name, 'earthDestroy')]/LowestPitch/@name">0.6</set>
 <set xpath="/Sounds/SoundDataNode[starts-with(@name, 'earthDestroy')]/HighestPitch/@name">1.3</set>
@@ -502,7 +568,7 @@
 <set xpath="/Sounds/SoundDataNode[starts-with(@name, 'impactbody')]/HighestPitch/@name">1.2</set>
 <set xpath="/Sounds/SoundDataNode[starts-with(@name, 'breakleg')]/LowestPitch/@name">0.8</set>
 <set xpath="/Sounds/SoundDataNode[starts-with(@name, 'breakleg')]/HighestPitch/@name">1.2</set>
-<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'gib')]/LowestPitch/@name">0.8</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'gib')]/LowestPitch/@name">0.7</set>
 <set xpath="/Sounds/SoundDataNode[starts-with(@name, 'gib')]/HighestPitch/@name">1.2</set>
 <set xpath="/Sounds/SoundDataNode[starts-with(@name, 'woodhit')]/LowestPitch/@name">0.6</set>
 <set xpath="/Sounds/SoundDataNode[starts-with(@name, 'woodhit')]/HighestPitch/@name">1.2</set>
@@ -555,7 +621,7 @@
 
 
 <!-- DOUGH: Overrides for specific "set" things -->
-<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'zombiefemalescout')]/LowestPitch/@name">0.7</set>
+<set xpath="/Sounds/SoundDataNode[starts-with(@name, 'zombiefemalescout')]/LowestPitch/@name">0.6</set>
 <set xpath="/Sounds/SoundDataNode[starts-with(@name, 'zombiefemalescout')]/HighestPitch/@name">1.5</set>
 
 </Doughs>

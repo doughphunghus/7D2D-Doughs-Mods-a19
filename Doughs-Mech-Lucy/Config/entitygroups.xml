@@ -1,0 +1,17 @@
+<Doughs>
+ 	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']">	
+		<entity name="Doughs_MechLucy" prob="10"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnow']">	
+		<entity name="Doughs_MechLucy" prob="10"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsForest']">	
+		<entity name="Doughs_MechLucy" prob="5"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsBurntForest']">
+		<entity name="Doughs_MechLucy" prob="5" />
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']">
+		<entity name="Doughs_MechLucy" prob="5" />
+	</append>	
+</Doughs>

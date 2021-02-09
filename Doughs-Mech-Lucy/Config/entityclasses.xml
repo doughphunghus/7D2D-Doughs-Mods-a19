@@ -1,0 +1,52 @@
+<Doughs>
+
+	<append xpath="/entity_classes" >
+
+		<entity_class name="Doughs_MechLucy" extends="mechRobot" >
+			<property name="Tags" value="entity,cp,mech,mechRobot"/>
+			<property name="PhysicsBody" value="RobotRig"/>
+			<property name="Faction" value="whiteriver"/>
+			<property name="HandItem" value="handRobot"/>
+			<property name="HasRagdoll" value="true"/> <!-- No ragdoll on entity, but when both Ragdoll and Rootmotion is false, the entity will not animate attacks on dedicated servers.  Set it to true even without a ragdoll but you MUST NOT have an E_Biped_Root tag on the entity or it will NRE  -->
+			<property name="HasDeathAnim" value="true"/>
+			<property name="RootMotion" value="false"/>
+      <property name="ExperienceGain" value="190"/> <!-- DOUGH: Override. Shes easier to kill. Default = 230 -->
+			<property name="SoundRandomTime" value="30.0"/> <!-- DOUGH: Default = 20 -->
+      <!-- Stealth settings -->
+      <property name="MaxViewAngle" value="150"/> <!-- DOUGH: Override. Default: 180 -->
+      <property name="SightRange" value="20"/> <!-- distance in m -->  <!-- DOUGH: Override. Default: 30 -->
+
+      <property name="MaxTurnSpeed" value="220"/> <!-- DOUGH: Override. Default: 280 -->
+      <property name="MoveSpeed" value=".2"/> <!-- DOUGH: Override. Default: .3 -->
+			<property name="MoveSpeedAggro" value="1.0, 1.1"/> <!-- DOUGH: Override. Default: 1.2, 1.2 -->
+			<property name="MoveSpeedPanic" value="1.2"/> <!-- DOUGH: Override. Default: 1.2 -->
+			<property name="LootDropProb" value="0.1"/>  <!-- DOUGH: Override. Default: 0.25 -->
+
+      <!-- DOUGH: TODO: Maybe change AI a bit? -->
+
+			<property name="SoundRandom" value="Doughs_MechLucyRandom" />
+			<property name="SoundAlert" value="Doughs_MechLucyAlert" />
+			<property name="SoundAttack" value="Doughs_MechLucyAttack" />
+			<property name="SoundDeath" value="Doughs_MechLucyDie" />
+			<property name="SoundHurt" value="RobotRandom" />
+			<property name="SoundSense" value="Doughs_MechLucySense" />
+			<property name="SurfaceCategory" value="metal"/>
+            <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+            <drop event="Harvest" name="resourceMechanicalParts" tag="salvageHarvest" count="10"/>
+            <drop event="Harvest" name="resourceScrapIron" tag="salvageHarvest" count="9"/>
+            <drop event="Harvest" name="resourceElectricParts" tag="salvageHarvest" count="12"/>
+            <drop event="Harvest" name="resourceScrapPolymers" tag="salvageHarvest" count="9"/>
+            <drop event="Harvest" name="resourceMetalPipe" count="1" tag="salvageHarvest"/>
+            <drop event="Harvest" name="carBattery" count="1" prob="0.25" tag="salvageHarvest"/>
+            <drop event="Harvest" name="resourceSpring" count="2,4" tag="salvageHarvest"/>
+            <drop event="Harvest" name="resourceScrapIron" count="3,7" tag="allHarvest"/>
+            <drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+            <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="300"/>  <!-- DOUGH: Default = 400 -->
+			</effect_group>
+			<property name="AttackTimeoutDay" value="1.5"/>
+			<property name="AttackTimeoutNight" value="1.4"/>
+		</entity_class>
+	</append>
+</Doughs>
