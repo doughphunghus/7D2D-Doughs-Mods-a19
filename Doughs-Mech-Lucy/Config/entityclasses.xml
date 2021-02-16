@@ -47,6 +47,12 @@
 			</effect_group>
 			<property name="AttackTimeoutDay" value="1.5"/>
 			<property name="AttackTimeoutNight" value="1.4"/>
+      <!-- TODO
+      <effect_group name="DisruptOnShocking">
+        <triggered_effect trigger="onSelfBuffStart" action="Ragdoll" duration="2.5"/>
+        <requirement name="HasBuff" buff="buffShocked"/>
+      </effect_group>
+    -->
 		</entity_class>
 	</append>
 </Doughs>
