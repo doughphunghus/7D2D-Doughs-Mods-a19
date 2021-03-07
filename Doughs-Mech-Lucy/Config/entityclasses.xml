@@ -30,6 +30,9 @@
 			<property name="SoundDeath" value="Doughs_MechLucyDie" />
 			<property name="SoundHurt" value="RobotRandom" />
 			<property name="SoundSense" value="Doughs_MechLucySense" />
+      <!-- NOt in teh default creture pack... hmmm
+      <property name="SoundGiveUp" value="Enemies/Zombie_Dogs/zombiedoggiveup"/>
+      -->
 			<property name="SurfaceCategory" value="metal"/>
             <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
             <drop event="Harvest" name="resourceMechanicalParts" tag="salvageHarvest" count="10"/>

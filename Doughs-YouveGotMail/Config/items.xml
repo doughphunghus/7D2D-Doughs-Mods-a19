@@ -244,6 +244,45 @@
       <property name="DescriptionKey" value="doughs_StickyNote_010Desc"/>
     </item>
 
+    <!-- Craftable notes for other players. Make all the same color
+    NO CUSTOIM TINT: Use default color
+    and description so you don't know what it says until you read it
+    -->
+
+    <item name="doughs_StickyNote_PlayerMeanNote001">
+      <property name="Extends" value="doughs_StickyNote_Base"/>
+      <property name="DescriptionKey" value="doughs_StickyNote_PlayerMeanNote001Desc"/>
+    </item>
+    <item name="doughs_StickyNote_PlayerMeanNote002">
+      <property name="Extends" value="doughs_StickyNote_Base"/>
+      <property name="DescriptionKey" value="doughs_StickyNote_PlayerMeanNote002Desc"/>
+    </item>
+    <item name="doughs_StickyNote_PlayerMeanNote003">
+      <property name="Extends" value="doughs_StickyNote_Base"/>
+      <property name="DescriptionKey" value="doughs_StickyNote_PlayerMeanNote003Desc"/>
+    </item>
+    <item name="doughs_StickyNote_PlayerMeanNote004">
+      <property name="Extends" value="doughs_StickyNote_Base"/>
+      <property name="DescriptionKey" value="doughs_StickyNote_PlayerMeanNote004Desc"/>
+    </item>
+
+    <item name="doughs_StickyNote_PlayerNiceNote001">
+      <property name="Extends" value="doughs_StickyNote_Base"/>
+      <property name="DescriptionKey" value="doughs_StickyNote_PlayerNiceNote001Desc"/>
+    </item>
+    <item name="doughs_StickyNote_PlayerNiceNote002">
+      <property name="Extends" value="doughs_StickyNote_Base"/>
+      <property name="DescriptionKey" value="doughs_StickyNote_PlayerNiceNote002Desc"/>
+    </item>
+    <item name="doughs_StickyNote_PlayerNiceNote003">
+      <property name="Extends" value="doughs_StickyNote_Base"/>
+      <property name="DescriptionKey" value="doughs_StickyNote_PlayerNiceNote003Desc"/>
+    </item>
+    <item name="doughs_StickyNote_PlayerNiceNote004">
+      <property name="Extends" value="doughs_StickyNote_Base"/>
+      <property name="DescriptionKey" value="doughs_StickyNote_PlayerNiceNote004Desc"/>
+    </item>
+
     <!--
     Looks like paper. Generic Notes for any purpose
     -->
@@ -1246,6 +1285,16 @@
       <property name="EconomicValue" value="1"/> <!-- its worth the raw material -->
     </item>
 
+    <item name="doughs_UselessItem_UsedZipTies">
+      <property name="Extends" value="doughs_UselessItem_Base"/>
+      <property name="CustomIconTint" value="210,4,0"/>
+      <property name="DescriptionKey" value="doughs_UselessItem_UsedZipTiesDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="resourceYuccaFibers"/> <!-- DOUGH: The item -->
+      <property name="Material" value="Mplastics"/> <!-- The material to scrap it to -->
+      <property name="SellableToTrader" value="true"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="1"/> <!-- its worth the raw material -->
+    </item>
+
     <item name="doughs_UselessItem_TwistyTiesBundle">
       <property name="Extends" value="doughs_UselessItem_Base"/>
       <property name="CustomIconTint" value="66, 210, 0"/>
@@ -1669,6 +1718,17 @@
       <property name="NoScrapping" value="true"/>
       <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
       <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+    </item>
+
+    <!-- NON LOOTABLE -->
+    <item name="doughs_UselessItem_CounterfeitCasinoCoin">
+      <property name="Extends" value="doughs_UselessItem_Base"/>
+      <property name="DescriptionKey" value="doughs_UselessItem_CounterfeitCasinoCoinDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="casinoCoin"/> <!-- DOUGH: The item -->
+      <property name="Material" value="MresourceScrapLeadSmall"/> <!-- The material to scrap it to -->
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="Stacknumber" value="20000"/> <!-- DOUGH: So you can make a full fake stack -->
+      <property name="EconomicValue" value="0"/> <!-- DOUGH: 0 Because you don't know what its really made of until scrapping ;) -->
     </item>
 
     <!-- ######################################################################
@@ -2169,6 +2229,100 @@
       <property name="DescriptionKey" value="doughs_Parcel_Sorry_005Desc"/> <!-- DOUGH: Fun text -->
       <property class="Action0">
         <property name="Create_item" value="doughs_ParcelNote_Sorry_005,doughs_ParcelNote_SorryCoupon_005"/>
+        <property name="Create_item_count" value="1,1"/>
+      </property>
+    </item>
+
+    <!-- ######################################################################
+    GIFT BOXES - Make them all the same color/description
+    AND match the recipe for contents!
+    ####################################################################### -->
+    <item name="doughs_Parcel_PlayerGift001">
+      <property name="Extends" value="doughs_Parcel_Base"/>
+      <property name="DescriptionKey" value="doughs_Parcel_PlayerGiftDesc"/> <!-- DOUGH: Fun text -->
+      <property class="Action0">
+        <property name="Create_item" value="doughs_UselessItem_EmptyCardboardBox,doughs_UselessItem_JarOfUrine"/>
+        <property name="Create_item_count" value="1,1"/>
+      </property>
+    </item>
+
+    <item name="doughs_Parcel_PlayerGift002">
+      <property name="Extends" value="doughs_Parcel_Base"/>
+      <property name="DescriptionKey" value="doughs_Parcel_PlayerGiftDesc"/> <!-- DOUGH: Fun text -->
+      <property class="Action0">
+        <property name="Create_item" value="doughs_UselessItem_EmptyCardboardBox,doughs_UselessItem_StiffSocks,resourcePaper"/>
+        <property name="Create_item_count" value="1,1,5"/>
+      </property>
+    </item>
+
+    <item name="doughs_Parcel_PlayerGift003">
+      <property name="Extends" value="doughs_Parcel_Base"/>
+      <property name="DescriptionKey" value="doughs_Parcel_PlayerGiftDesc"/> <!-- DOUGH: Fun text -->
+      <property class="Action0">
+        <property name="Create_item" value="doughs_UselessItem_EmptyCardboardBox,doughs_UselessItem_BlueberryPieDish,doughs_UselessItem_Cottonball"/>
+        <property name="Create_item_count" value="1,1,10"/>
+      </property>
+    </item>
+
+    <item name="doughs_Parcel_PlayerGift004">
+      <property name="Extends" value="doughs_Parcel_Base"/>
+      <property name="DescriptionKey" value="doughs_Parcel_PlayerGiftDesc"/> <!-- DOUGH: Fun text -->
+      <property class="Action0">
+        <property name="Create_item" value="doughs_UselessItem_EmptyCardboardBox,doughs_UselessItem_Lipstick_001,doughs_UselessItem_Lubricant"/>
+        <property name="Create_item_count" value="1,1,1"/>
+      </property>
+    </item>
+
+    <item name="doughs_Parcel_PlayerGift005">
+      <property name="Extends" value="doughs_Parcel_Base"/>
+      <property name="DescriptionKey" value="doughs_Parcel_PlayerGiftDesc"/> <!-- DOUGH: Fun text -->
+      <property class="Action0">
+        <property name="Create_item" value="doughs_UselessItem_EmptyCardboardBox,doughs_UselessItem_DollhouseSizedWorkbench,resourceWood,resourceForgedIron"/>
+        <property name="Create_item_count" value="1,1,20,2"/>
+      </property>
+    </item>
+
+    <item name="doughs_Parcel_PlayerGift006">
+      <property name="Extends" value="doughs_Parcel_Base"/>
+      <property name="DescriptionKey" value="doughs_Parcel_PlayerGiftDesc"/> <!-- DOUGH: Fun text -->
+      <property class="Action0">
+        <property name="Create_item" value="doughs_UselessItem_EmptyCardboardBox,doughs_UselessItem_DollhouseSizedChemistryStation,resourceCrushedSand,resourceForgedIron"/>
+        <property name="Create_item_count" value="1,1,20,2"/>
+      </property>
+    </item>
+
+    <item name="doughs_Parcel_PlayerGift007">
+      <property name="Extends" value="doughs_Parcel_Base"/>
+      <property name="DescriptionKey" value="doughs_Parcel_PlayerGiftDesc"/> <!-- DOUGH: Fun text -->
+      <property class="Action0">
+        <property name="Create_item" value="doughs_UselessItem_EmptyCardboardBox,doughs_UselessItem_LockPick"/>
+        <property name="Create_item_count" value="1,5"/>
+      </property>
+    </item>
+
+    <item name="doughs_Parcel_PlayerGift008">
+      <property name="Extends" value="doughs_Parcel_Base"/>
+      <property name="DescriptionKey" value="doughs_Parcel_PlayerGiftDesc"/> <!-- DOUGH: Fun text -->
+      <property class="Action0">
+        <property name="Create_item" value="doughs_UselessItem_EmptyCardboardBox,doughs_StickyNote_PlayerMeanNote001"/>
+        <property name="Create_item_count" value="1,1"/>
+      </property>
+    </item>
+
+    <item name="doughs_Parcel_PlayerGift009">
+      <property name="Extends" value="doughs_Parcel_Base"/>
+      <property name="DescriptionKey" value="doughs_Parcel_PlayerGiftDesc"/> <!-- DOUGH: Fun text -->
+      <property class="Action0">
+        <property name="Create_item" value="doughs_UselessItem_EmptyCardboardBox,doughs_StickyNote_PlayerMeanNote002"/>
+        <property name="Create_item_count" value="1,1"/>
+      </property>
+    </item>
+
+    <item name="doughs_Parcel_PlayerGift010">
+      <property name="Extends" value="doughs_Parcel_Base"/>
+      <property name="DescriptionKey" value="doughs_Parcel_PlayerGiftDesc"/> <!-- DOUGH: Fun text -->
+      <property class="Action0">
+        <property name="Create_item" value="doughs_UselessItem_EmptyCardboardBox,doughs_StickyNote_PlayerMeanNote003"/>
         <property name="Create_item_count" value="1,1"/>
       </property>
     </item>

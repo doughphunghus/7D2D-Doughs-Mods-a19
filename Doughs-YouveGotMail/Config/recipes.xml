@@ -44,7 +44,149 @@
     	<ingredient name="doughs_UselessItem_FancyChildsBelt" count="1"/>
     </recipe>
 
+    <!-- Counterfeit items.  Might be an interesting dynamic.
+    Don't put in default loot, only player crafted stuff.
+    Don't do iron "too hard to work with"
+    Don't do Brass, as we want something we can scrap and mine
+    Also want something we have to "electroplate" in chem station
+    -->
+
+    <recipe name="doughs_UselessItem_CounterfeitCasinoCoin" count="20" craft_area="chemistryStation">
+      <ingredient name="resourceScrapLead" count="200"/>
+      <ingredient name="resourcePaint" count="1"/>
+      <ingredient name="resourceScrapBrass" count="10"/>
+    </recipe>
+
+    <!-- Only these mugs are "drinkable", per localization. Don't want too many
+    Also: random amount of gunpowder, for no reason other than fun, and maybe it saves a newbie
+    in some rare early game.
+    -->
+    <recipe name="drinkJarBlackStrapCoffee" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+    	<ingredient name="resourceCropCoffeeBeans" count="1"/>
+    	<ingredient name="drinkJarBoiledWater" count="1"/>
+    	<ingredient name="resourceGunPowder" count="2"/> <!-- Dough: Lowered, a bit cause it needs a mug-->
+      <ingredient name="doughs_UselessItem_CeramicMug_001" count="1"/>
+    </recipe>
+
+    <recipe name="drinkJarBlackStrapCoffee" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="resourceCropCoffeeBeans" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+      <ingredient name="resourceGunPowder" count="2"/> <!-- Dough: Lowered, a bit cause it needs a mug-->
+      <ingredient name="doughs_UselessItem_CeramicMug_002" count="1"/>
+    </recipe>
+
+    <recipe name="drinkJarBlackStrapCoffee" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="resourceCropCoffeeBeans" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+      <ingredient name="resourceGunPowder" count="3"/> <!-- Dough: Lowered, a bit cause it needs a mug-->
+      <ingredient name="doughs_UselessItem_CeramicMug_003" count="1"/>
+    </recipe>
+
+    <recipe name="drinkJarBlackStrapCoffee" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="resourceCropCoffeeBeans" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+      <ingredient name="resourceGunPowder" count="1"/> <!-- Dough: Lowered, a bit cause it needs a mug-->
+      <ingredient name="doughs_UselessItem_CeramicMug_004" count="1"/>
+    </recipe>
+
+    <recipe name="drinkJarBlackStrapCoffee" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="resourceCropCoffeeBeans" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+      <ingredient name="resourceGunPowder" count="2"/> <!-- Dough: Lowered, a bit cause it needs a mug-->
+      <ingredient name="doughs_UselessItem_CeramicMug_005" count="1"/>
+    </recipe>
+
     <!-- Custom recipies for my items -->
+
+    <!-- "Mean" notes for other players -->
+    <recipe name="doughs_StickyNote_PlayerMeanNote001" count="1" material_based="true">
+      <ingredient name="resourcePaper" count="1"/>
+    </recipe>
+    <recipe name="doughs_StickyNote_PlayerMeanNote002" count="1" material_based="true">
+      <ingredient name="resourcePaper" count="1"/>
+    </recipe>
+    <recipe name="doughs_StickyNote_PlayerMeanNote003" count="1" material_based="true">
+      <ingredient name="resourcePaper" count="1"/>
+    </recipe>
+    <recipe name="doughs_StickyNote_PlayerMeanNote004" count="1" material_based="true">
+      <ingredient name="resourcePaper" count="1"/>
+    </recipe>
+
+    <!-- "Nice" notes for other players -->
+    <recipe name="doughs_StickyNote_PlayerNiceNote001" count="1" material_based="true">
+      <ingredient name="resourcePaper" count="1"/>
+    </recipe>
+    <recipe name="doughs_StickyNote_PlayerNiceNote002" count="1" material_based="true">
+      <ingredient name="resourcePaper" count="1"/>
+    </recipe>
+    <recipe name="doughs_StickyNote_PlayerNiceNote003" count="1" material_based="true">
+      <ingredient name="resourcePaper" count="1"/>
+    </recipe>
+    <recipe name="doughs_StickyNote_PlayerNiceNote004" count="1" material_based="true">
+      <ingredient name="resourcePaper" count="1"/>
+    </recipe>
+
+    <!-- Joke boxes, only for players to craft, gift, leave for others to find, etc
+    NOT in loot groups.
+    All boxes need to be identical, and nondescript
+    -->
+    <recipe name="doughs_Parcel_PlayerGift001" count="1" material_based="true">
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_UselessItem_JarOfUrine" count="1"/>
+    </recipe>
+
+    <recipe name="doughs_Parcel_PlayerGift002" count="1" material_based="true">
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_UselessItem_StiffSocks" count="1"/>
+      <ingredient name="resourcePaper" count="5"/> <!-- To nicely wrap it -->
+    </recipe>
+
+    <recipe name="doughs_Parcel_PlayerGift003" count="1" material_based="true">
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_UselessItem_BlueberryPieDish" count="1"/>
+      <ingredient name="doughs_UselessItem_Cottonball" count="10"/> <!-- To safely ship it -->
+    </recipe>
+
+    <recipe name="doughs_Parcel_PlayerGift004" count="1" material_based="true">
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_UselessItem_Lipstick_001" count="1"/>
+      <ingredient name="doughs_UselessItem_Lubricant" count="1"/>
+    </recipe>
+
+    <recipe name="doughs_Parcel_PlayerGift005" count="1" material_based="true">
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_UselessItem_DollhouseSizedWorkbench" count="1"/>
+      <ingredient name="resourceWood" count="20"/> <!-- For weight, and to hopefully look more real as loot -->
+      <ingredient name="resourceForgedIron" count="2"/> <!-- For weight, and to hopefully look more real as loot -->
+    </recipe>
+
+    <recipe name="doughs_Parcel_PlayerGift006" count="1" material_based="true">
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_UselessItem_DollhouseSizedChemistryStation" count="1"/>
+      <ingredient name="resourceCrushedSand" count="20"/> <!-- For weight, and to hopefully look more real as loot -->
+      <ingredient name="resourceForgedIron" count="2"/> <!-- For weight, and to hopefully look more real as loot -->
+    </recipe>
+
+    <recipe name="doughs_Parcel_PlayerGift007" count="1" material_based="true">
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_UselessItem_LockPick" count="5"/>
+    </recipe>
+
+    <recipe name="doughs_Parcel_PlayerGift008" count="1" material_based="true">
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_StickyNote_PlayerMeanNote001" count="1"/> <!-- Mean -->
+    </recipe>
+
+    <recipe name="doughs_Parcel_PlayerGift009" count="1" material_based="true">
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_StickyNote_PlayerMeanNote002" count="1"/> <!-- Mean -->
+    </recipe>
+
+    <recipe name="doughs_Parcel_PlayerGift010" count="1" material_based="true">
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_StickyNote_PlayerMeanNote003" count="1"/> <!-- Mean -->
+    </recipe>
+
     <recipe name="doughs_BrassBB" count="10" material_based="true" craft_area="forge">
       <ingredient name="unit_brass" count="1"/>
       <effect_group>

@@ -192,6 +192,7 @@
       <item name="doughs_UselessItem_StiffSocks" count="1" />
       <item name="doughs_UselessItem_ShowerTileSample" count="1,3" />
       <item name="doughs_UselessItem_ColdWheelzBus" count="1" />
+      <item name="doughs_UselessItem_UsedZipTies" count="1,20" />
     </lootgroup>
 
     <lootgroup name="doughs_Parcels_Family">
