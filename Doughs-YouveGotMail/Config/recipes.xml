@@ -49,17 +49,22 @@
     Don't do iron "too hard to work with"
     Don't do Brass, as we want something we can scrap and mine
     Also want something we have to "electroplate" in chem station
+    Real life: likely could not be done as brass electroplating is hard
+    more likely? coudl be done like a cooking a penny, but vanilla does not have zinc and copper
     -->
 
     <recipe name="doughs_UselessItem_CounterfeitCasinoCoin" count="20" craft_area="chemistryStation">
       <ingredient name="resourceScrapLead" count="200"/>
-      <ingredient name="resourcePaint" count="1"/>
-      <ingredient name="resourceScrapBrass" count="10"/>
+      <ingredient name="resourcePaint" count="1"/> <!-- For any paint in the duke embossing -->
+      <ingredient name="resourceScrapBrass" count="10"/> <!-- To make the coins look like brass -->
+      <ingredient name="casinoCoin" count="1"/>  <!-- For the master blank -->
     </recipe>
 
     <!-- Only these mugs are "drinkable", per localization. Don't want too many
     Also: random amount of gunpowder, for no reason other than fun, and maybe it saves a newbie
     in some rare early game.
+    Theyre not easy to find, so not a big deal if 1 or 2 of them are OP in terms of
+    getting a much better crafting deal on 1 drinkJarBlackStrapCoffee once in a rare while.
     -->
     <recipe name="drinkJarBlackStrapCoffee" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
     	<ingredient name="resourceCropCoffeeBeans" count="1"/>
