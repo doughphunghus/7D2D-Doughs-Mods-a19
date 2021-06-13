@@ -1,6 +1,8 @@
 <Doughs>
   <append xpath="/blocks">
 
+    <!-- the max cap for lootcontainer (LootList) id is 1023 -->
+
 
     <!-- DOUGH: 72 = This is where you get returtnable quest item from -->
     <!--

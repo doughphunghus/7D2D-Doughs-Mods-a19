@@ -291,6 +291,7 @@
       <property name="CustomIcon" value="resourcePaper"/>
       <property name="DescriptionKey" value="doughs_PaperNote_BaseDesc"/>
     </item>
+
     <item name="doughs_PaperNote_001">
       <property name="Extends" value="doughs_PaperNote_Base"/>
       <property name="DescriptionKey" value="doughs_PaperNote_001Desc"/>
@@ -335,6 +336,10 @@
     <item name="doughs_PaperNote_010">
       <property name="Extends" value="doughs_PaperNote_Base"/>
       <property name="DescriptionKey" value="doughs_PaperNote_010Desc"/>
+    </item>
+    <item name="doughs_PaperNote_011">
+      <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="DescriptionKey" value="doughs_PaperNote_011Desc"/>
     </item>
 
     <item name="doughs_GovFlyer_001">
@@ -417,6 +422,11 @@
       <property name="Extends" value="doughs_PaperNote_Base"/>
       <property name="DescriptionKey" value="doughs_GovFlyer_020Desc"/>
     </item>
+    <item name="doughs_GovFlyer_021">
+      <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="CustomIcon" value="signNotice01"/>
+      <property name="DescriptionKey" value="doughs_GovFlyer_021Desc"/>
+    </item>
 
     <item name="doughs_AirdropNote_001">
       <property name="Extends" value="doughs_PaperNote_Base"/>
@@ -458,6 +468,81 @@
       <property name="Extends" value="doughs_PaperNote_Base"/>
       <property name="DescriptionKey" value="doughs_AirdropNote_010Desc"/>
     </item>
+    <item name="doughs_AirdropNote_011">
+      <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="CustomIcon" value="signNotice01"/>
+      <property name="DescriptionKey" value="doughs_AirdropNote_011Desc"/>
+    </item>
+
+    <item name="doughs_PoemNote_001">
+      <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="DescriptionKey" value="doughs_PoemNote_001Desc"/>
+    </item>
+    <item name="doughs_PoemNote_002">
+      <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="DescriptionKey" value="doughs_PoemNote_002Desc"/>
+    </item>
+    <item name="doughs_PoemNote_003">
+      <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="DescriptionKey" value="doughs_PoemNote_003Desc"/>
+    </item>
+    <item name="doughs_PoemNote_004">
+      <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="DescriptionKey" value="doughs_PoemNote_004Desc"/>
+    </item>
+    <item name="doughs_PoemNote_005">
+      <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="DescriptionKey" value="doughs_PoemNote_005Desc"/>
+    </item>
+    <item name="doughs_PoemNote_006">
+      <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="DescriptionKey" value="doughs_PoemNote_006Desc"/>
+    </item>
+    <item name="doughs_PoemNote_007">
+      <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="DescriptionKey" value="doughs_PoemNote_007Desc"/>
+    </item>
+    <item name="doughs_PoemNote_008">
+      <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="DescriptionKey" value="doughs_PoemNote_008Desc"/>
+    </item>
+    <item name="doughs_PoemNote_009">
+      <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="DescriptionKey" value="doughs_PoemNote_009Desc"/>
+    </item>
+    <item name="doughs_PoemNote_010">
+      <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="DescriptionKey" value="doughs_PoemNote_010Desc"/>
+    </item>
+    <item name="doughs_PoemNote_011">
+      <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="DescriptionKey" value="doughs_PoemNote_011Desc"/>
+    </item>
+    <item name="doughs_PoemNote_012">
+      <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="DescriptionKey" value="doughs_PoemNote_012Desc"/>
+    </item>
+    <item name="doughs_PoemNote_013">
+      <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="DescriptionKey" value="doughs_PoemNote_013Desc"/>
+    </item>
+
+    <item name="doughs_JournalNote_001">
+      <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="DescriptionKey" value="doughs_JournalNote_001Desc"/>
+    </item>
+    <item name="doughs_JournalNote_002">
+      <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="DescriptionKey" value="doughs_JournalNote_002Desc"/>
+    </item>
+    <item name="doughs_JournalNote_003">
+      <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="DescriptionKey" value="doughs_JournalNote_0031Desc"/>
+    </item>
+    <item name="doughs_JournalNote_004">
+      <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="DescriptionKey" value="doughs_JournalNote_004Desc"/>
+    </item>
 
     <!-- ##########
     NOTE: See Parcels section for Parcel Specific notes
@@ -482,7 +567,7 @@
     	<property name="Group" value="Ammo/Weapons"/>
       <property name="UnlockedBy" value="doughs_BrassBB_Schematic"/>
     	<effect_group name="doughs_BrassBB" tiered="false">
-    		<passive_effect name="EntityDamage" operation="base_set" value="2"/>
+    		<passive_effect name="EntityDamage" operation="base_set" value="5"/>
     		<passive_effect name="BlockDamage" operation="base_set" value="0"/> <!-- DOUGH: Hee -->
     		<passive_effect name="DamageModifier" operation="perc_add" value="10" tags="glass"/> <!-- DOUGH: Hee -->
         <passive_effect name="DamageModifier" operation="base_set" value="0" tags="earth,metal,cloth,stone,wood,metal,organic,water"/> <!-- DOUGH: Hee -->
@@ -579,7 +664,7 @@
     		<passive_effect name="WeaponHandling" operation="base_set" value=".95" tags="perkGunslinger"/> <!-- crosshair reset speed -->
 
     		<passive_effect name="DegradationMax" operation="base_set" value="250,450" tier="1,6" tags="perkGunslinger,9mmGun"/>
-    		<passive_effect name="DegradationPerUse" operation="base_set" value=".05" tags="perkGunslinger,9mmGun"/><!-- DOUGH: its a bb gun-->
+    		<passive_effect name="DegradationPerUse" operation="base_set" value=".01" tags="perkGunslinger,9mmGun"/><!-- DOUGH: its a bb gun-->
     	</effect_group>
     </item>
 
@@ -1031,6 +1116,27 @@
       <property name="EconomicValue" value="18"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+      </effect_group>
+    </item>
+
+    <!-- Special book items = more oomph for sell/XP as they can be used in crafting -->
+    <item name="doughs_CraftableBook_001"> <!-- Dark Love #1 -->
+      <property name="Extends" value="doughs_BrownBook_Base"/>
+      <property name="CustomIconTint" value="255,0,0"/>
+      <property name="DescriptionKey" value="doughs_CraftableBook_001Desc"/>
+      <property name="EconomicValue" value="80"/> <!-- DOUGH: Default = 500 -->
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="2000"/>
+      </effect_group>
+    </item>
+
+    <item name="doughs_CraftableBook_002"> <!-- Dark Love #2 -->
+      <property name="Extends" value="doughs_BrownBook_Base"/>
+      <property name="CustomIconTint" value="204, 102, 153"/>
+      <property name="DescriptionKey" value="doughs_CraftableBook_002Desc"/>
+      <property name="EconomicValue" value="80"/> <!-- DOUGH: Default = 500 -->
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="2000"/>
       </effect_group>
     </item>
 
@@ -1720,16 +1826,18 @@
       <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
     </item>
 
-    <!-- NON LOOTABLE -->
+    <!-- NON LOOTABLE - MAYBE PULL OUT/LATER
+
     <item name="doughs_UselessItem_CounterfeitCasinoCoin">
       <property name="Extends" value="doughs_UselessItem_Base"/>
-      <property name="DescriptionKey" value="doughs_UselessItem_CounterfeitCasinoCoinDesc"/> <!-- DOUGH: Fun text -->
-      <property name="CustomIcon" value="casinoCoin"/> <!-- DOUGH: The item -->
-      <property name="Material" value="MresourceScrapLeadSmall"/> <!-- The material to scrap it to -->
-      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
-      <property name="Stacknumber" value="20000"/> <!-- DOUGH: So you can make a full fake stack -->
-      <property name="EconomicValue" value="0"/> <!-- DOUGH: 0 Because you don't know what its really made of until scrapping ;) -->
+      <property name="DescriptionKey" value="doughs_UselessItem_CounterfeitCasinoCoinDesc"/>
+      <property name="CustomIcon" value="casinoCoin"/>
+      <property name="Material" value="MresourceScrapLeadSmall"/>
+      <property name="SellableToTrader" value="false"/>
+      <property name="Stacknumber" value="20000"/>
+      <property name="EconomicValue" value="0"/>
     </item>
+  -->
 
     <!-- ######################################################################
     Boxes to Open
@@ -1756,6 +1864,28 @@
         <property name="Create_item" value="meleeToolWireTool,ammoGasCan"/>
      		<property name="Create_item_count" value="1,2"/>
     	</property>
+    </item>
+    <!-- Open a letter/small package. Try to keep 1-2 items in it -->
+    <item name="doughs_LetterPackage_Base">
+      <property name="CustomIcon" value="mattressFlatThin"/>
+      <property name="ItemTypeIcon" value="bundle"/>
+      <property name="DescriptionKey" value="doughs_LetterPackage_BaseDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIconTint" value="242, 242, 242"/> <!-- DOUGH: Light Shade -->
+      <property name="HoldType" value="45"/>
+      <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="Material" value="Mpaper"/>  <!-- DOUGH: Make paper -->
+      <property name="Stacknumber" value="1"/>
+      <property name="Weight" value="0"/>
+      <property name="SellableToTrader" value="false"/>
+      <property class="Action0">
+        <property name="Class" value="OpenBundle"/>
+        <property name="Sound_start" value="open_garbage"/>
+        <property name="Delay" value="0"/>
+        <property name="Use_time" value="0"/>
+        <property name="Create_item" value="resourcePaper"/>
+        <property name="Create_item_count" value="1,2"/>
+      </property>
     </item>
 
     <!-- ##########
@@ -1864,7 +1994,7 @@
     </item>
 
     <item name="doughs_ParcelNote_Grandpa_003">
-      <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="Extends" value="doughs_LetterPackage_Base"/>
       <property name="DescriptionKey" value="doughs_ParcelNote_Grandpa_003Desc"/>
     </item>
     <item name="doughs_Parcel_Grandpa_003">
@@ -1995,7 +2125,7 @@
       </property>
     </item>
     <item name="doughs_Parcel_ReturnedItem_004">
-      <property name="Extends" value="doughs_Parcel_Base"/>
+      <property name="Extends" value="doughs_LetterPackage_Base"/>
       <property name="DescriptionKey" value="doughs_Parcel_ReturnedItem_004Desc"/> <!-- DOUGH: Fun text -->
       <property class="Action0">
         <property name="Create_item" value="doughs_BrownBook_010,doughs_UselessItem_CellophaneTape"/>
@@ -2020,7 +2150,7 @@
       </property>
     </item>
     <item name="doughs_Parcel_UnopenedPackage_002">
-      <property name="Extends" value="doughs_Parcel_Base"/>
+      <property name="Extends" value="doughs_LetterPackage_Base"/>
       <property name="DescriptionKey" value="doughs_Parcel_UnopenedPackage_002Desc"/> <!-- DOUGH: Fun text -->
       <property class="Action0">
         <property name="Create_item" value="doughs_UselessItem_Lipstick_002,doughs_UselessItem_CellophaneTape"/>
@@ -2028,7 +2158,7 @@
       </property>
     </item>
     <item name="doughs_Parcel_UnopenedPackage_003">
-      <property name="Extends" value="doughs_Parcel_Base"/>
+      <property name="Extends" value="doughs_LetterPackage_Base"/>
       <property name="DescriptionKey" value="doughs_Parcel_UnopenedPackage_003Desc"/> <!-- DOUGH: Fun text -->
       <property class="Action0">
         <property name="Create_item" value="resourcePaper,doughs_UselessItem_CellophaneTape"/>
@@ -2044,7 +2174,7 @@
       </property>
     </item>
     <item name="doughs_Parcel_UnopenedPackage_005">
-      <property name="Extends" value="doughs_Parcel_Base"/>
+      <property name="Extends" value="doughs_LetterPackage_Base"/>
       <property name="DescriptionKey" value="doughs_Parcel_UnopenedPackage_005Desc"/> <!-- DOUGH: Fun text -->
       <property class="Action0">
         <property name="Create_item" value="apparelShades,doughs_UselessItem_CellophaneTape"/>
@@ -2161,7 +2291,7 @@
       <property name="DescriptionKey" value="doughs_ParcelNote_SorryCoupon_001Desc"/>
     </item>
     <item name="doughs_Parcel_Sorry_001">
-      <property name="Extends" value="doughs_Parcel_Base"/>
+      <property name="Extends" value="doughs_LetterPackage_Base"/>
       <property name="DescriptionKey" value="doughs_Parcel_Sorry_001Desc"/> <!-- DOUGH: Fun text -->
       <property class="Action0">
         <property name="Create_item" value="doughs_ParcelNote_Sorry_001"/>
@@ -2177,7 +2307,7 @@
       <property name="DescriptionKey" value="doughs_ParcelNote_SorryCoupon_002Desc"/>
     </item>
     <item name="doughs_Parcel_Sorry_002">
-      <property name="Extends" value="doughs_Parcel_Base"/>
+      <property name="Extends" value="doughs_LetterPackage_Base"/>
       <property name="DescriptionKey" value="doughs_Parcel_Sorry_002Desc"/> <!-- DOUGH: Fun text -->
       <property class="Action0">
         <property name="Create_item" value="doughs_ParcelNote_Sorry_002,doughs_ParcelNote_SorryCoupon_002"/>
@@ -2193,7 +2323,7 @@
       <property name="DescriptionKey" value="doughs_ParcelNote_SorryCoupon_003Desc"/>
     </item>
     <item name="doughs_Parcel_Sorry_003">
-      <property name="Extends" value="doughs_Parcel_Base"/>
+      <property name="Extends" value="doughs_LetterPackage_Base"/>
       <property name="DescriptionKey" value="doughs_ParcelNote_SorryCoupon_003Desc"/> <!-- DOUGH: Fun text -->
       <property class="Action0">
         <property name="Create_item" value="doughs_ParcelNote_Sorry_003,doughs_ParcelNote_SorryCoupon_003"/>
@@ -2225,7 +2355,7 @@
       <property name="DescriptionKey" value="doughs_ParcelNote_SorryCoupon_005Desc"/>
     </item>
     <item name="doughs_Parcel_Sorry_005">
-      <property name="Extends" value="doughs_Parcel_Base"/>
+      <property name="Extends" value="doughs_LetterPackage_Base"/>
       <property name="DescriptionKey" value="doughs_Parcel_Sorry_005Desc"/> <!-- DOUGH: Fun text -->
       <property class="Action0">
         <property name="Create_item" value="doughs_ParcelNote_Sorry_005,doughs_ParcelNote_SorryCoupon_005"/>
@@ -2326,7 +2456,6 @@
         <property name="Create_item_count" value="1,1"/>
       </property>
     </item>
-
 
     <!-- ######################################################################
     GAME BOXES - Make them all the same color!
@@ -2655,5 +2784,5 @@
       </property>
     </item>
      -->
- </append>>
+ </append>
 </Doughs>

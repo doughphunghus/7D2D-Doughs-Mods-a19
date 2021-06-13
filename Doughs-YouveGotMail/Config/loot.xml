@@ -129,6 +129,8 @@
       <item name="doughs_Book_Game_Soduku_003" count="1" />
       <item name="doughs_Book_Game_Soduku_004" count="1" />
       <item name="doughs_Book_Game_Soduku_005" count="1" />
+      <item name="doughs_CraftableBook_001" count="1" prob="0.01"/>
+      <item name="doughs_CraftableBook_002" count="1" prob="0.01"/>
     </lootgroup>
 
     <!-- DOUGH: Missing items in this list are in parcels -->
@@ -354,6 +356,35 @@
       <item name="cobweb" count="1"/> <!-- Loot Dilution item -->
     </lootgroup>
 
+    <!-- These are broken up to make finding them ALL a little harder
+      Want to split these up so you dont find them easily and all the time
+      find somewhat a little later game
+    -->
+    <lootgroup name="doughs_PoemNotesDarkLoveA"> <!-- Easy to find early? -->
+      <item name="doughs_PoemNote_001" count="1" prob="0.05"/>
+      <item name="doughs_PoemNote_006" count="1" prob="0.05"/>
+      <item name="doughs_PoemNote_002" count="1" prob="0.05"/>
+      <item name="doughs_PoemNote_007" count="1" prob="0.05"/>
+      <item name="doughs_PoemNote_011" count="1" prob="0.05"/>
+      <item name="cobweb" count="1" prob="0.5"/> <!-- Loot Dilution item -->
+    </lootgroup>
+
+    <lootgroup name="doughs_PoemNotesDarkLoveB"> <!-- Easy to find mid game? -->
+      <item name="doughs_PoemNote_003" count="1" prob="0.05"/>
+      <item name="doughs_PoemNote_008" count="1" prob="0.05"/>
+      <item name="doughs_PoemNote_004" count="1" prob="0.05"/>
+      <item name="doughs_PoemNote_009" count="1" prob="0.05"/>
+      <item name="doughs_PoemNote_012" count="1" prob="0.05"/>
+      <item name="cobweb" count="1" prob="0.5"/> <!-- Loot Dilution item -->
+    </lootgroup>
+
+    <lootgroup name="doughs_PoemNotesDarkLoveC"> <!-- Easy to find mid-end game? -->
+      <item name="doughs_PoemNote_005" count="1" prob="0.05"/>
+      <item name="doughs_PoemNote_010" count="1" prob="0.05"/>
+      <item name="doughs_PoemNote_013" count="1" prob="0.05"/>
+      <item name="cobweb" count="1" prob="0.5"/> <!-- Loot Dilution item -->
+    </lootgroup>
+
   </insertAfter>
 
   <!-- #######################################################
@@ -372,6 +403,7 @@
     <item group="doughs_Page_Game_Soduku" />
     <item group="doughs_StickyNotes" />
     <item group="doughs_Schematics" />
+    <item group="doughs_PoemNotesDarkLoveA" prob="0.02"/>
   </append>
 
   <!-- TODO: Maybe have rare books? -->
@@ -403,6 +435,9 @@
     <item group="doughs_StickyNotes" />
     <item group="doughs_Schematics" />
     <item group="doughs_Treasure_Maps" prob="0.2"/>
+    <item group="doughs_PoemNotesDarkLoveA" prob="0.03"/>
+    <item group="doughs_PoemNotesDarkLoveB" prob="0.03"/>
+    <item group="doughs_PoemNotesDarkLoveC" prob="0.03"/>
   </append>
 
   <!-- cntNightstandClosed and dressers, wooden desk: pistol, ammo, magazines, books -->
@@ -412,6 +447,9 @@
     <item group="doughs_Page_Game_Soduku" />
     <item group="doughs_StickyNotes" />
     <item group="doughs_Schematics" />
+    <item group="doughs_PoemNotesDarkLoveA" prob="0.02"/>
+    <item group="doughs_PoemNotesDarkLoveB" prob="0.02"/>
+    <item group="doughs_PoemNotesDarkLoveC" prob="0.01"/>
     <item group="doughs_Treasure_Maps" prob="0.4"/>
   </append>
 

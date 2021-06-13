@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Doughs PunishingWorld Nerf Block Stability" />
+		<Description value="Lowers block stability glue of several block types." />
+		<Author value="Doughphunghus" />
+		<Version value="19.5 b60 1.0.0" />
+    <Website value="https://github.com/doughphunghus" />
+	</ModInfo>
+</xml>

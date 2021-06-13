@@ -16,7 +16,14 @@ This modlet is purposefully made for/to:
 - ~60 "useless" items: Items that are not of any use, clutter up your inventory, OR can be scrapped or used in recipes.  You never know until you try!
 - ~45 books. So you can find more in places you normally find books. Books currently are for fun and can read for a little EXP, burned for fuel, or sold.
 - ~70 paper items/notes
+- ~20 poems: "Dark Love" Series and a few others.
 - ~40 unopened parcels/boxes: Contain various items. Some good, some bad, some really good.
-- 3 games to play: Soduku, Chess, Checkers, Tic-Tac-Toe. If you have time to burn. Specially sized containers for the game boards. Have to find or craft the pieces/puzzles depending on the game. Collect them all!
+- 1 games to play: Soduku. If you have time to burn. Specially sized container for the game board. Collect them all!
 - 1 "Geocaching" treasure map: Who knows what it will contain?
 - 1 Weapon: BB gun
+- 1 Blade mod: Rage Blade. 25% chance of bleeding on hit. (Craftable only)
+
+PvP or Multiplayer:
+- 4 nice/4 not nice notes to leave other players, or package some up in a box and leave for them.
+- 10 "Player craftable gift boxes" to give out or place in loot, etc. Most items are jokes/not usable.
+- 3 games to play: Chess, Checkers, Tic-Tac-Toe. If you have time to burn. Specially sized containers for the game boards. Have to find or craft the pieces/puzzles depending on the game. Collect them all!

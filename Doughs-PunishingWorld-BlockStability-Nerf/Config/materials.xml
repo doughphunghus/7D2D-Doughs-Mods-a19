@@ -1,0 +1,41 @@
+<Doughs>
+
+  <set xpath="/materials/material[@id='Mglass']/property[@name='stability_glue']/@value">10</set> <!-- DOUGH: Default 20, mass 5 => 4. NOW: 2 -->
+  <set xpath="/materials/material[@id='MglassBulletproof']/property[@name='stability_glue']/@value">30</set> <!-- DOUGH: Default 60, mass 10 => 6. NOW: 3 -->
+
+  <set xpath="/materials/material[@id='Mwood_weak']/property[@name='stability_glue']/@value">10</set> <!-- DOUGH: Default 40, mass 5 => 8. NOW: 2 -->
+  <set xpath="/materials/material[@id='Mwood_ladders']/property[@name='stability_glue']/@value">10</set> <!-- DOUGH: Default 20, mass 5 => 4. NOW: 2 -->
+  <set xpath="/materials/material[@id='MwoodReinforced']/property[@name='stability_glue']/@value">15</set> <!-- DOUGH: Default 40, mass 5 => 4. NOW: 3 -->
+  <set xpath="/materials/material[@id='Mwood']/property[@name='stability_glue']/@value">20</set> <!-- DOUGH: Default 40, mass 5 => 8. NOW: 4 -->
+  <set xpath="/materials/material[@id='Mwood_regular']/property[@name='stability_glue']/@value">20</set> <!-- DOUGH: Default 40, mass 5 => 8. NOW: 4 -->
+  <set xpath="/materials/material[@id='MwoodMetal']/property[@name='stability_glue']/@value">100</set> <!-- DOUGH: Default 300, mass 20 => 15. NOW: 5 -->
+  <set xpath="/materials/material[@id='MwoodCatwalk']/property[@name='stability_glue']/@value">16</set> <!-- DOUGH: Default 40, mass 4 => 10. NOW: 5 -->
+
+  <set xpath="/materials/material[@id='Mcobblestone']/property[@name='stability_glue']/@value">40</set> <!-- DOUGH: Default 120, mass 10 => 12. NOW: 4 -->
+
+  <set xpath="/materials/material[@id='Mstone']/property[@name='stability_glue']/@value">50</set> <!-- DOUGH: Default 120, mass 10 => 12. NOW: 5 -->
+
+  <set xpath="/materials/material[@id='Mmetal_weak']/property[@name='stability_glue']/@value">40</set> <!-- DOUGH: Default 120, mass 10 => 12. NOW: 4 -->
+  <set xpath="/materials/material[@id='Mmetal_chains']/property[@name='stability_glue']/@value">40</set> <!-- DOUGH: Default 300, mass 10 => 30. NOW: 4 -->
+  <set xpath="/materials/material[@id='Mmetal_frame']/property[@name='stability_glue']/@value">100</set> <!-- DOUGH: Default 300, mass 20 => 15. NOW: 5 (300/20 ratio = docs = bug in code) -->
+  <set xpath="/materials/material[@id='Mmetal_thin']/property[@name='stability_glue']/@value">4</set> <!-- DOUGH: Default 10, mass 1 => 10. NOW: 4 -->
+  <set xpath="/materials/material[@id='MmetalCatwalk']/property[@name='stability_glue']/@value">100</set> <!-- DOUGH: Default 300, mass 20 => 15. NOW: 5 -->
+  <set xpath="/materials/material[@id='Mmetal_rebar']/property[@name='stability_glue']/@value">50</set> <!-- DOUGH: Default 120, mass 10 => 12. NOW: 5 -->
+  <set xpath="/materials/material[@id='Mmetal']/property[@name='stability_glue']/@value">120</set> <!-- DOUGH: Default 300, mass 20 => 15. NOW: 6 -->
+  <set xpath="/materials/material[@id='Mmetal_medium']/property[@name='stability_glue']/@value">120</set> <!-- DOUGH: Default 300, mass 20 => 15. NOW: 6 -->
+  <set xpath="/materials/material[@id='Mmetal_hard']/property[@name='stability_glue']/@value">120</set> <!-- DOUGH: Default 300, mass 20 => 15. NOW: 6 -->
+
+  <set xpath="/materials/material[@id='Mbrick']/property[@name='stability_glue']/@value">60</set> <!-- DOUGH: Default 120, mass 10 => 12. NOW: 6 -->
+  <set xpath="/materials/material[@id='Mconcrete']/property[@name='stability_glue']/@value">70</set> <!-- DOUGH: Default 120, mass 10 => 12. NOW: 7 -->
+  <set xpath="/materials/material[@id='MrConcrete']/property[@name='stability_glue']/@value">80</set> <!-- DOUGH: Default 120, mass 10 => 12. NOW: 8 -->
+
+  <set xpath="/materials/material[@id='Miron']/property[@name='stability_glue']/@value">140</set> <!-- DOUGH: Default 300, mass 20 => 15. NOW: 7 -->
+  <set xpath="/materials/material[@id='Msteel']/property[@name='stability_glue']/@value">180</set> <!-- DOUGH: Default 300, mass 20 => 15. NOW: 9 -->
+  <set xpath="/materials/material[@id='MstainlessSteel']/property[@name='stability_glue']/@value">200</set> <!-- DOUGH: Default 300, mass 20 => 15. NOW: 10 -->
+
+  <set xpath="/materials/material[@id='Mbridge_asphalt']/property[@name='stability_glue']/@value">100</set> <!-- DOUGH: Default 400, mass 10 => 40. NOW: 10 -->
+  <set xpath="/materials/material[@id='Mbridge_metal']/property[@name='stability_glue']/@value">100</set> <!-- DOUGH: Default 400, mass 10 => 40. NOW: 10 -->
+  <set xpath="/materials/material[@id='Mbridge_concrete']/property[@name='stability_glue']/@value">100</set> <!-- DOUGH: Default 400, mass 10 => 40. NOW: 10 -->
+  <set xpath="/materials/material[@id='Mbridge_wood']/property[@name='stability_glue']/@value">20</set> <!-- DOUGH: Default 200, mass 5 => 40. NOW: 4 -->
+
+</Doughs>
