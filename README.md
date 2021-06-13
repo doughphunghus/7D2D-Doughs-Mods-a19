@@ -1,7 +1,7 @@
 # 7D2D-Mods-a19
 
 **Description**
-My 7 Days to Die modlets for a18
+My 7 Days to Die modlets for a19
 
 See the README.md file in each modlet for details.
 
