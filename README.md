@@ -12,3 +12,6 @@ Some modlets may not be compatible with all versions of a19! Submit an issue if 
 **Discussions (and additional info, links, etc)**: [My modlets main page](https://community.7daystodie.com/topic/17197-doughs-modlets/)
 
 **Modding Terms of Agreement**: [TFP Official Modding Forum Policy ](https://community.7daystodie.com/topic/4189-tfp-official-modding-forum-policy/)
+
+#### Additional credits:
+- :clap: You've Got Mail, a19.5 b60 Update -> [Netwit2008](https://community.7daystodie.com/profile/71357-netwit2008/), for text/lore/contributions.
