@@ -2,9 +2,9 @@
 <xml>
 	<ModInfo>
 		<Name value="Doughs You've Got Mail" />
-		<Description value="Adds interesting postal mail with fun semi useful items." />
+		<Description value="Adds interesting mail and personal items with sometimes fun or useful items." />
 		<Author value="Doughphunghus" />
-		<Version value="19.5 b60 1.0.1" />
+		<Version value="19.5 b60 1.0.2" />
     <Website value="https://github.com/doughphunghus" />
 	</ModInfo>
 </xml>

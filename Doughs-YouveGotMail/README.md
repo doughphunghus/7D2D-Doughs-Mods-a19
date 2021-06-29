@@ -1,7 +1,7 @@
 **For game**: [7 Days to Die](https://7daystodie.com)
 
 **Description**
-Possibly NSFW. This modlet adds a bunch of "fun" items into the game that you can find in places where mail would be found (mailboxes, desks, dressers, trash) in order to add a bit of backstory to the residents of the city, the outbreak and fall of civilization, and a bit of much needed whimsy.
+Some things NSFW. This modlet adds a bunch of "fun" items into the game that you can find in places where mail would be found (mailboxes, desks, dressers, trash) or "personal/people items" in order to add a bit of backstory to the residents of the city, the outbreak and fall of civilization, and a bit of much needed whimsy.
 
 Note: This modlet can be slightly NSFW at times. If you're using the "No Potty Mouth" or similar modlets you might want to edit out a few items.
 
@@ -16,7 +16,7 @@ This modlet is purposefully made for/to:
 - ~60 "useless" items: Items that are not of any use, clutter up your inventory, OR can be scrapped or used in recipes.  You never know until you try!
 - ~45 books. So you can find more in places you normally find books. Books currently are for fun and can read for a little EXP, burned for fuel, or sold.
 - ~70 paper items/notes
-- ~20 poems: "Dark Love" Series and a few others.
+- ~20 poems: "Dark Love" Collectible Series and a few others.
 - ~40 unopened parcels/boxes: Contain various items. Some good, some bad, some really good.
 - 1 games to play: Soduku. If you have time to burn. Specially sized container for the game board. Collect them all!
 - 1 "Geocaching" treasure map: Who knows what it will contain?

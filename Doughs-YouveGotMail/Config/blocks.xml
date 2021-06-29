@@ -261,4 +261,70 @@
     </block>
 
   </append>
+
+  <!-- Add things to get from destroying blocks -->
+  <!-- Seems 5% chance is a good number for all of these -->
+  <!-- tag="salvageHarvest" -->
+  <!--
+  BEDS
+  -->
+  <append xpath="/blocks/block[@name='bed01']"> <!-- Downgrades to a frame -->
+    <drop event="Harvest" name="doughs_Parcel_401k_001" count="1" prob="0.05" tag="allHarvest"/>
+    <drop event="Harvest" name="doughs_UselessItem_StiffSocks" count="1" prob="0.05" tag="allHarvest"/>
+  </append>
+  <append xpath="/blocks/block[@name='bed02']"> <!-- Downgrades to a frame -->
+    <drop event="Harvest" name="doughs_Parcel_401k_002" count="1" prob="0.05" tag="allHarvest"/>
+    <drop event="Harvest" name="doughs_UselessItem_StiffSocks" count="1" prob="0.05" tag="allHarvest"/>
+  </append>
+  <append xpath="/blocks/block[@name='mattress']">
+    <drop event="Harvest" name="doughs_Parcel_401k_003" count="1" prob="0.03" tag="allHarvest"/>
+    <drop event="Harvest" name="doughs_Parcel_401k_002" count="1" prob="0.05" tag="allHarvest"/>
+  </append>
+  <append xpath="/blocks/block[@name='mattressFlat']">
+    <drop event="Harvest" name="doughs_Parcel_401k_004" count="1" prob="0.05" tag="allHarvest"/>
+    <drop event="Harvest" name="doughs_Parcel_401k_003" count="1" prob="0.05" tag="allHarvest"/>
+  </append>
+  <append xpath="/blocks/block[@name='bunkBedMade']">
+    <drop event="Harvest" name="doughs_Parcel_401k_003" count="1" prob="0.05" tag="allHarvest"/>
+    <drop event="Harvest" name="doughs_Parcel_401k_005" count="1" prob="0.05" tag="allHarvest"/>
+  </append>
+  <append xpath="/blocks/block[@name='mattressFlatThin']">
+    <drop event="Harvest" name="doughs_Parcel_401k_005" count="1" prob="0.05" tag="allHarvest"/>
+    <drop event="Harvest" name="doughs_UselessItem_StiffSocks" count="1" prob="0.05" tag="allHarvest"/>
+  </append>
+
+  <!-- No do: Because not "something at a house": gurneyBed,hospitalBed -->
+
+  <!--
+  BODIES
+  -->
+  <!-- Note: All bodies extend from bodyBagBlack -->
+  <append xpath="/blocks/block[@name='bodyBagBlack']">
+    <drop event="Harvest" name="doughs_Parcel_401k_002" count="1" prob="0.05" tag="allHarvest"/>
+    <drop event="Harvest" name="oldCash" count="6,987" prob="0.05" tag="allHarvest"/>
+    <drop event="Harvest" name="doughs_UselessItem_VajazzlerItems" count="1,5" prob="0.05" tag="allHarvest"/>
+    <drop event="Harvest" name="apparelFacialPiercings" count="1,5" prob="0.05" tag="allHarvest"/>
+    <drop event="Harvest" name="doughs_UselessItem_ColdWheelzBus" count="1,2" prob="0.05" tag="allHarvest"/> <!-- so sad -->
+  </append>
+
+  <!--
+  COUCHES
+  -->
+  <!-- Note: All bodies extend from these blocks -->
+  <!-- Money already comes out of these: count="1,3" prob="0.05" -->
+ <append xpath="/blocks/block[@name='sectionalPlaidCouchSofaMiddle']">
+   <drop event="Harvest" name="doughs_UselessItem_ToyExpandingFoam" count="1" prob="0.05" tag="allHarvest"/>
+   <drop event="Harvest" name="doughs_UselessItem_Lipstick_002" count="1" prob="0.05" tag="allHarvest"/>
+   <drop event="Harvest" name="doughs_UselessItem_NippleWeights" count="1" prob="0.05" tag="allHarvest"/>
+   <drop event="Harvest" name="doughs_UselessItem_Pencil" count="1,3" prob="0.05" tag="allHarvest"/>
+   <drop event="Harvest" name="doughs_UselessItem_TinyCandy" count="1,12" prob="0.05" tag="allHarvest"/>
+ </append>
+ <append xpath="/blocks/block[@name='sectionalLeatherCouchSofaArm']">
+   <drop event="Harvest" name="doughs_UselessItem_TinyCandy" count="1,12" prob="0.05" tag="allHarvest"/>
+   <drop event="Harvest" name="doughs_UselessItem_BoardGameMoney" count="1,219" prob="0.05" tag="allHarvest"/>
+   <drop event="Harvest" name="doughs_UselessItem_Lipstick_001" count="1" prob="0.05" tag="allHarvest"/>
+   <drop event="Harvest" name="doughs_UselessItem_ToyWheel" count="1" prob="0.05" tag="allHarvest"/>
+   <drop event="Harvest" name="doughs_UselessItem_ColdWheelzBus" count="1" prob="0.05" tag="allHarvest"/>
+ </append>
+
 </Doughs>

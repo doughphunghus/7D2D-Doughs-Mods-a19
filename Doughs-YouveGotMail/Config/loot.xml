@@ -337,8 +337,8 @@
       <item name="doughs_BrownBook_038" count="1" prob="0.05"/>
       <item name="doughs_BrownBook_031" count="1" prob="0.05"/>
       <item name="casinoCoin" count="200" prob="0.2"/> <!-- Loot Dilution item -->
-      <item name="casinoCoin" count="300" prob="0.1"/> <!-- Loot Dilution item -->
-      <item name="casinoCoin" count="500" prob="0.05"/> <!-- Loot Dilution item: but good stuff -->
+      <item name="casinoCoin" count="500" prob="0.1"/> <!-- Loot Dilution item -->
+      <item name="casinoCoin" count="800" prob="0.05"/> <!-- Loot Dilution item: but good stuff -->
       <item name="cobweb" count="1"/> <!-- Loot Dilution item -->
     </lootgroup>
 
@@ -403,7 +403,7 @@
     <item group="doughs_Page_Game_Soduku" />
     <item group="doughs_StickyNotes" />
     <item group="doughs_Schematics" />
-    <item group="doughs_PoemNotesDarkLoveA" prob="0.02"/>
+    <item group="doughs_PoemNotesDarkLoveA" prob="0.04"/>
   </append>
 
   <!-- TODO: Maybe have rare books? -->
@@ -435,9 +435,9 @@
     <item group="doughs_StickyNotes" />
     <item group="doughs_Schematics" />
     <item group="doughs_Treasure_Maps" prob="0.2"/>
-    <item group="doughs_PoemNotesDarkLoveA" prob="0.03"/>
-    <item group="doughs_PoemNotesDarkLoveB" prob="0.03"/>
-    <item group="doughs_PoemNotesDarkLoveC" prob="0.03"/>
+    <item group="doughs_PoemNotesDarkLoveA" prob="0.08"/>
+    <item group="doughs_PoemNotesDarkLoveB" prob="0.05"/>
+    <item group="doughs_PoemNotesDarkLoveC" prob="0.02"/>
   </append>
 
   <!-- cntNightstandClosed and dressers, wooden desk: pistol, ammo, magazines, books -->
@@ -447,9 +447,9 @@
     <item group="doughs_Page_Game_Soduku" />
     <item group="doughs_StickyNotes" />
     <item group="doughs_Schematics" />
-    <item group="doughs_PoemNotesDarkLoveA" prob="0.02"/>
-    <item group="doughs_PoemNotesDarkLoveB" prob="0.02"/>
-    <item group="doughs_PoemNotesDarkLoveC" prob="0.01"/>
+    <item group="doughs_PoemNotesDarkLoveA" prob="0.08"/>
+    <item group="doughs_PoemNotesDarkLoveB" prob="0.05"/>
+    <item group="doughs_PoemNotesDarkLoveC" prob="0.02"/>
     <item group="doughs_Treasure_Maps" prob="0.4"/>
   </append>
 
