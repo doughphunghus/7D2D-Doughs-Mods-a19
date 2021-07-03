@@ -136,6 +136,7 @@ TODO: ADD!!!!! +recipes
     			<display_value name="dEntityDamageBrawling" value="3"/>
     			<display_value name="dStunResist" value="1"/>
     			<display_value name="dDuration" value="80"/> <!-- DOUGH: CHANGED -->
+
     			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffBeerDuration" operation="add" value="83"/>
     			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffBeerDuration" operation="set" value="200">
     				<requirement name="CVarCompare" cvar="$buffBeerDuration" operation="GT" value="200"/></triggered_effect>
@@ -177,10 +178,11 @@ TODO: ADD!!!!! +recipes
       </property>
       <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
       <effect_group tiered="false" name="Food Tier 2">
+
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-10"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-10"/><display_value name="$waterAmountAdd" value="-10"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="1"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/><display_value name="foodHealthAmount" value="1"/>
 
       </effect_group>
     </item>
@@ -214,7 +216,7 @@ TODO: ADD!!!!! +recipes
       <effect_group tiered="false" name="Food Tier 0">
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-10"/><display_value name="foodHealthAmount" value="-10"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-5"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-5"/><display_value name="dStaminaRegen" value="-.05"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="75"/><display_value name="dDysenteryRisk" value=".75"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
@@ -234,7 +236,7 @@ TODO: ADD!!!!! +recipes
       <effect_group tiered="false" name="Food Tier 0">
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="35"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-20"/><display_value name="foodHealthAmount" value="-20"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-15"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-15"/><display_value name="dStaminaRegen" value="-.15"/>
 
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="75"/><display_value name="dDysenteryRisk" value=".75"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
@@ -317,19 +319,13 @@ TODO: ADD!!!!! +recipes
       <property name="CustomIconTint" value="134, 171, 0"/> <!-- DOUGH: pea green -->
       <effect_group tiered="false" name="Food Tier 0">
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-5"/>
-        <display_value name="foodHealthAmount" value="-5"/>
-        <display_value name="dDysenteryRisk" value=".5"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-2"/>
-
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="50"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-5"/><display_value name="foodHealthAmount" value="-5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-2"/><display_value name="dStaminaRegen" value="-.2"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="50"/><display_value name="dDysenteryRisk" value=".5"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchFood">
             <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
         </triggered_effect>
-
-        <display_value name="foodHealthAmount" value="-5"/>
-        <display_value name="dDysenteryRisk" value=".50"/>
 
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
@@ -356,7 +352,7 @@ TODO: ADD!!!!! +recipes
       <effect_group tiered="false" name="Food Tier 0">
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-5"/><display_value name="foodHealthAmount" value="-5"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-2"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-2"/><display_value name="dStaminaRegen" value="-.2"/>
 
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="50"/><display_value name="dDysenteryRisk" value=".5"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
@@ -387,9 +383,10 @@ TODO: ADD!!!!! +recipes
       <property name="Stacknumber" value="25"/>
       <property name="CustomIconTint" value="229, 170, 112"/> <!-- DOUGH: fawn brown -->
       <effect_group tiered="false" name="Food Tier 0">
+
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-5"/><display_value name="foodHealthAmount" value="-5"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-2"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-2"/><display_value name="dStaminaRegen" value="-.02"/>
 
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="50"/><display_value name="dDysenteryRisk" value=".5"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
@@ -435,7 +432,8 @@ TODO: ADD!!!!! +recipes
       </property>
       <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
       <effect_group tiered="false" name="Food Tier 2">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="3"/>
+
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="3"/><display_value name="foodHealthAmount" value="3"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="3"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
@@ -469,8 +467,9 @@ TODO: ADD!!!!! +recipes
       </property>
       <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
       <effect_group tiered="false" name="Food Tier 2">
+
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="3"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="3"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="3"/><display_value name="foodHealthAmount" value="3"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
     </item>
@@ -504,9 +503,10 @@ TODO: ADD!!!!! +recipes
       </property>
       <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 
+      <display_value name="foodHealthAmount" value="30"/>
       <effect_group tiered="false" name="Food Tier 2"><!-- DOUGH: Make this pretty nice -->
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="35"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="30"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="30"/><display_value name="foodHealthAmount" value="30"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
     </item>
@@ -531,9 +531,11 @@ TODO: ADD!!!!! +recipes
     	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 
     	<effect_group tiered="false" name="Food Tier 2"> <!-- DOUGH: "beefed" up" a little-->
+        <display_value name="dStaminaRegen" value=".3"/>
+        <display_value name="foodHealthAmount" value="55"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="70"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="30"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/><display_value name="foodHealthAmount" value="55"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="30"/><display_value name="dStaminaRegen" value=".3"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
     	</effect_group>
     </item>
@@ -562,8 +564,8 @@ TODO: ADD!!!!! +recipes
 
     	<effect_group tiered="false" name="Food Tier 1"> <!-- DOUGH: a little food -->
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="15"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="10"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="15"/><display_value name="foodHealthAmount" value="15"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="10"/><display_value name="dStaminaRegen" value=".1"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
     	</effect_group>
     </item>
@@ -590,10 +592,10 @@ TODO: ADD!!!!! +recipes
       <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 
       <effect_group tiered="false" name="Food Tier 1"> <!-- DOUGH: a little food -->
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="15"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="15"/><display_value name="$waterAmountAdd" value="15"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/><display_value name="foodHealthAmount" value="15"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="15"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="15"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="15"/><display_value name="dStaminaRegen" value=".15"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
     </item>
@@ -633,7 +635,7 @@ TODO: ADD!!!!! +recipes
       <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
       <effect_group tiered="false" name="Food Tier 2">
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/><display_value name="foodHealthAmount" value="2"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
     </item>
@@ -668,7 +670,7 @@ TODO: ADD!!!!! +recipes
       <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
       <effect_group tiered="false" name="Food Tier 2">
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/><display_value name="foodHealthAmount" value="2"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
     </item>
@@ -703,7 +705,7 @@ TODO: ADD!!!!! +recipes
     	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
     	<effect_group tiered="false" name="Food Tier 2">
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/><display_value name="foodHealthAmount" value="2"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
     	</effect_group>
     </item>
@@ -752,7 +754,7 @@ TODO: ADD!!!!! +recipes
       </property>
       <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
       <effect_group tiered="false" name="Food Tier 2">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-10"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-10"/><display_value name="$waterAmountAdd" value="-10"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
     </item>
@@ -786,9 +788,9 @@ TODO: ADD!!!!! +recipes
       </property>
       <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
       <effect_group tiered="false" name="Food Tier 2">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-3"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-3"/><display_value name="$waterAmountAdd" value="-3"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="1"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="1"/><display_value name="dStaminaRegen" value=".01"/>
       </effect_group>
     </item>
     <!-- SCHEMATIC: doughsFoodBasicExtractingSchematic -->
@@ -822,7 +824,7 @@ TODO: ADD!!!!! +recipes
     	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
     	<effect_group tiered="false" name="Food Tier 2">
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="8"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="8"/><display_value name="foodHealthAmount" value="8"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
     	</effect_group>
     </item>
@@ -856,7 +858,7 @@ TODO: ADD!!!!! +recipes
       </property>
       <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
       <effect_group tiered="false" name="Food Tier 2">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-20"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-20"/><display_value name="$waterAmountAdd" value="-20"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
     </item>
@@ -909,8 +911,8 @@ TODO: ADD!!!!! +recipes
     	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
     	<effect_group tiered="false" name="Food Tier 2">
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="2"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/><display_value name="foodHealthAmount" value="2"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="2"/><display_value name="dStaminaRegen" value=".02"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
     	</effect_group>
     </item>
@@ -955,7 +957,7 @@ TODO: ADD!!!!! +recipes
     	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
     	<effect_group tiered="false" name="Food Tier 2">
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10"/><display_value name="foodHealthAmount" value="10"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
     	</effect_group>
     </item>
@@ -999,7 +1001,7 @@ TODO: ADD!!!!! +recipes
       </property>
       <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
       <effect_group tiered="false" name="Food Tier 2">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-10"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-10"/><display_value name="$waterAmountAdd" value="-10"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
     </item>
@@ -1042,8 +1044,8 @@ TODO: ADD!!!!! +recipes
       </property>
       <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
       <effect_group tiered="false" name="Food Tier 2">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-10"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="20"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-10"/><display_value name="$waterAmountAdd" value="-10"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="16"/><display_value name="foodHealthAmount" value="16"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
@@ -1078,13 +1080,11 @@ TODO: ADD!!!!! +recipes
     	</property>
     	<!-- <property name="Smell" value="ExLargeSmell"/> --> <!-- DOUGH: Removed. as is jerky -->
     	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
-
       <effect_group tiered="false" name="Food Tier 0/1"> <!-- DOUGH: replaced all with effects from Charred Meat, then changed. see recipe for how to divide-->
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="6"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-5"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="3"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="6"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-5"/><display_value name="$waterAmountAdd" value="-5"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="3"/><display_value name="foodHealthAmount" value="3"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-    		<display_value name="$waterAmountAdd" value="-5"/>
     	</effect_group>
     </item>
 
@@ -1119,12 +1119,10 @@ TODO: ADD!!!!! +recipes
     	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 
       <effect_group tiered="false" name="Food Tier 0/1"> <!-- DOUGH: replaced all with effects from Charred Meat, then changed. see recipe for how to divide-->
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="3"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-8"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="3"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-8"/><display_value name="$waterAmountAdd" value="-8"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/><display_value name="foodHealthAmount" value="2"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-
-    		<display_value name="$waterAmountAdd" value="-8"/>
 
         <!-- Musch less thatn rotten meat it was pulled from-->
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="15"/><display_value name="dDysenteryRisk" value=".15"/>
@@ -1164,14 +1162,11 @@ TODO: ADD!!!!! +recipes
       </property>
       <!-- <property name="Smell" value="ExLargeSmell"/> --> <!-- DOUGH: Removed. as is jerky -->
       <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
-
       <effect_group tiered="false" name="Food Tier 0/1"> <!-- DOUGH: replaced all with effects from Charred Meat, then changed. see recipe for how to divide-->
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-4"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-4"/><display_value name="$waterAmountAdd" value="-4"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/><display_value name="foodHealthAmount" value="1"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-
-        <display_value name="$waterAmountAdd" value="-4"/>
 
         <!-- Musch less thatn rotten meat it was pulled from-->
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="12"/><display_value name="dDysenteryRisk" value=".12"/>
@@ -1210,10 +1205,11 @@ TODO: ADD!!!!! +recipes
       </property>
       <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
       <effect_group tiered="false" name="Food Tier 2"> <!-- DOUGH: modified hard tack -->
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-2"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-2"/><display_value name="$waterAmountAdd" value="-2"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="8"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="8"/><display_value name="foodHealthAmount" value="8"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+
       </effect_group>
     </item>
     <item name="doughsFoodPemmicanSchematic">
@@ -1257,11 +1253,10 @@ TODO: ADD!!!!! +recipes
     	</property>
     	<property name="Smell" value="ExLargeSmell"/>
     	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
-
     	<effect_group tiered="false" name="Food Tier 0"> <!-- DOUGH: Much higher disease rate, lowered food amount -->
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="1"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-2"/><display_value name="foodHealthAmount" value="-2"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-2"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-2"/><display_value name="dStaminaRegen" value="-.02"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="38"/><display_value name="dDysenteryRisk" value=".38"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
@@ -1302,9 +1297,9 @@ TODO: ADD!!!!! +recipes
     	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 
     	<effect_group tiered="false" name="Food Tier 0"> <!-- DOUGH: Much lower disease rate, same lowered food amount as Raw -->
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="1"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-2"/><display_value name="foodHealthAmount" value="-2"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-2"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-2"/><display_value name="dStaminaRegen" value="-.02"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="15"/><display_value name="dDysenteryRisk" value=".15"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
@@ -1389,7 +1384,7 @@ TODO: ADD!!!!! +recipes
       <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
       <effect_group tiered="false" name="Food Tier 2">
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-5"/><display_value name="$waterAmountAdd" value="-5"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
     </item>
@@ -1436,12 +1431,9 @@ TODO: ADD!!!!! +recipes
     	<effect_group tiered="false" name="Drink Tier 0/1">
     		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
 
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="20"/>
-    		<display_value name="dStaminaRegen" value=".15"/>
-
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/> <!-- DOUGH: ADDED -->
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="6"/> <!-- DOUGH: ADDED -->
-
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="20"/><display_value name="$waterAmountAdd" value="20"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/><display_value name="foodHealthAmount" value="10"/> <!-- DOUGH: ADDED -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="6"/><display_value name="foodHealthAmount" value="10"/> <!-- DOUGH: ADDED -->
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
     	</effect_group>
 
@@ -1493,10 +1485,9 @@ TODO: ADD!!!!! +recipes
       <!-- DOUGH: Took effects from drinkJarRiverWater, as starting point, made really nasty to drink -->
       <effect_group tiered="false" name="Drink Tier 0">
         <requirement name="NotHasBuff" buff="buffIsOnFire"/>
-
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/><display_value name="$waterAmountAdd" value="10"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/> <!-- DOUGH: ADDED -->
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/> <!-- DOUGH: ADDED -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/><display_value name="foodHealthAmount" value="2"/> <!-- DOUGH: ADDED -->
 
         <display_value name="dStaminaRegen" value=".15"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
@@ -1545,10 +1536,10 @@ TODO: ADD!!!!! +recipes
       <!-- DOUGH: Took effects from drinkJarRiverYuccaJuice, as starting point -->
       <effect_group tiered="false" name="Drink Tier 0/1">
     		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
-    			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="25"/>
+    			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="25"/><display_value name="$waterAmountAdd" value="25"/>
           <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/> <!-- DOUGH: ADDED -->
-          <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/> <!-- DOUGH: ADDED -->
-          <display_value name="dStaminaRegen" value=".10"/>
+          <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/><display_value name="foodHealthAmount" value="2"/> <!-- DOUGH: ADDED -->
+
     			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
     	</effect_group>
 
@@ -1578,9 +1569,9 @@ TODO: ADD!!!!! +recipes
       -->
       <effect_group tiered="false" name="Drink Tier 0/1">
         <requirement name="NotHasBuff" buff="buffIsOnFire"/>
-          <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="25"/>
+          <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="25"/><display_value name="$waterAmountAdd" value="25"/>
           <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="30"/> <!-- DOUGH: ADDED -->
-          <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="20"/> <!-- DOUGH: ADDED -->
+          <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="20"/><display_value name="foodHealthAmount" value="20"/> <!-- DOUGH: ADDED -->
           <display_value name="dStaminaRegen" value=".10"/>
           <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
@@ -1639,7 +1630,7 @@ TODO: ADD!!!!! +recipes
 
     	<effect_group tiered="false" name="Food Tier 0">
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/><display_value name="foodHealthAmount" value="7"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
     	</effect_group>
     </item>
@@ -1676,8 +1667,8 @@ TODO: ADD!!!!! +recipes
 
       <effect_group tiered="false" name="Food Tier 0">
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="18"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
-            		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/><display_value name="foodHealthAmount" value="7"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="1"/><display_value name="dStaminaRegen" value=".01"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
     </item>
@@ -1724,8 +1715,8 @@ TODO: ADD!!!!! +recipes
 
       <effect_group tiered="false" name="Food Tier 0">
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="22"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10"/>
-            		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="2"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10"/><display_value name="foodHealthAmount" value="10"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="2"/><display_value name="dStaminaRegen" value=".02"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
     </item>
@@ -1769,10 +1760,9 @@ TODO: ADD!!!!! +recipes
         <property name="Create_item" value="drinkJarEmpty"/> --><!-- DOUGH: HA. How else do you carry it around? -->
       </property>
       <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
-
       <effect_group tiered="false" name="Food Tier 0">
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="18"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/><display_value name="foodHealthAmount" value="7"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
     </item>
@@ -1805,10 +1795,9 @@ TODO: ADD!!!!! +recipes
         <property name="Create_item" value="drinkJarEmpty"/> --><!-- DOUGH: HA. How else do you carry it around? -->
       </property>
       <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
-
       <effect_group tiered="false" name="Food Tier 0">
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="22"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="9"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="9"/><display_value name="foodHealthAmount" value="9"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
     </item>
@@ -1854,10 +1843,9 @@ TODO: ADD!!!!! +recipes
     		<!-- <property name="Create_item" value="drinkCanEmpty"/> --><!-- DOUGH: REMOVED -->
     	</property>
     	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
-
     	<effect_group tiered="false" name="Food Tier 2"><!-- DOUGH: Make this pretty nice -->
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="35"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="25"/><display_value name="foodHealthAmount" value="25"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
     	</effect_group>
     </item>
@@ -1905,8 +1893,9 @@ TODO: ADD!!!!! +recipes
     	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 
     	<effect_group tiered="false" name="Food Tier 2"><!-- DOUGH: Make this pretty nice -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="8"/><display_value name="$waterAmountAdd" value="8"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="30"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="20"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="20"/><display_value name="foodHealthAmount" value="20"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
     	</effect_group>
     </item>
@@ -1954,9 +1943,10 @@ TODO: ADD!!!!! +recipes
       <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 
       <effect_group tiered="false" name="Food Tier 2"><!-- DOUGH: Make this pretty nice -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="8"/><display_value name="$waterAmountAdd" value="8"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="85"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="80"/>
-            		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="35"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="80"/><display_value name="foodHealthAmount" value="80"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="35"/><display_value name="dStaminaRegen" value=".35"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
     </item>
@@ -1999,11 +1989,10 @@ TODO: ADD!!!!! +recipes
         <property name="Create_item" value="resourcePaper"/> --><!-- DOUGH: HA. How else do you carry it around? -->
       </property>
       <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
-
       <effect_group tiered="false" name="Food Tier 0">
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="25"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="12"/>
-            		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="10"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="12"/><display_value name="foodHealthAmount" value="12"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="10"/><display_value name="dStaminaRegen" value=".1"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
     </item>
@@ -2049,8 +2038,8 @@ TODO: ADD!!!!! +recipes
 
       <effect_group tiered="false" name="Food Tier 2"><!-- DOUGH: Make this pretty nice -->
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="60"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="10"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/><display_value name="foodHealthAmount" value="55"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="10"/><display_value name="dStaminaRegen" value=".1"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
     </item>
@@ -2096,8 +2085,8 @@ TODO: ADD!!!!! +recipes
 
       <effect_group tiered="false" name="Food Tier 2"><!-- DOUGH: Make this pretty nice -->
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="75"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="68"/>
-            		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="15"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="68"/><display_value name="foodHealthAmount" value="68"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="15"/><display_value name="dStaminaRegen" value=".15"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
     </item>
@@ -2140,11 +2129,10 @@ TODO: ADD!!!!! +recipes
         <!-- <property name="Create_item" value="drinkCanEmpty"/> --><!-- DOUGH: REMOVED -->
       </property>
       <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
-
       <effect_group tiered="false" name="Food Tier 2"><!-- DOUGH: Make this pretty nice -->
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="70"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="62"/>
-    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="25"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="62"/><display_value name="foodHealthAmount" value="62"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="25"/><display_value name="dStaminaRegen" value=".25"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
     </item>
@@ -2190,8 +2178,8 @@ TODO: ADD!!!!! +recipes
 
       <effect_group tiered="false" name="Food Tier 2"><!-- DOUGH: Make this pretty nice -->
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="74"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="60"/>
-            		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="30"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="60"/><display_value name="foodHealthAmount" value="60"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="30"/><display_value name="dStaminaRegen" value=".3"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
     </item>
