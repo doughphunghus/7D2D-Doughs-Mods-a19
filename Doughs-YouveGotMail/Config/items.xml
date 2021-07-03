@@ -3200,6 +3200,27 @@
       <property name="EconomicValue" value="0"/> <!-- DOUGH: 0 -->
     </item>
 
+    <item name="doughs_Game_Chess_RedCourt">
+      <property name="Extends" value="doughs_UselessItem_Base"/>
+      <property name="CustomIconTint" value="255, 51, 0"/>
+      <property name="DescriptionKey" value="doughs_Game_Chess_RedCourtDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="decoMannequinFemaleBroken"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/> <!-- DOUGH: So you can only stack enough for a single game -->
+      <property name="SellableToTrader" value="true"/>
+      <property name="EconomicValue" value="300"/> <!-- doughs_Game_Chess = 1000-->
+      <property name="Stacknumber" value="10"/>
+    </item>
+    <item name="doughs_Game_Chess_BlueCourt">
+      <property name="Extends" value="doughs_UselessItem_Base"/>
+      <property name="CustomIconTint" value="102, 255, 255"/>
+      <property name="DescriptionKey" value="doughs_Game_Chess_RedCourtDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="decoMannequinFemaleBroken"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/> <!-- DOUGH: So you can only stack enough for a single game -->
+      <property name="SellableToTrader" value="true"/>
+      <property name="EconomicValue" value="300"/> <!-- doughs_Game_Chess = 1000-->
+      <property name="Stacknumber" value="10"/>
+    </item>
+
     <item name="doughs_ParcelNote_Game_Chess">
       <property name="Extends" value="doughs_PaperNote_Base"/>
       <property name="DescriptionKey" value="doughs_ParcelNote_Game_ChessDesc"/>
@@ -3397,3 +3418,5 @@
       </property>
     </item>
      -->
+  </append>
+</Doughs>

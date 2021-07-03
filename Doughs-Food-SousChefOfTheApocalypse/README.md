@@ -11,11 +11,12 @@ Eventually they may both be merged together.
 Some items can be found in containers, or bought at traders. Item semi-rarity is hopefully a norm as you are supposed to be cooking and preparing, not buying and finding!
 
 It "currantly" includes:
-- New perk: Sous Chef of the Apocalypse.  Works similar to vanilla perk Master Chef
+- New perk: Sous Chef of the Apocalypse.  Works similar to vanilla perk Master Chef but with its own special foods
 - 4 New Cookbooks to unlock certain foods/ingredients
 - 20 New Schematics to unlock certain foods/ingredients
-- 39 Food/drink items (either found/crafted/perk unlock/or schematic)
-- 13 moldy/old foods that can be only looted (and eaten if starving) or processed into 'scraps' 
+- 55+ Food/drink items (either found/crafted/perk unlock/or schematic):
+These are:
+- 13 moldy/old foods that can be only looted (and eaten if starving) or processed into 'scraps'
   these scraps can also be eaten or made into a soup: Mulligan Au Jus
 - Toasted Pumpkin, Pine, and Acorn seeds
 - Cooking Oil
@@ -32,6 +33,8 @@ It "currantly" includes:
 - Raw and boiled Sweet Bread
 - Sweet Bread Cuisine
 - Steak And Potato Cuisine
+- Au Jus
+- Beef Au Jus Sandwich
 - Pop Corn
 - Milk Curds
 - Raw Milk, Milk, and Cream

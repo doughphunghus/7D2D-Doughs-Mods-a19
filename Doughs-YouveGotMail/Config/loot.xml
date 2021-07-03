@@ -465,8 +465,8 @@
   <!-- cars-->
   <append xpath="/lootcontainers/lootcontainer[@id='19']"> <!-- people died in cars -->
     <item group="doughs_UselessItems_Toys" count="1" prob="0.1"/>
-    <item group="doughs_UselessItem_StiffSocks" count="1" prob="0.1"/>
-    <item group="doughs_UselessItem_JarOfUrine" count="1" prob="0.1"/>
+    <item name="doughs_UselessItem_StiffSocks" count="1" prob="0.1"/>
+    <item name="doughs_UselessItem_JarOfUrine" count="1" prob="0.1"/>
     <item name="goreBlockHumanCorpse" count="1" prob="0.1"/>
     <item name="goreBlockHumanCorpse1" count="1" prob="0.1"/>
     <item name="goreBlockHumanCorpse2" count="1" prob="0.1"/>
@@ -525,8 +525,8 @@
   <!-- toilet -->
   <!-- NOTE: Adding to toilets messes up the 'beloved' default loot weapons chance! Rebalance for this below! -->
   <append xpath="/lootcontainers/lootcontainer[@id='65']">
-    <item name="doughs_UselessItem_JarOfUrine" count="0.1" />
-    <item name="doughs_UselessItem_JarOfPoo" count="0.1" />
+    <item name="doughs_UselessItem_JarOfUrine" prob="0.1" />
+    <item name="doughs_UselessItem_JarOfPoo" prob="0.1" />
   </append>
   <!-- To calc vanilla: 1+0.025 +0.025 = 1.05. then 0.025/1.05 = 0.023 actual prob of vanilla weapons
   is *slightly* lower because of water being lot balance for 100%

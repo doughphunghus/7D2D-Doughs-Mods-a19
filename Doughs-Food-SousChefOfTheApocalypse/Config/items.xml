@@ -177,8 +177,11 @@ TODO: ADD!!!!! +recipes
       </property>
       <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
       <effect_group tiered="false" name="Food Tier 2">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-10"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-10"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/>
+
       </effect_group>
     </item>
     <!-- SCHEMATIC: NONE -->
@@ -232,12 +235,14 @@ TODO: ADD!!!!! +recipes
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="35"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-20"/><display_value name="foodHealthAmount" value="-20"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-15"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="75"/><display_value name="dDysenteryRisk" value=".75"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchFood">
             <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
         </triggered_effect>
+
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
     </item>
     <item name="doughsFood_RuninedFoodBurned_Meat">
@@ -312,15 +317,22 @@ TODO: ADD!!!!! +recipes
       <property name="CustomIconTint" value="134, 171, 0"/> <!-- DOUGH: pea green -->
       <effect_group tiered="false" name="Food Tier 0">
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-5"/><display_value name="foodHealthAmount" value="-5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-5"/>
+        <display_value name="foodHealthAmount" value="-5"/>
+        <display_value name="dDysenteryRisk" value=".5"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-2"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="50"/><display_value name="dDysenteryRisk" value=".5"/>
+
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="50"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchFood">
             <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
         </triggered_effect>
-      </effect_group>d
+
+        <display_value name="foodHealthAmount" value="-5"/>
+        <display_value name="dDysenteryRisk" value=".50"/>
+
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+      </effect_group>
     </item>
     <item name="doughsFood_RuninedFoodHot_Bread"> <!-- old bread-->
       <property name="Extends" value="doughsFood_RuninedFoodBurned_Scraps"/>
@@ -345,12 +357,14 @@ TODO: ADD!!!!! +recipes
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-5"/><display_value name="foodHealthAmount" value="-5"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-2"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="50"/><display_value name="dDysenteryRisk" value=".5"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchFood">
             <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
         </triggered_effect>
+
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
     </item>
     <item name="doughsFood_RuninedFoodHot_BrusslesSprouts"> <!-- old brussles sprouts -->
@@ -371,17 +385,19 @@ TODO: ADD!!!!! +recipes
       <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
       <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
       <property name="Stacknumber" value="25"/>
-      <property name="CustomIconTint" value="70, 63, 38"/> <!-- DOUGH: dark brown -->
+      <property name="CustomIconTint" value="229, 170, 112"/> <!-- DOUGH: fawn brown -->
       <effect_group tiered="false" name="Food Tier 0">
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-5"/><display_value name="foodHealthAmount" value="-5"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-2"/>
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="50"/><display_value name="dDysenteryRisk" value=".5"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchFood">
             <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
         </triggered_effect>
+
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
       </effect_group>
     </item>
 
@@ -523,14 +539,14 @@ TODO: ADD!!!!! +recipes
     </item>
 
 
-    <item name="doughsFoodScrapsBowl">
+    <item name="doughsFoodScrapsAuJus">
       <property name="Extends" value="foodSteakAndPotato"/>
       <!-- New properties -->
       <property name="CustomIcon" value="foodVegetableStew"/>
       <property name="CustomIconTint" value="988558"/> <!-- DOUGH: dark tan ?-->
       <property name="TintColor" value="152, 133, 88"/> <!-- DOUGH: RGB. Tints the item in the hand -->
       <!-- <property name="UnlockedBy" value="doughsFoodIceCreamSchematic"/> -->
-      <property name="DescriptionKey" value="doughsFoodScrapsBowlDesc"/>
+      <property name="DescriptionKey" value="doughsFoodScrapsAuJusDesc"/>
       <property name="EconomicValue" value="2"/>
       <property name="CraftingIngredientExp" value="1" /> <!-- DOUGH: Added -->
       <property name="CraftingIngredientTime" value="8" /> <!-- DOUGH: Added a long time-->
@@ -550,6 +566,36 @@ TODO: ADD!!!!! +recipes
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="10"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
     	</effect_group>
+    </item>
+
+    <item name="doughsFoodAuJus">
+      <property name="Extends" value="foodSteakAndPotato"/>
+      <!-- New properties -->
+      <property name="CustomIcon" value="drinkJarYuccaCocktail"/>
+      <property name="CustomIconTint" value="4A0404"/> <!-- DOUGH: ox blood-->
+      <property name="TintColor" value="74, 4, 4"/> <!-- DOUGH: RGB. Tints the item in the hand -->
+      <!-- <property name="UnlockedBy" value="doughsFoodIceCreamSchematic"/> -->
+      <property name="DescriptionKey" value="doughsFoodAuJusDesc"/>
+      <property name="EconomicValue" value="5"/>
+      <property name="CraftingIngredientExp" value="2" /> <!-- DOUGH: Added -->
+      <property name="CraftingIngredientTime" value="8" /> <!-- DOUGH: Added a long time-->
+      <!-- Existing properties -->
+      <property name="UnlockedBy" value="perkDoughsSousChef"/> <!-- DOUGH: Changed-->
+      <property class="Action0">
+        <property name="Class" value="Eat"/>
+        <property name="Delay" value="1.0"/>
+        <property name="Use_time" value="..."/>
+        <property name="Sound_start" value="player_eating"/>
+      </property>
+      <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+      <effect_group tiered="false" name="Food Tier 1"> <!-- DOUGH: a little food -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="15"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="15"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="15"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+      </effect_group>
     </item>
 
     <!--
@@ -1046,9 +1092,9 @@ TODO: ADD!!!!! +recipes
     	<property name="Tags" value="food"/>
 
       <!-- New properties -->
-      <property name="CustomIcon" value="meleeWpnBladeT0BoneKnife"/>
-      <property name="CustomIconTint" value="5C4033"/> <!-- DOUGH: dark brown -->
-      <property name="TintColor" value="92, 64, 51"/> <!-- DOUGH: RGB. Tints the item in the hand -->
+      <property name="CustomIcon" value="resourceBrokenGlass"/>
+      <property name="CustomIconTint" value="483C32"/> <!-- DOUGH: taupe dark brown -->
+      <property name="TintColor" value="72, 60, 50"/> <!-- DOUGH: RGB. Tints the item in the hand -->
       <!-- <property name="UnlockedBy" value="doughsFoodBeefJerkySchematic"/> -->
       <property name="DescriptionKey" value="doughsFoodMeatScrapsDesc"/>
 
@@ -1093,9 +1139,9 @@ TODO: ADD!!!!! +recipes
       <property name="Tags" value="food"/>
 
       <!-- New properties -->
-      <property name="CustomIcon" value="meleeWpnBladeT0BoneKnife"/>
-      <property name="CustomIconTint" value="988558"/> <!-- DOUGH: dark tan -->
-      <property name="TintColor" value="152, 133, 88"/> <!-- DOUGH: RGB. Tints the item in the hand -->
+      <property name="CustomIcon" value="resourceBrokenGlass"/>
+      <property name="CustomIconTint" value="808000"/> <!-- DOUGH: olive green (dark) -->
+      <property name="TintColor" value="128, 128, 0"/> <!-- DOUGH: RGB. Tints the item in the hand -->
       <!-- <property name="UnlockedBy" value="doughsFoodBeefJerkySchematic"/> -->
       <property name="DescriptionKey" value="doughsFoodFoodScrapsDesc"/>
 
@@ -1815,6 +1861,56 @@ TODO: ADD!!!!! +recipes
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
     	</effect_group>
     </item>
+    <item name="doughsFoodCheeseSchematic">
+      <property name="Extends" value="schematicMaster"/>
+      <property name="CustomIcon" value="challengeQuestMaster"/> <!-- Looks like a recipe card -->
+      <property name="DescriptionKey" value="doughsFoodCheeseSchematicDesc"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Unlocks" value="doughsFoodCheese,doughsFoodMilkCurds"/>
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="doughsFoodCheese" operation="set" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="doughsFoodMilkCurds" operation="set" value="1"/>
+
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="100"/>
+      </effect_group>
+    </item>
+
+    <item name="doughsFoodRoastBeefAuJus"> <!-- Modified doughsFoodMilkCurds -->
+      <!-- New properties -->
+      <property name="CustomIcon" value="foodShamSandwich"/>
+      <property name="CustomIconTint" value="F0E68C"/> <!-- DOUGH: khaki -->
+      <property name="TintColor" value="40, 230, 140"/> <!-- DOUGH: RGB. Tints the item in the hand -->
+      <property name="UnlockedBy" value="perkDoughsSousChef"/>
+      <property name="DescriptionKey" value="doughsFoodRoastBeefAuJusDesc"/>
+
+      <!-- Existing properties -->
+    	<property name="Tags" value="food"/>
+    	<property name="HoldType" value="31"/>
+    	<property name="DisplayType" value="foodRaw"/>
+    	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+    	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+    	<property name="Material" value="Morganic"/>
+    	<property name="Weight" value="10"/> <!-- DOUGH: CHANGED -->
+    	<property name="EconomicValue" value="30"/> <!-- DOUGH: CHANGED, up from curds-->
+    	<property name="Stacknumber" value="10"/> <!-- STK food -->
+      <property name="CraftingIngredientExp" value="1" /> <!-- DOUGH: Added -->
+      <property name="CraftingIngredientTime" value="10" /> <!-- DOUGH: Added -->
+    	<property class="Action0">
+    		<property name="Class" value="Eat"/>
+    		<property name="Delay" value="1.0"/>
+    		<property name="Use_time" value="..."/>
+    		<property name="Sound_start" value="player_eating"/>
+    		<!-- <property name="Create_item" value="drinkCanEmpty"/> --><!-- DOUGH: REMOVED -->
+    	</property>
+    	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+    	<effect_group tiered="false" name="Food Tier 2"><!-- DOUGH: Make this pretty nice -->
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="30"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="20"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+    	</effect_group>
+    </item>
+
     <item name="doughsFoodCheeseSchematic">
       <property name="Extends" value="schematicMaster"/>
       <property name="CustomIcon" value="challengeQuestMaster"/> <!-- Looks like a recipe card -->

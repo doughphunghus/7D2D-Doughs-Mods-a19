@@ -44,24 +44,32 @@
     </recipe>
 
     <!-- Food -->
-    <recipe name="doughsFoodScrapsBowl" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+    <recipe name="doughsFoodScrapsAuJus" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
       <ingredient name="doughsFoodMeatScraps" count="3"/>
       <ingredient name="doughsFoodFoodScraps" count="3"/>
       <ingredient name="resourceAnimalFat" count="1"/>
       <ingredient name="drinkJarBoiledWater" count="1"/> <!-- Yeah, make them boil it first. take some time -->
     </recipe>
-    <recipe name="doughsFoodScrapsBowl" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+    <recipe name="doughsFoodScrapsAuJus" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
       <ingredient name="doughsFoodMeatScraps" count="5"/>
       <ingredient name="doughsFoodFoodScraps" count="5"/>
       <ingredient name="drinkJarBoiledWater" count="1"/> <!-- Yeah, make them boil it first. take some time -->
     </recipe>
-    <recipe name="doughsFoodScrapsBowl" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+    <recipe name="doughsFoodScrapsAuJus" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
       <ingredient name="doughsFoodMeatScraps" count="10"/>
       <ingredient name="drinkJarBoiledWater" count="1"/> <!-- Yeah, make them boil it first. take some time -->
     </recipe>
-    <recipe name="doughsFoodScrapsBowl" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+    <recipe name="doughsFoodScrapsAuJus" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
       <ingredient name="doughsFoodFoodScraps" count="10"/>
       <ingredient name="drinkJarBoiledWater" count="1"/> <!-- Yeah, make them boil it first. take some time -->
+    </recipe>
+
+    <recipe name="doughsFoodAuJus" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsFoodScrapsAuJus" count="2"/>
+      <ingredient name="doughsFoodFlour" count="2"/>
+      <ingredient name="doughsFoodSaltyExtract" count="1"/>
+      <ingredient name="resourceAnimalFat" count="1"/>
+      <ingredient name="doughsDrinkBottomShelfRedWine" count="1"/>
     </recipe>
 
     <recipe name="doughsFoodPumpkinSeedToasted" count="5" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
@@ -239,6 +247,13 @@
       <ingredient name="resourceCloth" count="20"/>
       <ingredient name="resourceAcid" count="1"/>
       <ingredient name="drinkJarBoiledWater" count="10"/>
+    </recipe>
+
+    <recipe name="doughsFoodRoastBeefAuJus" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsFoodAuJus" count="1"/>
+      <ingredient name="doughsFoodCheese" count="1"/>
+      <ingredient name="doughsFoodButteredToast" count="2"/> <!-- because it sounds good, and a whole bread loaf is overkill -->
+      <ingredient name="doughsFoodBeefJerky" count="8"/> <!-- Welll... it neds the Au Jus to moisten it. and its in strips. and you have another use for it. and I dont want to make roast beef pieces -->
     </recipe>
 
     <recipe name="doughsFoodCheese" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">

@@ -15,13 +15,13 @@
   			<passive_effect name="CraftingTime" operation="perc_add" level="1,5" value="-.1,-.5" tags="perkDoughsSousChef"/>
 
   			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1"
-  				tags="doughsFoodButteredToast,doughsFoodSauteedMushrooms,doughsFoodHardTack,doughsFoodBeefJerky,doughsFoodPineSeedToasted,doughsFoodAcornSeedToasted,doughsFoodPumpkinSeedToasted,doughsFoodPopCorn,doughsFoodScrapsBowl"/>
+  				tags="doughsFoodButteredToast,doughsFoodSauteedMushrooms,doughsFoodHardTack,doughsFoodBeefJerky,doughsFoodPineSeedToasted,doughsFoodAcornSeedToasted,doughsFoodPumpkinSeedToasted,doughsFoodPopCorn,doughsFoodScrapsAuJus"/>
         <passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,5" value="1"
-  				tags="doughsFoodPemmican,doughsFoodBoiledSweetBread,doughsFoodSaltyExtract,doughsFoodSweetExtract,doughsFoodCookingOil,doughsFoodCreamOfTartar,doughsFoodBoneMarrow,doughsFoodFlour"/>
+  				tags="doughsFoodPemmican,doughsFoodBoiledSweetBread,doughsFoodSaltyExtract,doughsFoodSweetExtract,doughsFoodCookingOil,doughsFoodCreamOfTartar,doughsFoodBoneMarrow,doughsFoodFlour,doughsFoodAuJus"/>
         <passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1"
   				tags="doughsDrinkMilk,doughsDrinkCream,doughsDrinkSweetNutMilk,doughsFoodIceCream,doughsFoodRedWineBlueberrySorbet,doughsFoodTurkishDelight,doughsFoodSweetBreadCuisine"/>
         <passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1"
-  				tags="doughsFoodMilkCurds,doughsFoodButter,doughsFoodButterOfTheGods,doughsFoodBreadBatter,doughsFoodBread,doughsFoodCheese,doughsFoodSteakAndPotatoCuisine"/>
+  				tags="doughsFoodMilkCurds,doughsFoodButter,doughsFoodButterOfTheGods,doughsFoodBreadBatter,doughsFoodBread,doughsFoodCheese,doughsFoodSteakAndPotatoCuisine,doughsFoodRoastBeefAuJus"/>
         <passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,5" value="1"
   				tags="doughsFoodEggSouffle,doughsFoodSweetCornBlueberryMuffin,doughsFoodPotatoesDauphinoise,doughsFoodCroqueMonsieur,doughsFoodBoeufBourguignon"/>
 
