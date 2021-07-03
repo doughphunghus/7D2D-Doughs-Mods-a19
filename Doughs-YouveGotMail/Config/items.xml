@@ -366,6 +366,7 @@
     </item>
     <item name="doughs_GovFlyer_002">
       <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="CustomIcon" value="signNotice01"/>
       <property name="DescriptionKey" value="doughs_GovFlyer_002Desc"/>
     </item>
     <item name="doughs_GovFlyer_003">
@@ -378,6 +379,7 @@
     </item>
     <item name="doughs_GovFlyer_005">
       <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="CustomIcon" value="signNotice01"/>
       <property name="DescriptionKey" value="doughs_GovFlyer_005Desc"/>
     </item>
     <item name="doughs_GovFlyer_006">
@@ -398,6 +400,7 @@
     </item>
     <item name="doughs_GovFlyer_010">
       <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="CustomIcon" value="signNotice02"/>
       <property name="DescriptionKey" value="doughs_GovFlyer_010Desc"/>
     </item>
     <item name="doughs_GovFlyer_011">
@@ -406,6 +409,7 @@
     </item>
     <item name="doughs_GovFlyer_012">
       <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="CustomIcon" value="signNotice02"/>
       <property name="DescriptionKey" value="doughs_GovFlyer_012Desc"/>
     </item>
     <item name="doughs_GovFlyer_013">
@@ -418,6 +422,7 @@
     </item>
     <item name="doughs_GovFlyer_015">
       <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="CustomIcon" value="signNotice02"/>
       <property name="DescriptionKey" value="doughs_GovFlyer_015Desc"/>
     </item>
     <item name="doughs_GovFlyer_016">
@@ -430,6 +435,7 @@
     </item>
     <item name="doughs_GovFlyer_018">
       <property name="Extends" value="doughs_PaperNote_Base"/>
+      <property name="CustomIcon" value="signNotice01"/>
       <property name="DescriptionKey" value="doughs_GovFlyer_018Desc"/>
     </item>
     <item name="doughs_GovFlyer_019">
@@ -444,6 +450,58 @@
       <property name="Extends" value="doughs_PaperNote_Base"/>
       <property name="CustomIcon" value="signNotice01"/>
       <property name="DescriptionKey" value="doughs_GovFlyer_021Desc"/>
+    </item>
+
+    <item name="doughs_SaleNote_Base">
+      <property name="Extends" value="blankNoteMaster"/>
+      <property name="CustomIcon" value="signSale01"/> <!-- signSale02 -->
+      <property name="DescriptionKey" value="doughs_SaleNote_BaseDesc"/>
+    </item>
+
+    <item name="doughs_SaleNote_001">
+      <property name="Extends" value="doughs_SaleNote_Base"/>
+      <property name="DescriptionKey" value="doughs_SaleNote_001Desc"/>
+    </item>
+    <item name="doughs_SaleNote_002">
+      <property name="Extends" value="doughs_SaleNote_Base"/>
+      <property name="DescriptionKey" value="doughs_SaleNote_002Desc"/>
+    </item>
+    <item name="doughs_SaleNote_003">
+      <property name="Extends" value="doughs_SaleNote_Base"/>
+      <property name="DescriptionKey" value="doughs_SaleNote_003Desc"/>
+    </item>
+    <item name="doughs_SaleNote_004">
+      <property name="Extends" value="doughs_SaleNote_Base"/>
+      <property name="DescriptionKey" value="doughs_SaleNote_004Desc"/>
+    </item>
+    <item name="doughs_SaleNote_005">
+      <property name="Extends" value="doughs_SaleNote_Base"/>
+      <property name="DescriptionKey" value="doughs_SaleNote_005Desc"/>
+    </item>
+    <item name="doughs_SaleNote_006">
+      <property name="Extends" value="doughs_SaleNote_Base"/>
+      <property name="CustomIcon" value="signNotice02"/>
+      <property name="DescriptionKey" value="doughs_SaleNote_006Desc"/>
+    </item>
+    <item name="doughs_SaleNote_007">
+      <property name="Extends" value="doughs_SaleNote_Base"/>
+      <property name="CustomIcon" value="signNotice02"/>
+      <property name="DescriptionKey" value="doughs_SaleNote_007Desc"/>
+    </item>
+    <item name="doughs_SaleNote_008">
+      <property name="Extends" value="doughs_SaleNote_Base"/>
+      <property name="CustomIcon" value="signNotice02"/>
+      <property name="DescriptionKey" value="doughs_SaleNote_008Desc"/>
+    </item>
+    <item name="doughs_SaleNote_009">
+      <property name="Extends" value="doughs_SaleNote_Base"/>
+      <property name="CustomIcon" value="signNotice02"/>
+      <property name="DescriptionKey" value="doughs_SaleNote_009Desc"/>
+    </item>
+    <item name="doughs_SaleNote_010">
+      <property name="Extends" value="doughs_SaleNote_Base"/>
+      <property name="CustomIcon" value="signNotice02"/>
+      <property name="DescriptionKey" value="doughs_SaleNote_010Desc"/>
     </item>
 
     <item name="doughs_AirdropNote_001">
@@ -720,7 +778,7 @@
       </property>
       <effect_group tiered="false">
         <!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacHeat" level="-1"/> --><!-- level="-1" sets a perk to max level -->
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/> <!-- DOUGH: Look into Reading these makes you stupider by default ;) -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/> <!-- DOUGH: Look into Reading these makes you stupider by default ;) -->
         <!-- DOUGH: remove other book perk code until want to add some -->
       </effect_group>
     </item>
@@ -730,7 +788,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_001Desc"/>
       <property name="EconomicValue" value="18"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_002">
@@ -739,7 +797,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_002Desc"/>
       <property name="EconomicValue" value="20"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_003">
@@ -747,7 +805,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_003Desc"/>
       <property name="EconomicValue" value="20"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_004">
@@ -756,7 +814,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_004Desc"/>
       <property name="EconomicValue" value="40"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_005">
@@ -765,7 +823,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_005Desc"/>
       <property name="EconomicValue" value="25"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_006">
@@ -774,7 +832,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_006Desc"/>
       <property name="EconomicValue" value="14"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_007">
@@ -783,7 +841,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_007Desc"/>
       <property name="EconomicValue" value="8"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_008">
@@ -791,7 +849,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_008Desc"/>
       <property name="EconomicValue" value="12"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_009">
@@ -800,7 +858,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_009Desc"/>
       <property name="EconomicValue" value="14"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_010">
@@ -809,7 +867,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_010Desc"/>
       <property name="EconomicValue" value="12"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_011">
@@ -818,7 +876,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_011Desc"/>
       <property name="EconomicValue" value="11"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_012">
@@ -827,7 +885,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_012Desc"/>
       <property name="EconomicValue" value="6"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_013">
@@ -836,7 +894,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_013Desc"/>
       <property name="EconomicValue" value="8"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_014">
@@ -845,7 +903,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_014Desc"/>
       <property name="EconomicValue" value="16"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_015">
@@ -854,7 +912,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_015Desc"/>
       <property name="EconomicValue" value="22"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_016">
@@ -863,7 +921,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_016Desc"/>
       <property name="EconomicValue" value="16"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_017">
@@ -872,7 +930,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_017Desc"/>
       <property name="EconomicValue" value="20"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_018">
@@ -890,7 +948,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_019Desc"/>
       <property name="EconomicValue" value="26"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_020">
@@ -899,7 +957,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_020Desc"/>
       <property name="EconomicValue" value="13"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_021">
@@ -908,7 +966,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_021Desc"/>
       <property name="EconomicValue" value="4"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_022">
@@ -917,7 +975,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_022Desc"/>
       <property name="EconomicValue" value="18"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_023">
@@ -926,7 +984,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_023Desc"/>
       <property name="EconomicValue" value="12"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_024">
@@ -935,7 +993,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_024Desc"/>
       <property name="EconomicValue" value="30"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_025">
@@ -944,7 +1002,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_025Desc"/>
       <property name="EconomicValue" value="11"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_026">
@@ -953,7 +1011,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_026Desc"/>
       <property name="EconomicValue" value="4"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_027">
@@ -962,7 +1020,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_027Desc"/>
       <property name="EconomicValue" value="15"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_028">
@@ -971,7 +1029,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_028Desc"/>
       <property name="EconomicValue" value="17"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_029">
@@ -980,7 +1038,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_029Desc"/>
       <property name="EconomicValue" value="20"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_030">
@@ -989,7 +1047,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_030Desc"/>
       <property name="EconomicValue" value="24"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_031">
@@ -998,7 +1056,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_031Desc"/>
       <property name="EconomicValue" value="4"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_032">
@@ -1007,7 +1065,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_032Desc"/>
       <property name="EconomicValue" value="14"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_033">
@@ -1016,7 +1074,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_033Desc"/>
       <property name="EconomicValue" value="14"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_034">
@@ -1025,7 +1083,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_034Desc"/>
       <property name="EconomicValue" value="6"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_035">
@@ -1034,7 +1092,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_035Desc"/>
       <property name="EconomicValue" value="18"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_036">
@@ -1043,7 +1101,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_036Desc"/>
       <property name="EconomicValue" value="30"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_037">
@@ -1052,7 +1110,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_037Desc"/>
       <property name="EconomicValue" value="33"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_038">
@@ -1061,7 +1119,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_038Desc"/>
       <property name="EconomicValue" value="22"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_039">
@@ -1070,7 +1128,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_039Desc"/>
       <property name="EconomicValue" value="4"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_040">
@@ -1079,7 +1137,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_040Desc"/>
       <property name="EconomicValue" value="16"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_041">
@@ -1088,7 +1146,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_041Desc"/>
       <property name="EconomicValue" value="8"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_042">
@@ -1097,7 +1155,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_042Desc"/>
       <property name="EconomicValue" value="2"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_043">
@@ -1106,7 +1164,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_043Desc"/>
       <property name="EconomicValue" value="14"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_044">
@@ -1115,7 +1173,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_044Desc"/>
       <property name="EconomicValue" value="6"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_045">
@@ -1124,7 +1182,7 @@
       <property name="DescriptionKey" value="doughs_BrownBook_045Desc"/>
       <property name="EconomicValue" value="8"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
     <item name="doughs_BrownBook_046">
@@ -1133,11 +1191,13 @@
       <property name="DescriptionKey" value="doughs_BrownBook_046Desc"/>
       <property name="EconomicValue" value="18"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
-        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="10"/>
       </effect_group>
     </item>
 
-    <!-- Special book items = more oomph for sell/XP as they can be used in crafting -->
+    <!--
+    Special book items = more oomph for sell/XP as they can be used in crafting
+    -->
     <item name="doughs_CraftableBook_001"> <!-- Dark Love #1 -->
       <property name="Extends" value="doughs_BrownBook_Base"/>
       <property name="CustomIconTint" value="255,0,0"/>
@@ -1152,6 +1212,125 @@
       <property name="Extends" value="doughs_BrownBook_Base"/>
       <property name="CustomIconTint" value="204, 102, 153"/>
       <property name="DescriptionKey" value="doughs_CraftableBook_002Desc"/>
+      <property name="EconomicValue" value="80"/> <!-- DOUGH: Default = 500 -->
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="2000"/>
+      </effect_group>
+    </item>
+
+    <item name="doughs_BookCollection_Soduku">
+      <property name="Extends" value="doughs_BrownBook_Base"/>
+      <property name="CustomIcon" value="cntBookPile03"/> <!-- larger pile=4-5. cntBookPile02= 2-3-->
+      <property name="DescriptionKey" value="doughs_BookCollection_SodukuDesc"/>
+      <property name="EconomicValue" value="80"/> <!-- DOUGH: Default = 500 -->
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="2000"/>
+      </effect_group>
+    </item>
+
+    <item name="doughs_BookCollection_Nature">
+      <property name="Extends" value="doughs_BrownBook_Base"/>
+      <property name="CustomIcon" value="cntBookPile03"/> <!-- larger pile=4-5. cntBookPile02= 2-3-->
+      <property name="DescriptionKey" value="doughs_BookCollection_NatureDesc"/>
+      <property name="EconomicValue" value="80"/> <!-- DOUGH: Default = 500 -->
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="2000"/>
+      </effect_group>
+    </item>
+    <item name="doughs_BookCollection_Tips">
+      <property name="Extends" value="doughs_BrownBook_Base"/>
+      <property name="CustomIcon" value="cntBookPile02"/> <!-- larger pile=4-5. cntBookPile02= 2-3-->
+      <property name="DescriptionKey" value="doughs_BookCollection_TipsDesc"/>
+      <property name="EconomicValue" value="80"/> <!-- DOUGH: Default = 500 -->
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="2000"/>
+      </effect_group>
+    </item>
+    <item name="doughs_BookCollection_Computer">
+      <property name="Extends" value="doughs_BrownBook_Base"/>
+      <property name="CustomIcon" value="cntBookPile03"/> <!-- larger pile=4-5. cntBookPile02= 2-3-->
+      <property name="DescriptionKey" value="doughs_BookCollection_ComputerDesc"/>
+      <property name="EconomicValue" value="80"/> <!-- DOUGH: Default = 500 -->
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="2000"/>
+      </effect_group>
+    </item>
+    <item name="doughs_BookCollection_Mystery">
+      <property name="Extends" value="doughs_BrownBook_Base"/>
+      <property name="CustomIcon" value="cntBookPile02"/> <!-- larger pile=4-5. cntBookPile02= 2-3-->
+      <property name="DescriptionKey" value="doughs_BookCollection_MysteryDesc"/>
+      <property name="EconomicValue" value="80"/> <!-- DOUGH: Default = 500 -->
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="2000"/>
+      </effect_group>
+    </item>
+    <item name="doughs_BookCollection_Food">
+      <property name="Extends" value="doughs_BrownBook_Base"/>
+      <property name="CustomIcon" value="cntBookPile02"/> <!-- larger pile=4-5. cntBookPile02= 2-3-->
+      <property name="DescriptionKey" value="doughs_BookCollection_FoodDesc"/>
+      <property name="EconomicValue" value="80"/> <!-- DOUGH: Default = 500 -->
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="2000"/>
+      </effect_group>
+    </item>
+    <item name="doughs_BookCollection_Dating">
+      <property name="Extends" value="doughs_BrownBook_Base"/>
+      <property name="CustomIcon" value="cntBookPile03"/> <!-- larger pile=4-5. cntBookPile02= 2-3-->
+      <property name="DescriptionKey" value="doughs_BookCollection_DatingDesc"/>
+      <property name="EconomicValue" value="80"/> <!-- DOUGH: Default = 500 -->
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="2000"/>
+      </effect_group>
+    </item>
+    <item name="doughs_BookCollection_SelfHelp">
+      <property name="Extends" value="doughs_BrownBook_Base"/>
+      <property name="CustomIcon" value="cntBookPile02"/> <!-- larger pile=4-5. cntBookPile02= 2-3-->
+      <property name="DescriptionKey" value="doughs_BookCollection_SelfHelpDesc"/>
+      <property name="EconomicValue" value="80"/> <!-- DOUGH: Default = 500 -->
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="2000"/>
+      </effect_group>
+    </item>
+    <item name="doughs_BookCollection_SciFi">
+      <property name="Extends" value="doughs_BrownBook_Base"/>
+      <property name="CustomIcon" value="cntBookPile03"/> <!-- larger pile=4-5. cntBookPile02= 2-3-->
+      <property name="DescriptionKey" value="doughs_BookCollection_SciFiDesc"/>
+      <property name="EconomicValue" value="80"/> <!-- DOUGH: Default = 500 -->
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="2000"/>
+      </effect_group>
+    </item>
+    <item name="doughs_BookCollection_BucksAdventures">
+      <property name="Extends" value="doughs_BrownBook_Base"/>
+      <property name="CustomIcon" value="cntBookPile03"/> <!-- larger pile=4-5. cntBookPile02= 2-3-->
+      <property name="DescriptionKey" value="doughs_BookCollection_BucksAdventuresDesc"/>
+      <property name="EconomicValue" value="80"/> <!-- DOUGH: Default = 500 -->
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="2000"/>
+      </effect_group>
+    </item>
+    <item name="doughs_BookCollection_Medical">
+      <property name="Extends" value="doughs_BrownBook_Base"/>
+      <property name="CustomIcon" value="cntBookPile03"/> <!-- larger pile=4-5. cntBookPile02= 2-3-->
+      <property name="DescriptionKey" value="doughs_BookCollection_MedicalDesc"/>
+      <property name="EconomicValue" value="80"/> <!-- DOUGH: Default = 500 -->
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="2000"/>
+      </effect_group>
+    </item>
+    <item name="doughs_BookCollection_Reminisce">
+      <property name="Extends" value="doughs_BrownBook_Base"/>
+      <property name="CustomIcon" value="cntBookPile03"/> <!-- larger pile=4-5. cntBookPile02= 2-3-->
+      <property name="DescriptionKey" value="doughs_BookCollection_ReminisceDesc"/>
+      <property name="EconomicValue" value="80"/> <!-- DOUGH: Default = 500 -->
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="2000"/>
+      </effect_group>
+    </item>
+    <item name="doughs_BookCollection_Kids">
+      <property name="Extends" value="doughs_BrownBook_Base"/>
+      <property name="CustomIcon" value="cntBookPile03"/> <!-- larger pile=4-5. cntBookPile02= 2-3-->
+      <property name="DescriptionKey" value="doughs_BookCollection_KidsDesc"/>
       <property name="EconomicValue" value="80"/> <!-- DOUGH: Default = 500 -->
       <effect_group tiered="false">
         <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="2000"/>
@@ -1192,7 +1371,7 @@
       <property name="CustomIconTint" value="210,0,210"/>
       <property name="DescriptionKey" value="doughs_UselessItem_CrazyStrawDesc"/> <!-- DOUGH: Fun text -->
       <property name="CustomIcon" value="resourceSpring"/> <!-- DOUGH: The item -->
-      <property name="Material" value="Mmetal"/> <!-- The material to scrap it to -->
+      <property name="Material" value="Mplastics"/> <!-- The material to scrap it to -->
       <property name="SellableToTrader" value="true"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
       <property name="EconomicValue" value="1"/> <!-- its worth the raw material -->
     </item>
@@ -1290,16 +1469,70 @@
       <property name="SellableToTrader" value="true"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
       <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
       <property name="Stacknumber" value="500"/>
+      <property class="Action0">
+        <property name="Class" value="Eat"/>
+        <property name="Delay" value="1.0"/>
+        <property name="Use_time" value="..."/>
+        <property name="Sound_start" value="player_eating"/>
+        <!-- <property name="Create_item" value="drinkCanEmpty"/> --><!-- DOUGH: REMOVED -->
+      </property>
+      <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+      <effect_group tiered="false" name="Food Tier 0">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+      </effect_group>
     </item>
 
-    <item name="doughs_UselessItem_JarOfUrine">
-      <property name="Extends" value="doughs_UselessItem_Base"/>
+    <!-- Can drink -->
+    <item name="doughs_UselessItem_JarOfUrine"> <!-- like drinking drinkJarMurkywater but much worse -->
+      <property name="Extends" value="drinkJarRiverWater"/>
+      <property name="HoldType" value="3"/>
       <property name="DescriptionKey" value="doughs_UselessItem_JarOfUrineDesc"/> <!-- DOUGH: Fun text -->
       <property name="CustomIcon" value="drinkJarRiverWater"/> <!-- DOUGH: The item -->
       <property name="NoScrapping" value="true"/>
       <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
       <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
       <property name="Stacknumber" value="25"/> <!-- may be a throwable weapon later on -->
+      <effect_group tiered="false" name="Drink Tier 0">
+    		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
+    		<display_value name="dStaminaRegen" value=".01"/> <!-- DOUGH: want to be negative, but how? -->
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="50"/><display_value name="dDysenteryRisk" value=".50"/> <!-- DOUGH: vanilla river water = 12 -->
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchDrink">
+    			<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+    		</triggered_effect>
+    	</effect_group>
+    </item>
+    <!-- Can drink -->
+    <item name="doughs_UselessItem_JarOfPoo"> <!-- like drinking drinkJarMurkywater but much MUCH worse -->
+      <property name="Extends" value="drinkJarRiverWater"/>
+      <property name="HoldType" value="3"/>
+      <property name="CustomIconTint" value="128, 70, 27"/> <!-- "russet" brown -->
+      <property name="DescriptionKey" value="doughs_UselessItem_JarOfPooDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="drinkJarRiverWater"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="25"/> <!-- may be a throwable weapon later on -->
+      <effect_group tiered="false" name="Drink Tier 0">
+        <requirement name="NotHasBuff" buff="buffIsOnFire"/>
+
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
+        <display_value name="dStaminaRegen" value=".01"/> <!-- DOUGH: want to be negative, but how? -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="98"/><display_value name="dDysenteryRisk" value=".98"/> <!-- DOUGH: vanilla river water = 12. 98 = "always have some hope" -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchDrink">
+          <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+        </triggered_effect>
+      </effect_group>
     </item>
 
     <item name="doughs_UselessItem_Empty35mmFilmCanister">
@@ -1734,24 +1967,52 @@
       <property name="Stacknumber" value="500"/>
     </item>
 
-    <item name="doughs_UselessItem_WiperFluid">
+    <item name="doughs_UselessItem_WiperFluid"> <!-- Combined from resourceBroken glass and water bottle-->
       <property name="Extends" value="doughs_UselessItem_Base"/>
+      <property name="HoldType" value="3"/>
       <property name="CustomIconTint" value="0, 203, 210"/>
       <property name="DescriptionKey" value="doughs_UselessItem_WiperFluidDesc"/> <!-- DOUGH: Fun text -->
       <property name="CustomIcon" value="resourceAcid"/> <!-- DOUGH: The item -->
       <property name="NoScrapping" value="true"/>
       <property name="SellableToTrader" value="true"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
       <property name="EconomicValue" value="1"/> <!-- its worth the raw material -->
+      <property class="Action0">
+        <property name="Class" value="Eat"/>
+        <property name="Delay" value="1.0"/>
+        <property name="Use_time" value="..."/>
+        <property name="Gain_health" value="-20"/>
+        <property name="Sound_start" value="player_eating"/>
+      </property>
+      <property name="Group" value="Resources"/>
+
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInternalBleeding"/>
+      </effect_group>
     </item>
 
-    <item name="doughs_UselessItem_PaintStripper">
+    <item name="doughs_UselessItem_PaintStripper"> <!-- Combined from resourceBroken glass and water bottle-->
       <property name="Extends" value="doughs_UselessItem_Base"/>
+      <property name="HoldType" value="3"/>
       <property name="CustomIconTint" value="210, 94, 0"/>
       <property name="DescriptionKey" value="doughs_UselessItem_PaintStripperDesc"/> <!-- DOUGH: Fun text -->
       <property name="CustomIcon" value="resourceAcid"/> <!-- DOUGH: The item -->
       <property name="NoScrapping" value="true"/>
       <property name="SellableToTrader" value="true"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
       <property name="EconomicValue" value="1"/> <!-- its worth the raw material -->
+      <property class="Action0">
+        <property name="Class" value="Eat"/>
+        <property name="Delay" value="1.0"/>
+        <property name="Use_time" value="..."/>
+        <property name="Gain_health" value="-50"/>
+        <property name="Sound_start" value="player_eating"/>
+      </property>
+      <property name="Group" value="Resources"/>
+
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="set" value="0"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInternalBleeding"/>
+      </effect_group>
     </item>
 
     <item name="doughs_UselessItem_Lubricant">
@@ -1889,7 +2150,162 @@
       <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
       <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
       <property name="Stacknumber" value="25"/> <!-- Kids toy -->
+      <property name="CustomIconTint" value="255,255,0"/> <!-- DOUGH: yellow. + blue = green? -->
     </item>
+    <item name="doughs_UselessItem_ColdWheelzCar">
+      <property name="Extends" value="doughs_UselessItem_Base"/>
+      <property name="DescriptionKey" value="doughs_UselessItem_ColdWheelzCarDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="cntCar03SedanDamage0Master"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="25"/> <!-- Kids toy -->
+      <property name="CustomIconTint" value="184, 115, 51"/> <!-- DOUGH: Copper -->
+    </item>
+    <item name="doughs_UselessItem_ColdWheelzArmy">
+      <property name="Extends" value="doughs_UselessItem_Base"/>
+      <property name="DescriptionKey" value="doughs_UselessItem_ColdWheelzArmyDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="cntArmyTruckOpen"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="25"/> <!-- Kids toy -->
+    </item>
+
+    <item name="doughs_UselessItem_ActionFigure_001">
+      <property name="Extends" value="doughs_UselessItem_Base"/>
+      <property name="DescriptionKey" value="doughs_UselessItem_ActionFigure_001Desc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="decoMannequinMale"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="50"/> <!-- Kids toy -->
+      <property name="CustomIconTint" value="150, 121, 105"/> <!-- DOUGH: Mocha -->
+    </item>
+    <item name="doughs_UselessItem_ActionFigure_002">
+      <property name="Extends" value="doughs_UselessItem_Base"/>
+      <property name="DescriptionKey" value="doughs_UselessItem_ActionFigure_002Desc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="decoMannequinFemale"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="50"/> <!-- Kids toy -->
+      <property name="CustomIconTint" value="194, 178, 128"/> <!-- DOUGH: Ecru -->
+    </item>
+    <item name="doughs_UselessItem_ActionFigure_003">
+      <property name="Extends" value="doughs_UselessItem_Base"/>
+      <property name="DescriptionKey" value="doughs_UselessItem_ActionFigure_003Desc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="decoMannequinFemaleBroken"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="50"/> <!-- Kids toy -->
+      <property name="CustomIconTint" value="234, 221, 202"/> <!-- DOUGH: Almond -->
+    </item>
+    <item name="doughs_UselessItem_ActionFigure_004">
+      <property name="Extends" value="doughs_UselessItem_Base"/>
+      <property name="DescriptionKey" value="doughs_UselessItem_ActionFigure_004Desc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="decoMannequinMale"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="50"/> <!-- Kids toy -->
+      <property name="CustomIconTint" value="3, 100, 2"/> <!-- DOUGH: green army -->
+    </item>
+    <item name="doughs_UselessItem_ActionFigure_005">
+      <property name="Extends" value="doughs_UselessItem_Base"/>
+      <property name="DescriptionKey" value="doughs_UselessItem_ActionFigure_005Desc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="decoMannequinFemale"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="50"/> <!-- Kids toy -->
+      <property name="CustomIconTint" value="3, 100, 223"/> <!-- DOUGH: blue superhero -->
+    </item>
+
+    <item name="doughs_UselessItem_CrackedEmptyContainer">
+      <property name="Extends" value="doughs_UselessItem_Base"/>
+      <property name="DescriptionKey" value="doughs_UselessItem_CrackedEmptyContainerDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="drinkJarPureMineralWater"/> <!-- DOUGH: The item -->
+      <property name="Material" value="Mplastics"/> <!-- The material to scrap it to -->
+      <property name="SellableToTrader" value="true"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="1"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="125"/>
+    </item>
+    <item name="doughs_UselessItem_UsedToothpicks">
+      <property name="Extends" value="doughs_UselessItem_Base"/>
+      <property name="DescriptionKey" value="doughs_UselessItem_UsedToothpicksDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="trapSpikesDamage4"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="2000"/> <!-- ha ha -->
+      <property name="CustomIconTint" value="193, 154, 107"/> <!-- DOUGH: camel brown -->
+    </item>
+
+    <item name="doughs_UselessItem_Antacids"> <!-- default color, on purpose -->
+      <property name="Extends" value="doughs_UselessItem_Base"/>
+      <property name="DescriptionKey" value="doughs_UselessItem_AntacidsDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="drugPainkillers"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="10"/> <!-- vanilla stack for pills -->
+    </item>
+    <item name="doughs_UselessItem_StoolSofteners"> <!-- default color, on purpose -->
+      <property name="Extends" value="doughs_UselessItem_Base"/>
+      <property name="DescriptionKey" value="doughs_UselessItem_StoolSoftenersDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="drugPainkillers"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="10"/> <!-- vanilla stack for pills -->
+    </item>
+    <item name="doughs_UselessItem_BirthControlPills"> <!-- default color, on purpose -->
+      <property name="Extends" value="doughs_UselessItem_Base"/>
+      <property name="DescriptionKey" value="doughs_UselessItem_BirthControlPillsDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="drugPainkillers"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="10"/> <!-- vanilla stack for pills -->
+    </item>
+
+    <!-- Basically like a weak bartertering candy buff -->
+    <item name="doughs_UselessItem_BreathMints"> <!-- default color, on purpose -->
+      <property name="Extends" value="drugSugarButts"/>
+      <property name="DescriptionKey" value="doughs_UselessItem_BreathMintsDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="drugPainkillers"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material, anmd don't allow to by and then use -->
+      <property name="Stacknumber" value="10"/> <!-- vanilla stack for pills -->
+
+      <effect_group tiered="false" name="Candy Tier 1">
+        <display_value name="dBarteringSellBuy" value=".03"/> <!-- DOUGH: way less than 1/2 candy MUST MATCH DESCRIPTION AND BUFF INTERNALS-->
+        <display_value name="dDuration" value="20"/> <!-- DOUGH: a LOT less than vanilla sugarbutts candy PANIC BUY/SELL!-->
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$doughs_drugBreathMintsDuration" operation="add" value="23"/> <!-- DOUGH: way less than 1/2 vanilla candy-->
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$doughs_drugBreathMintsDuration" operation="set" value="63"> <!-- DOUGH: way less than 1/2 vanilla candy-->
+          <requirement name="CVarCompare" cvar="$doughs_drugBreathMintsDuration" operation="GT" value="63"/></triggered_effect>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="doughs_buffDrugBreathMints"/>
+
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="1"/> <!-- DOUGH: Its not food -->
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+      </effect_group>
+
+    </item>
+
+    <item name="doughs_UselessItem_BadElectricalCord">
+      <property name="Extends" value="doughs_UselessItem_Base"/>
+      <property name="DescriptionKey" value="doughs_UselessItem_BadElectricalCordDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="modGunBowPolymerString"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="25"/> <!-- Kids toy -->
+    </item>
+
+    <!-- # TO DO: mod for gems = terrorepotassiumnitrate!! -->
 
     <!-- NON LOOTABLE - MAYBE PULL OUT/LATER
 
@@ -1907,6 +2323,13 @@
     <!-- ######################################################################
     Boxes to Open
     -->
+    <!-- TODO -->
+    <!-- cntToolBoxClosed: maybe do later? Find in cars? -->
+    <!-- paper mail? stainedGlassCTRPlate, sidingWhiteBurntCTRPlate, corrugatedMetalCTRPlate
+      windowPlug04CTRPlate, rScrapIronCTRPlate, flagstoneCTRPlate
+     : maybe do later? Find in cars? -->
+    <!-- SaleNotes: put in mail boxes -->
+    <!-- Letters to traders their family, etc? sell for $$? -->
 
     <!-- Open a box. can put as much as you want int it, list can be looong -->
     <item name="doughs_Parcel_Base">
@@ -1949,13 +2372,60 @@
         <property name="Delay" value="0"/>
         <property name="Use_time" value="0"/>
         <property name="Create_item" value="resourcePaper"/>
-        <property name="Create_item_count" value="1,2"/>
+        <property name="Create_item_count" value="1"/>
       </property>
     </item>
 
     <!-- ##########
     Parcels
     ############# -->
+
+    <item name="doughs_Mail_Junk_001">
+    	<property name="Extends" value="doughs_LetterPackage_Base"/>
+      <property name="CustomIcon" value="sidingWhiteBurntCTRPlate"/>
+      <property name="DescriptionKey" value="doughs_Mail_Junk_001Desc"/> <!-- DOUGH: Fun text -->
+    	<property class="Action0">
+    		<property name="Create_item" value="doughs_SaleNote_001"/>
+    		<property name="Create_item_count" value="1"/>
+    	</property>
+    </item>
+    <item name="doughs_Mail_Junk_002">
+      <property name="Extends" value="doughs_LetterPackage_Base"/>
+      <property name="CustomIcon" value="sidingWhiteBurntCTRPlate"/>
+      <property name="DescriptionKey" value="doughs_Mail_Junk_002Desc"/> <!-- DOUGH: Fun text -->
+      <property class="Action0">
+        <property name="Create_item" value="doughs_SaleNote_002"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+    <item name="doughs_Mail_Junk_003">
+      <property name="Extends" value="doughs_LetterPackage_Base"/>
+      <property name="CustomIcon" value="sidingWhiteBurntCTRPlate"/>
+      <property name="DescriptionKey" value="doughs_Mail_Junk_003Desc"/> <!-- DOUGH: Fun text -->
+      <property class="Action0">
+        <property name="Create_item" value="doughs_SaleNote_003"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+    <item name="doughs_Mail_Junk_004">
+      <property name="Extends" value="doughs_LetterPackage_Base"/>
+      <property name="CustomIcon" value="sidingWhiteBurntCTRPlate"/>
+      <property name="DescriptionKey" value="doughs_Mail_Junk_004Desc"/> <!-- DOUGH: Fun text -->
+      <property class="Action0">
+        <property name="Create_item" value="doughs_SaleNote_004"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+    <item name="doughs_Mail_Junk_005">
+      <property name="Extends" value="doughs_LetterPackage_Base"/>
+      <property name="CustomIcon" value="sidingWhiteBurntCTRPlate"/>
+      <property name="DescriptionKey" value="doughs_Mail_Junk_005Desc"/> <!-- DOUGH: Fun text -->
+      <property class="Action0">
+        <property name="Create_item" value="doughs_SaleNote_005"/>
+        <property name="Create_item_count" value="1"/>
+      </property>
+    </item>
+
     <item name="doughs_ParcelNote_Grandma_001">
       <property name="Extends" value="doughs_PaperNote_Base"/>
       <property name="CustomIconTint" value="210,4,0"/>
@@ -2595,6 +3065,7 @@
     <!--
     Checkers
     -->
+
     <item name="doughs_CheckersBlock_1">
       <property name="Extends" value="doughs_UselessItem_Base"/>
       <property name="CustomIconTint" value="255, 0, 0"/>
@@ -2627,6 +3098,20 @@
       <property class="Action0">
         <property name="Create_item" value="doughs_cntGameBoardChessAndCheckers,doughs_ParcelNote_Game_Checkers,doughs_UselessItem_WrappingPaperRibbon"/>
         <property name="Create_item_count" value="1,1,1,1"/>
+      </property>
+    </item>
+
+    <item name="doughs_Game_Checkers"> <!-- worth the sell money and to carry/unpack it -->
+      <property name="Extends" value="doughs_Parcel_Base"/>
+      <property name="CustomIconTint" value="0, 133, 210"/>
+      <property name="DescriptionKey" value="doughs_Game_CheckersDesc"/> <!-- DOUGH: Fun text -->
+      <property name="NoScrapping" value="true"/> <!-- Not obvious -->
+      <property name="SellableToTrader" value="true"/>
+      <property name="EconomicValue" value="500"/> <!-- SolarPanel = 2000-->
+      <property name="Stacknumber" value="10"/>
+      <property class="Action0">
+        <property name="Create_item" value="doughs_cntGameBoardChessAndCheckers,doughs_UselessItem_EmptyCardboardBox,doughs_CheckersBlock_1,doughs_CheckersBlock_2"/>
+        <property name="Create_item_count" value="1,1,16,16"/>
       </property>
     </item>
 
@@ -2726,6 +3211,20 @@
       <property class="Action0">
         <property name="Create_item" value="doughs_cntGameBoardChessAndCheckers,doughs_ParcelNote_Game_Chess,doughs_UselessItem_WrappingPaperRibbon"/>
         <property name="Create_item_count" value="1,1,1"/>
+      </property>
+    </item>
+
+    <item name="doughs_Game_Chess"> <!-- worth the sell money and to carry/unpack it -->
+      <property name="Extends" value="doughs_Parcel_Base"/>
+      <property name="CustomIconTint" value="0, 133, 210"/>
+      <property name="DescriptionKey" value="doughs_Game_ChessDesc"/> <!-- DOUGH: Fun text -->
+      <property name="NoScrapping" value="true"/> <!-- Not obvious -->
+      <property name="SellableToTrader" value="true"/>
+      <property name="EconomicValue" value="1000"/> <!-- SolarPanel = 2000-->
+      <property name="Stacknumber" value="10"/>
+      <property class="Action0">
+        <property name="Create_item" value="doughs_cntGameBoardChessAndCheckers,doughs_UselessItem_EmptyCardboardBox,doughs_ChessPiece_Queen_Red,doughs_ChessPiece_Rook_Red,doughs_ChessPiece_Knight_Red,doughs_ChessPiece_Bishop_Red,doughs_ChessPiece_Pawn_Red,doughs_ChessPiece_Queen_Blue,doughs_ChessPiece_Rook_Blue,doughs_ChessPiece_Knight_Blue,doughs_ChessPiece_Bishop_Blue,doughs_ChessPiece_Pawn_Blue"/>
+        <property name="Create_item_count" value="1,1,1,2,2,2,8,1,2,2,2,8"/>
       </property>
     </item>
 
@@ -2898,5 +3397,3 @@
       </property>
     </item>
      -->
- </append>
-</Doughs>

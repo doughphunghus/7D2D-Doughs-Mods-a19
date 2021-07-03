@@ -305,6 +305,9 @@
     <drop event="Harvest" name="doughs_UselessItem_VajazzlerItems" count="1,5" prob="0.05" tag="allHarvest"/>
     <drop event="Harvest" name="apparelFacialPiercings" count="1,5" prob="0.05" tag="allHarvest"/>
     <drop event="Harvest" name="doughs_UselessItem_ColdWheelzBus" count="1,2" prob="0.05" tag="allHarvest"/> <!-- so sad -->
+    <drop event="Harvest" name="doughs_UselessItem_ColdWheelzArmy" count="1,2" prob="0.05" tag="allHarvest"/> <!-- so sad -->
+    <drop event="Harvest" name="doughs_UselessItem_ActionFigure_003" count="1,2" prob="0.05" tag="allHarvest"/> <!-- so sad -->
+    <drop event="Harvest" name="doughs_UselessItem_ActionFigure_004" count="1,2" prob="0.05" tag="allHarvest"/> <!-- so sad -->
   </append>
 
   <!--

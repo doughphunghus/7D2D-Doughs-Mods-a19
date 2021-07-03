@@ -15,7 +15,7 @@
   			<passive_effect name="CraftingTime" operation="perc_add" level="1,5" value="-.1,-.5" tags="perkDoughsSousChef"/>
 
   			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1"
-  				tags="doughsFoodButteredToast,doughsFoodSauteedMushrooms,doughsFoodHardTack,doughsFoodBeefJerky,doughsFoodPineSeedToasted,doughsFoodAcornSeedToasted,doughsFoodPumpkinSeedToasted,doughsFoodPopCorn"/>
+  				tags="doughsFoodButteredToast,doughsFoodSauteedMushrooms,doughsFoodHardTack,doughsFoodBeefJerky,doughsFoodPineSeedToasted,doughsFoodAcornSeedToasted,doughsFoodPumpkinSeedToasted,doughsFoodPopCorn,doughsFoodScrapsBowl"/>
         <passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,5" value="1"
   				tags="doughsFoodPemmican,doughsFoodBoiledSweetBread,doughsFoodSaltyExtract,doughsFoodSweetExtract,doughsFoodCookingOil,doughsFoodCreamOfTartar,doughsFoodBoneMarrow,doughsFoodFlour"/>
         <passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1"

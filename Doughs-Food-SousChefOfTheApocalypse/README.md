@@ -15,6 +15,8 @@ It "currantly" includes:
 - 4 New Cookbooks to unlock certain foods/ingredients
 - 20 New Schematics to unlock certain foods/ingredients
 - 39 Food/drink items (either found/crafted/perk unlock/or schematic)
+- 13 moldy/old foods that can be only looted (and eaten if starving) or processed into 'scraps' 
+  these scraps can also be eaten or made into a soup: Mulligan Au Jus
 - Toasted Pumpkin, Pine, and Acorn seeds
 - Cooking Oil
 - Bouillon Cube

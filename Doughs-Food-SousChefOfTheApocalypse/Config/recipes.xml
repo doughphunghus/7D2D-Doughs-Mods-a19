@@ -1,7 +1,69 @@
 <Doughs>
   <append xpath="/recipes">
 
+    <!-- Scraps -->
+    <recipe name="doughsFoodMeatScraps" count="1" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodBurned_Scraps" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodMeatScraps" count="2" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodBurned_Meat" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodMeatScraps" count="2" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodCold_BoiledMeat" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodMeatScraps" count="2" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodCold_GrilledMeat" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodMeatScraps" count="6" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodBurned_Carcass" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodMeatScraps" count="1" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodCold_BaconAndEggs" count="1"/>
+    </recipe>
+
+    <recipe name="doughsFoodFoodScraps" count="1" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodCold_Egg" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodFoodScraps" count="1" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodCold_Dessert" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodFoodScraps" count="3" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodHot_Potato" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodFoodScraps" count="3" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodHot_Bread" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodFoodScraps" count="2" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodHot_Yam" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodFoodScraps" count="1" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodHot_BrusslesSprouts" count="1"/>
+    </recipe>
+    <recipe name="doughsFoodFoodScraps" count="2" tags="perkDoughsSousChef">
+      <ingredient name="doughsFood_RuninedFoodHot_Carrot" count="1"/>
+    </recipe>
+
     <!-- Food -->
+    <recipe name="doughsFoodScrapsBowl" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsFoodMeatScraps" count="3"/>
+      <ingredient name="doughsFoodFoodScraps" count="3"/>
+      <ingredient name="resourceAnimalFat" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/> <!-- Yeah, make them boil it first. take some time -->
+    </recipe>
+    <recipe name="doughsFoodScrapsBowl" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsFoodMeatScraps" count="5"/>
+      <ingredient name="doughsFoodFoodScraps" count="5"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/> <!-- Yeah, make them boil it first. take some time -->
+    </recipe>
+    <recipe name="doughsFoodScrapsBowl" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsFoodMeatScraps" count="10"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/> <!-- Yeah, make them boil it first. take some time -->
+    </recipe>
+    <recipe name="doughsFoodScrapsBowl" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
+      <ingredient name="doughsFoodFoodScraps" count="10"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/> <!-- Yeah, make them boil it first. take some time -->
+    </recipe>
+
     <recipe name="doughsFoodPumpkinSeedToasted" count="5" craft_area="campfire" craft_tool="toolCookingPot" tags="perkDoughsSousChef,learnable">
       <ingredient name="plantedPumpkin1" count="5"/>
     	<ingredient name="resourceAnimalFat" count="1"/>

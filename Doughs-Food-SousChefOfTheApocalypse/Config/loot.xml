@@ -4,14 +4,45 @@
   # Low percentage for stuff you should be crafting!
   -->
 
+  doughsFood_RuninedFoodHot_Potato,items,Food,,,"Old Potato",,,,,,,,,,,,,,
+  doughsFood_RuninedFoodHot_PotatoDesc,items,Food,,,"An old potato. Or an old patato. You might want to call the whole thing off.",,,,,,,,,,,,,,
+  doughsFood_RuninedFoodHot_Bread,items,Food,,,"Old Bread",,,,,,,,,,,,,,
+  doughsFood_RuninedFoodHot_BreadDesc,items,Food,,,"A well aged loaf of bread. This looks like something your dad would still eat.",,,,,,,,,,,,,,
+  doughsFood_RuninedFoodHot_Yam,items,Food,,,"Old Yam",,,,,,,,,,,,,,
+  doughsFood_RuninedFoodHot_YamDesc,items,Food,,,"This fugly yam might still have some life in it.",,,,,,,,,,,,,,
+  doughsFood_RuninedFoodHot_BrusslesSprouts,items,Food,,,"Molding Brussels Sprouts",,,,,,,,,,,,,,
+  doughsFood_RuninedFoodHot_BrusslesSproutsDesc,items,Food,,,"Brussels sprouts! WOW! You've really been missing these! Almost enough to cut off all the goo covering them.",,,,,,,,,,,,,,
+  doughsFood_RuninedFoodHot_Carrot,items,Food,,,"Very Old Carrot",,,,,,,,,,,,,,
+  doughsFood_RuninedFoodHot_CarrotDesc
+
+  <!-- stove/oven, cooking pots and pans rotten food -->
+  <append xpath="/lootcontainers/lootcontainer[@id='11']">
+    <item name="doughsFood_RuninedFoodBurned_Scraps" count="1,2" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodBurned_Carcass" count="1,2" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodBurned_Meat" count="1,2" prob="0.1"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='grills']">
+    <item name="doughsFood_RuninedFoodBurned_Meat" count="1,2" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodBurned_Scraps" count="1,5" prob="0.1"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='cupboard']">
+    <item name="doughsDrinkBottomShelfRedWine" count="1,2" prob="0.08"/>
+  </append>
+
   <append xpath="/lootcontainers/lootgroup[@name='coldfood']">
     <item name="doughsDrinkBottomShelfRedWine" count="1,2" prob="0.1"/>
     <item name="doughsFoodRawSweetBread" count="1,2" prob="0.1"/>
-    <item name="doughsFoodButter" count="1,2" prob="0.08"/>
-    <item name="doughsFoodCheese" count="1,2" prob="0.08"/>
+    <item name="doughsFoodButter" count="1,2" prob="0.1"/>
+    <item name="doughsFoodCheese" count="1,2" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodCold_BaconAndEggs" count="1,2" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodCold_BoiledMeat" count="1,2" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodCold_Egg" count="1,4" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodCold_GrilledMeat" count="1,2" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodCold_Dessert" count="1,3" prob="0.1"/>
   </append>
   <append xpath="/lootcontainers/lootgroup[@name='beverages']"> <!-- COLD DRINKS -->
-    <item name="doughsDrinkBottomShelfRedWine" count="1,2" prob="0.1"/>
+    <item name="doughsDrinkBottomShelfRedWine" count="1,2" prob="0.05"/>
     <item name="doughsDrinkRawMilk" count="1,2" prob="0.05"/>
   </append>
   <append xpath="/lootcontainers/lootgroup[@name='drinks']"> <!-- WARM DRINKS -->
@@ -23,15 +54,20 @@
   </append>
   -->
   <append xpath="/lootcontainers/lootgroup[@name='cupboard']">
-    <item name="doughsFoodFlour" count="1,2" prob="0.05"/>
-    <item name="doughsFoodBouillonCube" count="1,2" prob="0.05"/>
-    <item name="doughsFoodCreamOfTartar" count="1,2" prob="0.05"/>
-    <item name="doughsFoodCookingOil" count="1,2" prob="0.05"/>
-    <item name="doughsFoodHardTack" count="1,2" prob="0.08"/>
-    <item name="doughsFoodBeefJerky" count="1,2" prob="0.08"/>
-    <item name="doughsFoodTurkishDelight" count="1,2" prob="0.05"/>
+    <item name="doughsFoodFlour" count="1,2" prob="0.08"/>
+    <item name="doughsFoodBouillonCube" count="1,2" prob="0.08"/>
+    <item name="doughsFoodCreamOfTartar" count="1,2" prob="0.08"/>
+    <item name="doughsFoodCookingOil" count="1,2" prob="0.08"/>
+    <item name="doughsFoodHardTack" count="1,2" prob="0.1"/>
+    <item name="doughsFoodBeefJerky" count="1,2" prob="0.1"/>
+    <item name="doughsFoodTurkishDelight" count="1,2" prob="0.08"/>
     <item name="doughsDrinkBottomShelfRedWine" count="1,2" prob="0.1"/>
     <item name="doughsFoodCheese" count="1,2" prob="0.08"/>
+    <item name="doughsFood_RuninedFoodHot_Potato" count="1,6" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodHot_Bread" count="1,2" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodHot_Yam" count="1,8" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodHot_BrusslesSprouts" count="1,12" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodHot_Carrot" count="1,6" prob="0.1"/>
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='perkBooks']"> <!-- All books -->

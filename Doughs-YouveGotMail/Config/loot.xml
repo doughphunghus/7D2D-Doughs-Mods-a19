@@ -145,6 +145,7 @@
       <item name="doughs_UselessItem_BugBomb" count="1,4" />
       <item name="doughs_UselessItem_TinyCandy" count="1,4" />
       <item name="doughs_UselessItem_JarOfUrine" count="1" />
+      <item name="doughs_UselessItem_JarOfPoo" count="1" />
       <item name="doughs_UselessItem_Empty35mmFilmCanister" count="1,5" />
       <item name="doughs_UselessItem_EmptyCardboardBox" count="1" />
       <item name="doughs_UselessItem_DollhouseSizedChemistryStation" count="1" />
@@ -195,6 +196,27 @@
       <item name="doughs_UselessItem_ShowerTileSample" count="1,3" />
       <item name="doughs_UselessItem_ColdWheelzBus" count="1" />
       <item name="doughs_UselessItem_UsedZipTies" count="1,20" />
+      <item name="doughs_UselessItem_CrackedEmptyContainer" count="1,3" />
+      <item name="doughs_UselessItem_BadElectricalCord" count="1,3" />
+    </lootgroup>
+
+    <lootgroup name="doughs_UselessItems_Toys"> <!-- Collectible? NOTE: Some are in bodybags too!-->
+      <item name="doughs_UselessItem_ActionFigure_001" count="1" prob="0.5"/>
+      <item name="doughs_UselessItem_ActionFigure_002" count="1" prob="0.5"/>!
+      <item name="doughs_UselessItem_ActionFigure_003" count="1" />
+      <item name="doughs_UselessItem_ActionFigure_004" count="1" prob="0.1"/> <!-- rarer -->
+      <item name="doughs_UselessItem_ActionFigure_005" count="1" prob="0.1"/> <!-- rarer -->
+      <item name="doughs_UselessItem_ColdWheelzBus" count="1" />
+      <item name="doughs_UselessItem_ColdWheelzCar" count="1" prob="0.1"/> <!-- rarer -->
+    </lootgroup>
+
+    <lootgroup name="doughs_UselessItems_Medical"> <!-- Collectible? Have effects? -->
+      <item name="doughs_UselessItem_UsedToothpicks" count="9,99" prob="0.1"/>
+      <item name="doughs_UselessItem_Antacids" count="1,4" prob="0.1"/>
+      <item name="doughs_UselessItem_StoolSofteners" count="1,4" prob="0.1"/>
+      <item name="doughs_UselessItem_BirthControlPills" count="1,4" prob="0.1"/>
+      <item name="doughs_UselessItem_BreathMints" count="1,4" prob="0.1"/>
+      <item name="doughs_UselessItem_Cottonball" count="1,40" prob="0.1"/>
     </lootgroup>
 
     <lootgroup name="doughs_Parcels_Family">
@@ -265,18 +287,18 @@
       <item name="doughs_ChessPiece_Bishop_Blue" count="1" prob="0.2"/> <!-- -->
       <item name="doughs_ChessPiece_Rook_Red" count="1" prob="0.2"/> <!-- -->
       <item name="doughs_ChessPiece_Rook_Blue" count="1" prob="0.2"/> <!-- -->
-      <item name="doughs_ChessPiece_King_Red_001" count="1" prob="0.01"/> <!-- Because there are 5 kings -->
-      <item name="doughs_ChessPiece_King_Red_002" count="1" prob="0.01"/> <!-- Because there are 5 kings -->
-      <item name="doughs_ChessPiece_King_Red_003" count="1" prob="0.01"/> <!-- Because there are 5 kings -->
-      <item name="doughs_ChessPiece_King_Red_004" count="1" prob="0.01"/> <!-- Because there are 5 kings -->
-      <item name="doughs_ChessPiece_King_Red_005" count="1" prob="0.01"/> <!-- Because there are 5 kings -->
-      <item name="doughs_ChessPiece_King_Blue_001" count="1" prob="0.01"/> <!-- Because there are 5 kings -->
-      <item name="doughs_ChessPiece_King_Blue_002" count="1" prob="0.01"/> <!-- Because there are 5 kings -->
-      <item name="doughs_ChessPiece_King_Blue_003" count="1" prob="0.01"/> <!-- Because there are 5 kings -->
-      <item name="doughs_ChessPiece_King_Blue_004" count="1" prob="0.01"/> <!-- Because there are 5 kings -->
-      <item name="doughs_ChessPiece_King_Blue_005" count="1" prob="0.01"/> <!-- Because there are 5 kings -->
-      <item name="doughs_ChessPiece_Queen_Red" count="1" prob="0.02"/> <!-- Because queen wil be hard to get -->
-      <item name="doughs_ChessPiece_Queen_Blue" count="1" prob="0.02"/> <!-- Because queen wil be hard to get -->
+      <item name="doughs_ChessPiece_King_Red_001" count="1" prob="0.1"/> <!-- Because there are 5 kings -->
+      <item name="doughs_ChessPiece_King_Red_002" count="1" prob="0.1"/> <!-- Because there are 5 kings -->
+      <item name="doughs_ChessPiece_King_Red_003" count="1" prob="0.1"/> <!-- Because there are 5 kings -->
+      <item name="doughs_ChessPiece_King_Red_004" count="1" prob="0.1"/> <!-- Because there are 5 kings -->
+      <item name="doughs_ChessPiece_King_Red_005" count="1" prob="0.1"/> <!-- Because there are 5 kings -->
+      <item name="doughs_ChessPiece_King_Blue_001" count="1" prob="0.1"/> <!-- Because there are 5 kings -->
+      <item name="doughs_ChessPiece_King_Blue_002" count="1" prob="0.1"/> <!-- Because there are 5 kings -->
+      <item name="doughs_ChessPiece_King_Blue_003" count="1" prob="0.1"/> <!-- Because there are 5 kings -->
+      <item name="doughs_ChessPiece_King_Blue_004" count="1" prob="0.1"/> <!-- Because there are 5 kings -->
+      <item name="doughs_ChessPiece_King_Blue_005" count="1" prob="0.1"/> <!-- Because there are 5 kings -->
+      <item name="doughs_ChessPiece_Queen_Red" count="1" prob="0.05"/> <!-- Because queen wil be hard to get -->
+      <item name="doughs_ChessPiece_Queen_Blue" count="1" prob="0.05"/> <!-- Because queen wil be hard to get -->
     </lootgroup>
 
     <lootgroup name="doughs_Pieces_Game_Checkers">
@@ -324,6 +346,7 @@
       <item name="oldCash" count="3"/>
       <item name="casinoCoin" count="2"/>
       <item group="doughs_Pieces_Game_Checkers"/>
+      <item group="doughs_UselessItems_Toys"/>
     </lootgroup>
 
     <lootgroup name="doughs_AirdropItems">
@@ -385,6 +408,19 @@
       <item name="cobweb" count="1" prob="0.5"/> <!-- Loot Dilution item -->
     </lootgroup>
 
+    <lootgroup name="doughs_GeneralMail">
+      <item name="doughs_SaleNote_006" count="1"/>
+      <item name="doughs_SaleNote_007" count="1"/>
+      <item name="doughs_SaleNote_008" count="1"/>
+      <item name="doughs_SaleNote_009" count="1"/>
+      <item name="doughs_SaleNote_010" count="1"/>
+      <item name="doughs_Mail_Junk_001" count="1"/>
+      <item name="doughs_Mail_Junk_002" count="1"/>
+      <item name="doughs_Mail_Junk_003" count="1"/>
+      <item name="doughs_Mail_Junk_004" count="1"/>
+      <item name="doughs_Mail_Junk_005" count="1"/>
+    </lootgroup>
+
   </insertAfter>
 
   <!-- #######################################################
@@ -403,8 +439,17 @@
     <item group="doughs_Page_Game_Soduku" />
     <item group="doughs_StickyNotes" />
     <item group="doughs_Schematics" />
-    <item group="doughs_PoemNotesDarkLoveA" prob="0.04"/>
+    <item group="doughs_PoemNotesDarkLoveA" prob="0.05"/>
   </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='medicine']">
+    <item group="doughs_UselessItems_Medical" />
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='survivalMedical']">
+    <item group="doughs_UselessItems_Medical" />
+  </append>
+
+  <!-- No do: airdropMedicine -->
 
   <!-- TODO: Maybe have rare books? -->
   <!--
@@ -416,6 +461,21 @@
   <!-- #######################################################
   Add my ***lootgroups*** to the vanilla ***lootcontainer***
   #######################################################  -->
+
+  <!-- cars-->
+  <append xpath="/lootcontainers/lootcontainer[@id='19']"> <!-- people died in cars -->
+    <item group="doughs_UselessItems_Toys" count="1" prob="0.1"/>
+    <item group="doughs_UselessItem_StiffSocks" count="1" prob="0.1"/>
+    <item group="doughs_UselessItem_JarOfUrine" count="1" prob="0.1"/>
+    <item name="goreBlockHumanCorpse" count="1" prob="0.1"/>
+    <item name="goreBlockHumanCorpse1" count="1" prob="0.1"/>
+    <item name="goreBlockHumanCorpse2" count="1" prob="0.1"/>
+    <item name="decoCarTireFlat" count="1" prob="0.1"/>
+    <item name="decoCarTireSmallFlat" count="1" prob="0.1"/>
+    <item name="decoCarWheelFlat" count="1" prob="0.1"/>
+    <item name="doughs_Mail_Junk_003" prob="0.1"/> <!-- extended warranty -->
+  </append>
+
   <!-- misc metal container mailbox-->
   <append xpath="/lootcontainers/lootcontainer[@id='14']">
     <item group="doughs_Parcels_Sorry" />
@@ -426,6 +486,7 @@
     <item group="doughs_GovFlyers" />
     <item group="doughs_PaperNotes" />
     <item group="doughs_Parcels_BuildKitPackage" prob="0.2"/>
+    <item group="doughs_GeneralMail" />
   </append>
 
   <!-- metal desk: also books-->
@@ -457,9 +518,26 @@
   <append xpath="/lootcontainers/lootcontainer[@id='34']">
     <item group="doughs_AirdropItems" prob="0.1"/>
     <item group="doughs_AirdropNotes" prob="0.1"/>
+    <item name="doughs_SaleNote_009" prob="0.1"/> <!-- extended warranty -->
+    <item name="doughs_Mail_Junk_003" prob="0.1"/> <!-- extended warranty -->
   </append>
 
-  <!-- Append these NEW containers ... errr.  at the beginning? -->
+  <!-- toilet -->
+  <!-- NOTE: Adding to toilets messes up the 'beloved' default loot weapons chance! Rebalance for this below! -->
+  <append xpath="/lootcontainers/lootcontainer[@id='65']">
+    <item name="doughs_UselessItem_JarOfUrine" count="0.1" />
+    <item name="doughs_UselessItem_JarOfPoo" count="0.1" />
+  </append>
+  <!-- To calc vanilla: 1+0.025 +0.025 = 1.05. then 0.025/1.05 = 0.023 actual prob of vanilla weapons
+  is *slightly* lower because of water being lot balance for 100%
+  the math works out to increase 0.025 -> 0.032! *approx*
+  -->
+  <set xpath="/lootcontainers/lootcontainer[@id='65']/item[@name='gunHandgunT1Pistol']/@prob">0.032</set> <!-- vanilla = 0.025 = -->
+  <set xpath="/lootcontainers/lootcontainer[@id='65']/item[@name='meleeWpnBladeT1HuntingKnife']/@prob">0.032</set> <!-- vanilla = 0.025 = -->
+
+  <!--
+  Append these NEW containers ... errr.  at the beginning?
+  -->
   <insertAfter xpath="/lootcontainers/lootcontainer[@id='1']">
 
     <!-- 3 by 3 board -->

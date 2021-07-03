@@ -3,6 +3,8 @@
   <append xpath="/items">
 
 <!--
+TODO: ADD!!!!! +recipes
+
     PROGRESSION: UNLOCKS. etc
 
     FIND ONLY = NO SCHEMATIC
@@ -181,6 +183,208 @@
     </item>
     <!-- SCHEMATIC: NONE -->
 
+    <!-- FINDABLE ONLY, ROTTEN FOOD -->
+    <!-- BASE for ruined food BASE for effects = sham sandwich -->
+    <item name="doughsFood_RuninedFoodBurned_Scraps">
+      <property name="DescriptionKey" value="doughsFood_RuninedFoodBurned_ScrapsDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="emberPileDeco1"/> <!-- DOUGH: The item -->
+      <property name="Tags" value="food"/>
+      <property name="HoldType" value="31"/>
+      <property name="DisplayType" value="food"/>
+      <property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="Material" value="Morganic"/>
+      <property name="CraftingIngredientExp" value="1" /> <!-- DOUGH: Added -->
+      <property name="CraftingIngredientTime" value="10" /> <!-- DOUGH: Added: want lots of "prep time"-->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="25"/>
+      <property class="Action0">
+        <property name="Class" value="Eat"/>
+        <property name="Delay" value="1.0"/>
+        <property name="Use_time" value="..."/>
+        <property name="Sound_start" value="player_eating"/>
+        <!-- jar from cooking food <property name="Create_item" value="drinkJarEmpty"/> -->
+      </property>
+      <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+      <effect_group tiered="false" name="Food Tier 0">
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-10"/><display_value name="foodHealthAmount" value="-10"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-5"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="75"/><display_value name="dDysenteryRisk" value=".75"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchFood">
+    				<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+    		</triggered_effect>
+    	</effect_group>
+    </item>
+    <item name="doughsFood_RuninedFoodBurned_Carcass">
+      <property name="Extends" value="doughsFood_RuninedFoodBurned_Scraps"/>
+      <property name="DescriptionKey" value="doughsFood_RuninedFoodBurned_CarcassDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="goreBlockAnimal"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="25"/>
+      <effect_group tiered="false" name="Food Tier 0">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="35"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-20"/><display_value name="foodHealthAmount" value="-20"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-15"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="75"/><display_value name="dDysenteryRisk" value=".75"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchFood">
+            <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+        </triggered_effect>
+      </effect_group>
+    </item>
+    <item name="doughsFood_RuninedFoodBurned_Meat">
+      <property name="Extends" value="doughsFood_RuninedFoodBurned_Scraps"/>
+      <property name="DescriptionKey" value="doughsFood_RuninedFoodBurned_MeatDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="oreBoulderMaster"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="25"/>
+    </item>
+
+    <item name="doughsFood_RuninedFoodCold_BaconAndEggs">
+      <property name="Extends" value="doughsFood_RuninedFoodBurned_Scraps"/>
+      <property name="DescriptionKey" value="doughsFood_RuninedFoodCold_BaconAndEggsDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="foodBaconAndEggs"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="25"/>
+      <property name="CustomIconTint" value="134, 171, 0"/> <!-- DOUGH: pea green -->
+    </item>
+    <item name="doughsFood_RuninedFoodCold_BoiledMeat">
+      <property name="Extends" value="doughsFood_RuninedFoodBurned_Scraps"/>
+      <property name="DescriptionKey" value="doughsFood_RuninedFoodCold_BoiledMeatDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="foodBoiledMeat"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="25"/>
+      <property name="CustomIconTint" value="134, 171, 0"/> <!-- DOUGH: pea green -->
+    </item>
+    <item name="doughsFood_RuninedFoodCold_Egg">
+      <property name="Extends" value="doughsFood_RuninedFoodBurned_Scraps"/>
+      <property name="DescriptionKey" value="doughsFood_RuninedFoodCold_EggDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="foodEggBoiled"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="25"/>
+      <property name="CustomIconTint" value="134, 120, 0"/> <!-- DOUGH: brown -->
+    </item>
+    <item name="doughsFood_RuninedFoodCold_GrilledMeat">
+      <property name="Extends" value="doughsFood_RuninedFoodBurned_Scraps"/>
+      <property name="DescriptionKey" value="doughsFood_RuninedFoodCold_GrilledMeatDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="foodGrilledMeat"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="25"/>
+      <property name="CustomIconTint" value="99, 139, 41"/> <!-- DOUGH: green -->
+    </item>
+    <item name="doughsFood_RuninedFoodCold_Dessert">
+      <property name="Extends" value="doughsFood_RuninedFoodBurned_Scraps"/>
+      <property name="DescriptionKey" value="doughsFood_RuninedFoodCold_DessertDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="foodPumpkinCheesecake"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="25"/>
+      <property name="CustomIconTint" value="80, 97, 41"/> <!-- DOUGH: dark green -->
+    </item>
+
+    <item name="doughsFood_RuninedFoodHot_Potato"> <!-- old potao -->
+      <property name="Extends" value="doughsFood_RuninedFoodBurned_Scraps"/>
+      <property name="DescriptionKey" value="doughsFood_RuninedFoodHot_PotatoDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="foodBakedPotato"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="25"/>
+      <property name="CustomIconTint" value="134, 171, 0"/> <!-- DOUGH: pea green -->
+      <effect_group tiered="false" name="Food Tier 0">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-5"/><display_value name="foodHealthAmount" value="-5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-2"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="50"/><display_value name="dDysenteryRisk" value=".5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchFood">
+            <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+        </triggered_effect>
+      </effect_group>d
+    </item>
+    <item name="doughsFood_RuninedFoodHot_Bread"> <!-- old bread-->
+      <property name="Extends" value="doughsFood_RuninedFoodBurned_Scraps"/>
+      <property name="DescriptionKey" value="doughsFood_RuninedFoodHot_BreadDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="foodPumpkinBread"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="25"/>
+      <property name="CustomIconTint" value="80, 97, 41"/> <!-- DOUGH: dark green -->
+    </item>
+    <item name="doughsFood_RuninedFoodHot_Yam"> <!-- old yams-->
+      <property name="Extends" value="doughsFood_RuninedFoodBurned_Scraps"/>
+      <property name="DescriptionKey" value="doughsFood_RuninedFoodHot_YamDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="foodCropYuccaFruit"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="25"/>
+      <property name="CustomIconTint" value="80, 85, 41"/> <!-- DOUGH: dark green -->
+      <effect_group tiered="false" name="Food Tier 0">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-5"/><display_value name="foodHealthAmount" value="-5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-2"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="50"/><display_value name="dDysenteryRisk" value=".5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchFood">
+            <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+        </triggered_effect>
+      </effect_group>
+    </item>
+    <item name="doughsFood_RuninedFoodHot_BrusslesSprouts"> <!-- old brussles sprouts -->
+      <property name="Extends" value="doughsFood_RuninedFoodBurned_Scraps"/>
+      <property name="DescriptionKey" value="doughsFood_RuninedFoodHot_BrusslesSproutsDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="plantedHop1"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="25"/>
+      <property name="CustomIconTint" value="65, 63, 38"/> <!-- DOUGH: dark brown -->
+    </item>
+    <item name="doughsFood_RuninedFoodHot_Carrot"> <!-- old carrot -->
+      <property name="Extends" value="doughsFood_RuninedFoodBurned_Scraps"/>
+      <property name="DescriptionKey" value="doughsFood_RuninedFoodHot_CarrotDesc"/> <!-- DOUGH: Fun text -->
+      <property name="CustomIcon" value="stalagmite03"/> <!-- DOUGH: The item -->
+      <property name="NoScrapping" value="true"/>
+      <property name="SellableToTrader" value="false"/> <!-- its worth the raw material.  And maybe someone buys it? :) -->
+      <property name="EconomicValue" value="0"/> <!-- its worth the raw material -->
+      <property name="Stacknumber" value="25"/>
+      <property name="CustomIconTint" value="70, 63, 38"/> <!-- DOUGH: dark brown -->
+      <effect_group tiered="false" name="Food Tier 0">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-5"/><display_value name="foodHealthAmount" value="-5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-2"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="50"/><display_value name="dDysenteryRisk" value=".5"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchFood">
+            <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+        </triggered_effect>
+      </effect_group>
+    </item>
+
     <!--
 
       CRAFTABLE + No Recipes?
@@ -314,6 +518,36 @@
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="70"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="30"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+    	</effect_group>
+    </item>
+
+
+    <item name="doughsFoodScrapsBowl">
+      <property name="Extends" value="foodSteakAndPotato"/>
+      <!-- New properties -->
+      <property name="CustomIcon" value="foodVegetableStew"/>
+      <property name="CustomIconTint" value="988558"/> <!-- DOUGH: dark tan ?-->
+      <property name="TintColor" value="152, 133, 88"/> <!-- DOUGH: RGB. Tints the item in the hand -->
+      <!-- <property name="UnlockedBy" value="doughsFoodIceCreamSchematic"/> -->
+      <property name="DescriptionKey" value="doughsFoodScrapsBowlDesc"/>
+      <property name="EconomicValue" value="2"/>
+      <property name="CraftingIngredientExp" value="1" /> <!-- DOUGH: Added -->
+      <property name="CraftingIngredientTime" value="8" /> <!-- DOUGH: Added a long time-->
+      <!-- Existing properties -->
+    	<property name="UnlockedBy" value="perkDoughsSousChef"/> <!-- DOUGH: Changed-->
+    	<property class="Action0">
+    		<property name="Class" value="Eat"/>
+    		<property name="Delay" value="1.0"/>
+    		<property name="Use_time" value="..."/>
+    		<property name="Sound_start" value="player_eating"/>
+    	</property>
+    	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+    	<effect_group tiered="false" name="Food Tier 1"> <!-- DOUGH: a little food -->
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="15"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="10"/>
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
     	</effect_group>
     </item>
@@ -806,6 +1040,100 @@
     		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
     		<display_value name="$waterAmountAdd" value="-5"/>
     	</effect_group>
+    </item>
+
+    <item name="doughsFoodMeatScraps"> <!-- Taken from doughsFoodBeefJerky. THese are processed scraps from old carcasses -->
+    	<property name="Tags" value="food"/>
+
+      <!-- New properties -->
+      <property name="CustomIcon" value="meleeWpnBladeT0BoneKnife"/>
+      <property name="CustomIconTint" value="5C4033"/> <!-- DOUGH: dark brown -->
+      <property name="TintColor" value="92, 64, 51"/> <!-- DOUGH: RGB. Tints the item in the hand -->
+      <!-- <property name="UnlockedBy" value="doughsFoodBeefJerkySchematic"/> -->
+      <property name="DescriptionKey" value="doughsFoodMeatScrapsDesc"/>
+
+      <!-- Existing properties -->
+    	<property name="HoldType" value="31"/>
+    	<property name="DisplayType" value="food"/> <!-- DOUGH: CHANGED -->
+    	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+    	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+    	<property name="Material" value="Morganic"/> <!-- DOUGH: CHANGED -->
+    	<property name="Stacknumber" value="300"/> <!-- STK food --> <!-- DOUGH: CHANGED -->
+    	<property name="EconomicBundleSize" value="50"/> <!-- DOUGH: CHANGED -->
+    	<property name="EconomicValue" value="25"/> <!-- DOUGH: CHANGED -->
+      <property name="CraftingIngredientExp" value="1" /> <!-- DOUGH: Added -->
+      <property name="CraftingIngredientTime" value="15" /> <!-- DOUGH: Added -->
+    	<property class="Action0">
+    		<property name="Class" value="Eat"/>
+    		<property name="Delay" value="1.0"/>
+    		<property name="Use_time" value="..."/>
+    		<property name="Sound_start" value="player_eating"/>
+    	</property>
+    	<!-- <property name="Smell" value="ExLargeSmell"/> --> <!-- DOUGH: Removed. as is jerky -->
+    	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+      <effect_group tiered="false" name="Food Tier 0/1"> <!-- DOUGH: replaced all with effects from Charred Meat, then changed. see recipe for how to divide-->
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="3"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-8"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/>
+    		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+
+    		<display_value name="$waterAmountAdd" value="-8"/>
+
+        <!-- Musch less thatn rotten meat it was pulled from-->
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="15"/><display_value name="dDysenteryRisk" value=".15"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchFood">
+            <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+        </triggered_effect>
+      </effect_group>
+    </item>
+
+    <item name="doughsFoodFoodScraps"> <!-- Taken from doughsFoodBeefJerky. THese are processed scraps from old carcasses -->
+      <property name="Tags" value="food"/>
+
+      <!-- New properties -->
+      <property name="CustomIcon" value="meleeWpnBladeT0BoneKnife"/>
+      <property name="CustomIconTint" value="988558"/> <!-- DOUGH: dark tan -->
+      <property name="TintColor" value="152, 133, 88"/> <!-- DOUGH: RGB. Tints the item in the hand -->
+      <!-- <property name="UnlockedBy" value="doughsFoodBeefJerkySchematic"/> -->
+      <property name="DescriptionKey" value="doughsFoodFoodScrapsDesc"/>
+
+      <!-- Existing properties -->
+      <property name="HoldType" value="31"/>
+      <property name="DisplayType" value="food"/> <!-- DOUGH: CHANGED -->
+      <property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="Material" value="Morganic"/> <!-- DOUGH: CHANGED -->
+      <property name="Stacknumber" value="300"/> <!-- STK food --> <!-- DOUGH: CHANGED -->
+      <property name="EconomicBundleSize" value="50"/> <!-- DOUGH: CHANGED -->
+      <property name="EconomicValue" value="25"/> <!-- DOUGH: CHANGED -->
+      <property name="CraftingIngredientExp" value="1" /> <!-- DOUGH: Added -->
+      <property name="CraftingIngredientTime" value="15" /> <!-- DOUGH: Added -->
+      <property class="Action0">
+        <property name="Class" value="Eat"/>
+        <property name="Delay" value="1.0"/>
+        <property name="Use_time" value="..."/>
+        <property name="Sound_start" value="player_eating"/>
+      </property>
+      <!-- <property name="Smell" value="ExLargeSmell"/> --> <!-- DOUGH: Removed. as is jerky -->
+      <property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+      <effect_group tiered="false" name="Food Tier 0/1"> <!-- DOUGH: replaced all with effects from Charred Meat, then changed. see recipe for how to divide-->
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-4"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+
+        <display_value name="$waterAmountAdd" value="-4"/>
+
+        <!-- Musch less thatn rotten meat it was pulled from-->
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="12"/><display_value name="dDysenteryRisk" value=".12"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchFood">
+            <requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+        </triggered_effect>
+      </effect_group>
     </item>
 
     <item name="doughsFoodPemmican">

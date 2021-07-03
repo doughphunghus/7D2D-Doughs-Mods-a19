@@ -45,7 +45,121 @@
     	<ingredient name="doughs_UselessItem_FancyChildsBelt" count="1"/>
     </recipe>
 
-    <!-- Counterfeit items.  Might be an interesting dynamic.
+    <recipe name="farmPlotBlockPlayer" count="1" tags="perkLivingOffTheLandCrafting" craft_time="20">
+    	<ingredient name="resourceWood" count="4"/>
+    	<ingredient name="doughs_UselessItem_JarOfPoo" count="4"/> <!-- 10 rotting flesh is default -->
+    	<ingredient name="resourcePotassiumNitratePowder" count="25"/>
+    	<ingredient name="resourceClayLump" count="100"/>
+    	<effect_group>
+    		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="perc_add" value="-.3,-.5,-.5" tags="foodRottingFlesh,resourcePotassiumNitratePowder,resourceClayLump"/>
+    	</effect_group>
+    </recipe>
+
+    <!-- Book stacks -->
+    <recipe name="doughs_BookCollection_Soduku" count="1">
+      <ingredient name="doughs_Book_Game_Soduku_001" count="1"/>
+      <ingredient name="doughs_Book_Game_Soduku_002" count="1"/>
+      <ingredient name="doughs_Book_Game_Soduku_003" count="1"/>
+      <ingredient name="doughs_Book_Game_Soduku_004" count="1"/>
+      <ingredient name="doughs_Book_Game_Soduku_005" count="1"/>
+    </recipe>
+
+    <recipe name="doughs_BookCollection_Nature" count="1">
+      <ingredient name="doughs_BrownBook_010" count="1"/>
+      <ingredient name="doughs_BrownBook_034" count="1"/>
+      <ingredient name="doughs_BrownBook_018" count="1"/>
+    </recipe>
+    <recipe name="doughs_BookCollection_Tips" count="1">
+      <ingredient name="doughs_BrownBook_002" count="1"/>
+      <ingredient name="doughs_BrownBook_001" count="1"/>
+      <ingredient name="doughs_BrownBook_004" count="1"/>
+      <ingredient name="doughs_BrownBook_005" count="1"/>
+      <ingredient name="doughs_BrownBook_008" count="1"/>
+    </recipe>
+    <recipe name="doughs_BookCollection_Computer" count="1">
+      <ingredient name="doughs_BrownBook_006" count="1"/>
+      <ingredient name="doughs_BrownBook_007" count="1"/>
+      <ingredient name="doughs_BrownBook_040" count="1"/>
+    </recipe>
+    <recipe name="doughs_BookCollection_Mystery" count="1">
+      <ingredient name="doughs_BrownBook_011" count="1"/>
+      <ingredient name="doughs_BrownBook_024" count="1"/>
+      <ingredient name="doughs_BrownBook_033" count="1"/>
+      <ingredient name="doughs_BrownBook_037" count="1"/>
+      <ingredient name="doughs_BrownBook_043" count="1"/>
+    </recipe>
+    <recipe name="doughs_BookCollection_Food" count="1">
+      <ingredient name="doughs_BrownBook_015" count="1"/>
+      <ingredient name="doughs_BrownBook_017" count="1"/>
+      <ingredient name="doughs_BrownBook_020" count="1"/>
+      <ingredient name="doughs_BrownBook_025" count="1"/>
+      <ingredient name="doughs_BrownBook_039" count="1"/>
+    </recipe>
+    <recipe name="doughs_BookCollection_Dating" count="1">
+      <ingredient name="doughs_BrownBook_023" count="1"/>
+      <ingredient name="doughs_BrownBook_027" count="1"/>
+    </recipe>
+    <recipe name="doughs_BookCollection_SelfHelp" count="1">
+      <ingredient name="doughs_BrownBook_014" count="1"/>
+      <ingredient name="doughs_BrownBook_021" count="1"/>
+      <ingredient name="doughs_BrownBook_035" count="1"/>
+      <ingredient name="doughs_BrownBook_045" count="1"/>
+    </recipe>
+    <recipe name="doughs_BookCollection_SciFi" count="1">
+      <ingredient name="doughs_BrownBook_029" count="1"/>
+      <ingredient name="doughs_BrownBook_041" count="1"/>
+    </recipe>
+    <recipe name="doughs_BookCollection_BucksAdventures" count="1">
+      <ingredient name="doughs_BrownBook_032" count="1"/>
+      <ingredient name="doughs_BrownBook_022" count="1"/>
+    </recipe>
+    <recipe name="doughs_BookCollection_Medical" count="1">
+      <ingredient name="doughs_BrownBook_030" count="1"/>
+      <ingredient name="doughs_BrownBook_044" count="1"/>
+    </recipe>
+    <recipe name="doughs_BookCollection_Reminisce" count="1">
+      <ingredient name="doughs_BrownBook_031" count="1"/>
+      <ingredient name="doughs_BrownBook_036" count="1"/>
+      <ingredient name="doughs_BrownBook_046" count="1"/>
+    </recipe>
+    <recipe name="doughs_BookCollection_Kids" count="1">
+      <ingredient name="doughs_BrownBook_009" count="1"/>
+      <ingredient name="doughs_BrownBook_016" count="1"/>
+    </recipe>
+
+    <!-- Game bundles -->
+    <recipe name="doughs_Game_Checkers" count="1">
+      <ingredient name="doughs_CheckersBlock_1" count="16"/>
+      <ingredient name="doughs_CheckersBlock_2" count="16"/>
+      <ingredient name="doughs_cntGameBoardChessAndCheckers" count="1"/>
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="1"/>
+    </recipe>
+
+    <recipe name="doughs_Game_Chess_RedCourt" count="1"> <!-- Minus all the kings -->
+      <ingredient name="doughs_ChessPiece_Queen_Red" count="1"/>
+      <ingredient name="doughs_ChessPiece_Rook_Red" count="2"/>
+      <ingredient name="doughs_ChessPiece_Knight_Red" count="2"/>
+      <ingredient name="doughs_ChessPiece_Bishop_Red" count="2"/>
+      <ingredient name="doughs_ChessPiece_Pawn_Red" count="8"/>
+    </recipe>
+    <recipe name="doughs_Game_Chess_BlueCourt" count="1"> <!-- Minus all the kings -->
+      <ingredient name="doughs_ChessPiece_Queen_Blue" count="1"/>
+      <ingredient name="doughs_ChessPiece_Rook_Blue" count="2"/>
+      <ingredient name="doughs_ChessPiece_Knight_Blue" count="2"/>
+      <ingredient name="doughs_ChessPiece_Bishop_Blue" count="2"/>
+      <ingredient name="doughs_ChessPiece_Pawn_Blue" count="8"/>
+    </recipe>
+
+    <recipe name="doughs_Game_Chess" count="1">
+      <ingredient name="doughs_Game_Chess_RedCourt" count="1"/>
+      <ingredient name="doughs_Game_Chess_BlueCourt" count="1"/>
+      <ingredient name="doughs_cntGameBoardChessAndCheckers" count="1"/>
+      <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="1"/>
+    </recipe>
+
+    <!-- Counterfeit items mod?  Might be an interesting dynamic.
     Don't put in default loot, only player crafted stuff.
     Don't do iron "too hard to work with"
     Don't do Brass, as we want something we can scrap and mine
@@ -148,7 +262,7 @@
       <ingredient name="doughs_UselessItem_Pen" count="1"/>
     </recipe>
 
-    <!-- Book crafting-->
+    <!-- Book crafting -->
     <recipe name="doughs_CraftableBook_001" count="1" >
       <ingredient name="doughs_PoemNote_001" count="1"/>
       <ingredient name="doughs_PoemNote_002" count="1"/>
@@ -179,24 +293,30 @@
     <recipe name="doughs_Parcel_PlayerGift001" count="1" >
       <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
       <ingredient name="doughs_UselessItem_JarOfUrine" count="1"/>
+      <ingredient name="doughs_UselessItem_Cottonball" count="10"/> <!-- To safely ship it -->
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="4"/>
     </recipe>
 
     <recipe name="doughs_Parcel_PlayerGift002" count="1" >
       <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
       <ingredient name="doughs_UselessItem_StiffSocks" count="1"/>
       <ingredient name="resourcePaper" count="5"/> <!-- To nicely wrap it -->
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="4"/>
     </recipe>
 
     <recipe name="doughs_Parcel_PlayerGift003" count="1" >
       <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
       <ingredient name="doughs_UselessItem_BlueberryPieDish" count="1"/>
       <ingredient name="doughs_UselessItem_Cottonball" count="10"/> <!-- To safely ship it -->
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="4"/>
     </recipe>
 
     <recipe name="doughs_Parcel_PlayerGift004" count="1" >
       <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
       <ingredient name="doughs_UselessItem_Lipstick_001" count="1"/>
       <ingredient name="doughs_UselessItem_Lubricant" count="1"/>
+      <ingredient name="resourcePaper" count="5"/> <!-- To nicely wrap it -->
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="4"/>
     </recipe>
 
     <recipe name="doughs_Parcel_PlayerGift005" count="1" >
@@ -204,6 +324,7 @@
       <ingredient name="doughs_UselessItem_DollhouseSizedWorkbench" count="1"/>
       <ingredient name="resourceWood" count="20"/> <!-- For weight, and to hopefully look more real as loot -->
       <ingredient name="resourceForgedIron" count="2"/> <!-- For weight, and to hopefully look more real as loot -->
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="4"/>
     </recipe>
 
     <recipe name="doughs_Parcel_PlayerGift006" count="1" >
@@ -211,26 +332,31 @@
       <ingredient name="doughs_UselessItem_DollhouseSizedChemistryStation" count="1"/>
       <ingredient name="resourceCrushedSand" count="20"/> <!-- For weight, and to hopefully look more real as loot -->
       <ingredient name="resourceForgedIron" count="2"/> <!-- For weight, and to hopefully look more real as loot -->
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="4"/>
     </recipe>
 
     <recipe name="doughs_Parcel_PlayerGift007" count="1" >
       <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
       <ingredient name="doughs_UselessItem_LockPick" count="5"/>
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="4"/>
     </recipe>
 
     <recipe name="doughs_Parcel_PlayerGift008" count="1" >
       <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
       <ingredient name="doughs_StickyNote_PlayerMeanNote001" count="1"/> <!-- Mean -->
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="4"/>
     </recipe>
 
     <recipe name="doughs_Parcel_PlayerGift009" count="1" >
       <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
       <ingredient name="doughs_StickyNote_PlayerMeanNote002" count="1"/> <!-- Mean -->
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="4"/>
     </recipe>
 
     <recipe name="doughs_Parcel_PlayerGift010" count="1" >
       <ingredient name="doughs_UselessItem_EmptyCardboardBox" count="1"/>
       <ingredient name="doughs_StickyNote_PlayerMeanNote003" count="1"/> <!-- Mean -->
+      <ingredient name="doughs_UselessItem_CellophaneTape" count="4"/>
     </recipe>
 
     <recipe name="doughs_BrassBB" count="10" material_based="true" craft_area="forge">
