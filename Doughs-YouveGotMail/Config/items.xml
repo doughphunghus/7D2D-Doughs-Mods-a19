@@ -2907,7 +2907,7 @@
       <property name="DescriptionKey" value="doughs_Parcel_401k_001Desc"/> <!-- DOUGH: Fun text -->
       <property class="Action0">
         <property name="Create_item" value="oldCash"/>
-        <property name="Create_item_count" value="7,69"/> <!-- ha ha -->
+        <property name="Create_item_count" value="69"/> <!-- ha ha -->
       </property>
     </item>
     <item name="doughs_Parcel_401k_002">
@@ -2916,7 +2916,7 @@
       <property name="CustomIconTint" value="234, 221, 202"/> <!-- Brown color palette -->
       <property class="Action0">
         <property name="Create_item" value="oldCash"/>
-        <property name="Create_item_count" value="50,500"/>
+        <property name="Create_item_count" value="291"/>
       </property>
     </item>
     <item name="doughs_Parcel_401k_003">
@@ -2925,7 +2925,7 @@
       <property name="CustomIconTint" value="225, 193, 110"/> <!-- Brown color palette -->
       <property class="Action0">
         <property name="Create_item" value="oldCash"/>
-        <property name="Create_item_count" value="200,800"/>
+        <property name="Create_item_count" value="710"/>
       </property>
     </item>
     <item name="doughs_Parcel_401k_004">
@@ -2934,7 +2934,7 @@
       <property name="CustomIconTint" value="218, 160, 109"/> <!-- Brown color palette -->
       <property class="Action0">
         <property name="Create_item" value="oldCash"/>
-        <property name="Create_item_count" value="350,1500"/>
+        <property name="Create_item_count" value="1203"/>
       </property>
     </item>
     <item name="doughs_Parcel_401k_005">
@@ -2943,7 +2943,7 @@
       <property name="CustomIconTint" value="210, 125, 45"/> <!-- Brown color palette -->
       <property class="Action0">
         <property name="Create_item" value="oldCash"/>
-        <property name="Create_item_count" value="700,8000"/>
+        <property name="Create_item_count" value="2030"/>
       </property>
     </item>
 

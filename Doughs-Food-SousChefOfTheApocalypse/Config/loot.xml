@@ -4,30 +4,15 @@
   # Low percentage for stuff you should be crafting!
   -->
 
-  doughsFood_RuninedFoodHot_Potato,items,Food,,,"Old Potato",,,,,,,,,,,,,,
-  doughsFood_RuninedFoodHot_PotatoDesc,items,Food,,,"An old potato. Or an old patato. You might want to call the whole thing off.",,,,,,,,,,,,,,
-  doughsFood_RuninedFoodHot_Bread,items,Food,,,"Old Bread",,,,,,,,,,,,,,
-  doughsFood_RuninedFoodHot_BreadDesc,items,Food,,,"A well aged loaf of bread. This looks like something your dad would still eat.",,,,,,,,,,,,,,
-  doughsFood_RuninedFoodHot_Yam,items,Food,,,"Old Yam",,,,,,,,,,,,,,
-  doughsFood_RuninedFoodHot_YamDesc,items,Food,,,"This fugly yam might still have some life in it.",,,,,,,,,,,,,,
-  doughsFood_RuninedFoodHot_BrusslesSprouts,items,Food,,,"Molding Brussels Sprouts",,,,,,,,,,,,,,
-  doughsFood_RuninedFoodHot_BrusslesSproutsDesc,items,Food,,,"Brussels sprouts! WOW! You've really been missing these! Almost enough to cut off all the goo covering them.",,,,,,,,,,,,,,
-  doughsFood_RuninedFoodHot_Carrot,items,Food,,,"Very Old Carrot",,,,,,,,,,,,,,
-  doughsFood_RuninedFoodHot_CarrotDesc
-
   <!-- stove/oven, cooking pots and pans rotten food -->
-  <append xpath="/lootcontainers/lootcontainer[@id='11']">
-    <item name="doughsFood_RuninedFoodBurned_Scraps" count="1,2" prob="0.1"/>
-    <item name="doughsFood_RuninedFoodBurned_Carcass" count="1,2" prob="0.1"/>
-    <item name="doughsFood_RuninedFoodBurned_Meat" count="1,2" prob="0.1"/>
+  <append xpath="/lootcontainers/lootcontainer[@id='11']"> <!-- Loot probability is high for everything in vanilla-->
+    <item name="doughsFood_RuninedFoodBurned_Scraps" count="1,2" prob="1"/>
+    <item name="doughsFood_RuninedFoodBurned_Carcass" count="1,2" prob="0.6"/> <!-- Biggest -->
+    <item name="doughsFood_RuninedFoodBurned_Meat" count="1,2" prob="0.8"/>
   </append>
   <append xpath="/lootcontainers/lootgroup[@name='grills']">
-    <item name="doughsFood_RuninedFoodBurned_Meat" count="1,2" prob="0.1"/>
+    <item name="doughsFood_RuninedFoodBurned_Meat" count="1,2" prob="0.6"/>
     <item name="doughsFood_RuninedFoodBurned_Scraps" count="1,5" prob="0.1"/>
-  </append>
-
-  <append xpath="/lootcontainers/lootgroup[@name='cupboard']">
-    <item name="doughsDrinkBottomShelfRedWine" count="1,2" prob="0.08"/>
   </append>
 
   <append xpath="/lootcontainers/lootgroup[@name='coldfood']">
