@@ -1,0 +1,24 @@
+<configs>
+
+    <!--
+    Keeping these user created waypoints to be compatible with Androth's mod v1.0.0,
+    map waypoints are not removed, however if using my Remove The Map mod you cannot set
+    custom waypoints anyway.
+    -->
+    <!-- Makes any map waypoint you set except for quick waypoint invisible on compass -->
+    <!-- <remove xpath="/nav_object_classes/nav_object_class[@name='waypoint']/inactive_compass_settings"></remove> -->
+	  <!-- <remove xpath="/nav_object_classes/nav_object_class[@name='waypoint']/compass_settings"></remove> -->
+
+	  <!-- These are removed -->
+	  <remove xpath="/nav_object_classes/nav_object_class[@name='spear']/compass_settings"></remove>
+	  <remove xpath="/nav_object_classes/nav_object_class[@name='supply_drop']/compass_settings"></remove>
+	  <remove xpath="/nav_object_classes/nav_object_class[@name='backpack_distant']/compass_settings"></remove>
+	  <remove xpath="/nav_object_classes/nav_object_class[@name='bicycle']/compass_settings"></remove>
+	  <remove xpath="/nav_object_classes/nav_object_class[@name='minibike']/compass_settings"></remove>
+	  <remove xpath="/nav_object_classes/nav_object_class[@name='motorcycle']/compass_settings"></remove>
+	  <remove xpath="/nav_object_classes/nav_object_class[@name='gyrocopter']/compass_settings"></remove>
+	  <remove xpath="/nav_object_classes/nav_object_class[@name='junk_turret']/compass_settings"></remove>
+	  <remove xpath="/nav_object_classes/nav_object_class[@name='junk_sledge']/compass_settings"></remove>
+	  <remove xpath="/nav_object_classes/nav_object_class[@name='land_claim']/compass_settings"></remove>
+	  <remove xpath="/nav_object_classes/nav_object_class[@name='sleeping_bag']/compass_settings"></remove>
+</configs>
