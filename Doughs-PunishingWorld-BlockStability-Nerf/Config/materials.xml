@@ -1,5 +1,25 @@
 <Doughs>
 
+  <!--
+  Purposefully make "burnt wood" really freaking weak.
+  First: define a new super weak material
+  Second: set it as the material on burnt blocks.
+  -->
+  <append xpath="/materials">
+    <material id="doughsMburntwood_weak">
+    	<property name="damage_category" value="wood"/>
+    	<property name="surface_category" value="wood"/>
+    	<property name="forge_category" value="wood"/>
+    	<property name="Hardness" type="float" value="1"/>
+    	<property name="stepsound" value="wood"/>
+    	<property name="stability_glue" value="5"/> <!-- NOW: 1. Should drop a lot of you touch one block  -->
+    	<property name="Mass" type="int" value="5"/>
+    	<property name="MaxDamage" value="20"/> <!-- DEFAULT = 100. Mow very easy to damage -->
+    	<property name="Experience" value="2"/>
+    </material>
+  </append>
+
+  <!-- Handle all the other items -->
   <set xpath="/materials/material[@id='Mglass']/property[@name='stability_glue']/@value">10</set> <!-- DOUGH: Default 20, mass 5 => 4. NOW: 2 -->
   <set xpath="/materials/material[@id='MglassBulletproof']/property[@name='stability_glue']/@value">30</set> <!-- DOUGH: Default 60, mass 10 => 6. NOW: 3 -->
 
