@@ -10,6 +10,8 @@ Why?
   in a pocket or backpack (ignoring weight still, and yeah its more like "overall what might be carryable in small amounts"). In real life you can carry 100 empty cans, but not if you wanted to carry other stuff so its "what might be practical" for things like this.
 - Makes traveling more difficult as you cannot take lots of food/water/items.
 - When looting, your backpack slots will fill up much faster, forcing you to choose what to carry (or store for later) much much much more often
+- If you want to carry "a lot" of something, you're going to have to not carry other items, making "gathering a lot of wood" or "mining coal" (for example) a chore you will likely have to have an empty backpack to do or build a local storage depot around the resource, and maybe carry only essentials like a litte food, water, a weapon and some ammo.
+- Since you can't carry a lot of items, you can't sell massive amounts to the trader, lessening the ability to rely on buying/selling to get money.
 
 NOTICE:
 1. No more carrying 6000 wood/rocks/etc per stack!
