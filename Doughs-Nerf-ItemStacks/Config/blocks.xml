@@ -9,7 +9,6 @@
   <set xpath="/blocks/block[@name='candleWallLightPlayer']/property[@name='Stacknumber']/@value">4</set>  <!-- DOUGH: Default = 50 -->
   <set xpath="/blocks/block[@name='burningBarrelPlayer']/property[@name='Stacknumber']/@value">1</set>  <!-- DOUGH: Default = 50 -->
   <set xpath="/blocks/block[@name='dartTrap']/property[@name='Stacknumber']/@value">1</set>  <!-- DOUGH: Default = 10 -->
-  <set xpath="/blocks/block[@name='flamethrowerTrap']/property[@name='Stacknumber']/@value">1</set>  <!-- DOUGH: Default = 10 -->
   <set xpath="/blocks/block[@name='bladeTrap']/property[@name='Stacknumber']/@value">1</set>  <!-- DOUGH: Default = 10 -->
   <set xpath="/blocks/block[@name='autoTurret']/property[@name='Stacknumber']/@value">1</set>  <!-- DOUGH: Default = 10 -->
   <set xpath="/blocks/block[@name='rScrapIronPlateMine']/property[@name='Stacknumber']/@value">3</set>  <!-- DOUGH: Default = 25 -->
