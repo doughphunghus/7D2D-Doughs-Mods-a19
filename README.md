@@ -17,4 +17,3 @@ Some modlets may not be compatible with all versions of a19! Submit an issue if 
 - :clap: You've Got Mail, a19.5 b60 Update -> [Netwit2008](https://community.7daystodie.com/profile/71357-netwit2008/), for text/lore/contributions.
 - :clap: Screamers-Spawn-More - Inspired by JaWoodle's "Silent Hill" series ;) and a post by @Doomofman. DOES NOT WORK LIKE JAWOODLES Youtube series.
 - :clap: UI-Add-2ModSlots - Inspired by request from @CrazyAluminum. See also joshwar99's More Mod Slots A18-A19 on nexusmods.com
-- 
