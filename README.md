@@ -18,3 +18,5 @@ Some modlets may not be compatible with all versions of a19! Submit an issue if 
 - :clap: Screamers-Spawn-More - Inspired by JaWoodle's "Silent Hill" series ;) and a post by @Doomofman. DOES NOT WORK LIKE JAWOODLES Youtube series.
 - :clap: UI-Add-2ModSlots - Inspired by request from @CrazyAluminum. See also joshwar99's More Mod Slots A18-A19 on nexusmods.com
 - :clap: Electric-CapacitorBank - Inspired by post by @ausbrecher
+- :clap: RabbitOfCaerbannog - Rabbit 3D model/rework and packaging by @Mjoelnir.hh, @Mumpfy
+- :clap: UI-Hide-TheDayAndTime - Is this mod server side safe?: Yes (in a19. confirmed by: @Fanatical_Meat)
